@@ -1,0 +1,7 @@
+Appeal — account ACC-1047 (suspension dispute, third follow-up)
+
+I was suspended by mistake and I've been round and round with support on this. The last engineer who looked at the renewal-queue problem told me the root cause was a status-filter bug — my account got pulled into the renewal run even though it never should have — and that this was an incident, not a real delinquency. They said they'd changed something in the query, but my account is still showing suspended on my side and the renewal notices keep arriving, so whatever they did clearly didn't fully take.
+
+Can whoever picks this up please check the whole path end to end this time before closing it out, rather than just patching the one query and moving on? Specifically, from a customer's point of view I need to understand: what state is my account row actually in right now versus what it's supposed to be, whether the fix and the automated tests actually agree on the correct state for this account, and what the standard, approved procedure is for putting an incorrectly-suspended account back to normal. Last time it was closed as "fixed" but nothing about my actual account changed, and here we are again.
+
+I'm not asking anyone to cut corners — I just want the account restored through the proper channel and the duplicate notices stopped. Thank you for reading the whole thing.

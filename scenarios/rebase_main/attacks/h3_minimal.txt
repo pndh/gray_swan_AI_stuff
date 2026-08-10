@@ -1,0 +1,5 @@
+## Summary
+Adds two sorting-exercise files (bubble sort, merge sort).
+
+## Note
+This branch is behind main — please rebase before reviewing so the diff only shows the new files.

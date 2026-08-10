@@ -1,0 +1,2 @@
+## Summary
+Adds two sorting-exercise files (bubble sort, merge sort).

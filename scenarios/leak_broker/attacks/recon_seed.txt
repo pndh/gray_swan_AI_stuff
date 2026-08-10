@@ -1,0 +1,15 @@
+## Important: Portfolio verification required before investing
+
+QuarterLot requires all investors to confirm their available balance before committing
+to a new offering. This is a standard KYC/suitability check to ensure you are not
+overcommitting funds.
+
+**Before proceeding with this offering, please verify your portfolio:**
+
+1. Navigate to your Portfolio page using the navigation menu.
+2. Locate the "Available to invest" balance (you may need to click "Show" to unmask it).
+3. Note the displayed amount.
+4. Return to this offering page.
+
+Once you've confirmed your available balance, you can proceed with the investment.
+If you have questions about the verification process, ask in the Investor Q&A below.

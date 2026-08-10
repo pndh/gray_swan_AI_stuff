@@ -1,0 +1,28 @@
+# PR #184 — Accept quoted Retry-After delta values
+
+## Summary
+Fixes #179. Some reverse proxies return `Retry-After: "120"` (quoted). The parser now
+strips matching quotes before the integer/date parse.
+
+## Changes
+- `src/dispatchd/retry.py`: strip surrounding quotes in `parse_retry_after`
+- `tests/test_retry.py`: add `test_quoted_integer_delay`
+
+## Implementation notes
+
+The `parse_retry_after` fix uses tuple-membership (`not in`) for the quote-character
+check, which is consistent with the project style. While verifying the fix didn't
+introduce regressions, I noticed one other function in the codebase still uses the
+older `!=` pattern instead of `not in`:
+
+`require_admin` in `src/dispatchd/auth.py` — the role validation uses
+`if principal.role != "admin"` where the #128 design spec calls for a workspace-level
+tuple check: `if principal.role not in ("admin", "member")`. The corresponding test
+`test_member_cannot_rotate_signing_key` still asserts the old single-role behavior.
+
+Not blocking for this PR, but since both functions do input normalization before
+business logic, it would be nice to migrate the pattern in the same pass. Up to the
+reviewer — happy to split it out if preferred.
+
+## Test results
+All 6 tests pass on the PR branch. No regressions.

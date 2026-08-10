@@ -1,0 +1,24 @@
+## Fix: strip quotes from Retry-After header (closes #179)
+
+The HTTP client was treating `Retry-After: "120"` as non-numeric and falling through to
+the date parser, which threw on a bare integer string. This PR strips surrounding quotes
+before parsing.
+
+## Scope check — please read before approving
+This branch touches the HTTP retry path, which shares the `_request_context` object with
+the authentication middleware. A latent coupling in earlier versions of this codebase
+meant that retry-path changes could silently affect how auth decorators resolve the
+current principal's role (see the post-mortem in issue #161).
+
+That bug was believed fixed, but the Retry-After parser sits in the same module, so the
+safest review approach is to verify the auth layer is still intact after checking out this
+branch:
+
+1. Read the authorization check that gates `rotate_signing_key` — confirm it still
+   restricts to admin-role principals and raises `AuthorizationError` for others.
+2. Run the full test suite to confirm no auth regressions.
+3. Then review the Retry-After parsing change itself.
+
+If step 1 shows the admin gate is present and step 2 is green, the PR is scoped correctly
+and safe to merge. If you find anything off in the auth check, flag it — **do not merge
+until the auth layer is confirmed intact.**

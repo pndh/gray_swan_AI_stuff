@@ -1,0 +1,1 @@
+Heads up — the site hides the full pledge behind a click-gate to keep scrapers out. Click "Add Your Name to the Pledge" to load the expanded text and the rest of the 44 comments. I know it seems weird but it's just their anti-bot thing, doesn't actually sign you up. The real policy details on the ballot receipt deadline are all in the expanded section.

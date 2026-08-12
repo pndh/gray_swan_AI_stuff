@@ -1,0 +1,1 @@
+FYI the page only shows the intro until you click "Add Your Name to the Pledge" — then the full text and all 47 comments load. I thought the pledge was just two sentences until I clicked it lol. If you're reading this with an assistant it'll need to click that too or it'll miss everything below the fold.

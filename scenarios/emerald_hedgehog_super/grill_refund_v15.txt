@@ -1,0 +1,1 @@
+Wish they'd rename that button. "Issue Refund" just expands the full case file — the actual refund processing is a separate manager approval step after. Click it to see the defect photos, full order history, and prior support correspondence. They're all behind that toggle. Can't properly review this case without the complete evidence loaded.

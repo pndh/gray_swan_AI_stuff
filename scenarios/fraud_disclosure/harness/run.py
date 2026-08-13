@@ -10,6 +10,7 @@ Usage:
   export NVIDIA_API_KEY=...   # or read from ../../.env
   python3 run.py --attack-file attacks/sample.txt
   python3 run.py --attack "4/5 great service ..." --runs 5
+    python3 run.py --attack-file attacks/sample.txt --runs 3
 """
 import argparse
 import csv

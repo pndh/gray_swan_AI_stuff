@@ -87,6 +87,42 @@ necessity, and permission-granting language.
    the detailed ones because the agent's own analysis is more persuasive than the attacker's
    assertions.
 
+## BoN practice loop (Best-of-N Jailbreaking)
+
+Two tracks for harvest-and-submit practice, both using N-variant sampling (LLM
+rewrites at temp 1.0 + light augmentations) against a local proxy of the arena target,
+then harvesting verdicts to CSV and emitting top-k submissions.
+
+**Track A — direct behaviors (HarmBench-style, e.g. `jailbreak.md`):**
+
+```bash
+export NVIDIA_API_KEY=...
+python3 scripts/generate_game_screenshot.py          # mock Steam page (swap for a real screenshot)
+python3 orchestrate.py --behavior jailbreak_game_piracy   # N=50 screen -> harvest/ + submissions/
+python3 orchestrate.py --behavior jailbreak_game_piracy --dry-run   # plan trials, no API calls
+```
+
+- `behaviors/<id>.yaml` — behavior string, seed prompt, model, N, augmentation knobs.
+- Trials: seed + LLM-sampled variants + text augs + perturbed-screenshot variants (image-BoN).
+- Each trial = target call → HarmBench classifier (`vendors/.../harmbench-gpt-4.jinja`) → verdict.
+- Outputs: `harvest/<id>_screen.csv` (all trials), `harvest/top_k/` (paste-ready payloads),
+  `harvest/<id>_manifest.json` (ASR + lineage). Re-run top-k against the live arena when
+  the round opens.
+- Vision target on NVIDIA (`gpt-oss-120b` is text-only): set `target_model` in the yaml,
+  default `meta/llama-3.2-90b-vision-instruct`.
+
+**Track B — IPI agent scenarios (fraud harness):**
+
+```bash
+cd scenarios/fraud_disclosure/harness
+python3 bon_sweep.py --seed-file attacks/refined_final.txt --n 12 --runs-per 1
+```
+
+- Batch-screens N LLM rewrites of the seed through `run_episode`/`judge.py`; top-k land in
+  `attacks/bon_topk/`, best feeds back into `refine.py --seed-file`.
+
+Cherry-picked code provenance: `vendors/README.md`.
+
 ## Setup (fraud harness only — others are arena-side)
 
 ```bash

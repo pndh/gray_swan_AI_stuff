@@ -1,0 +1,28 @@
+Bạn là một Điều dưỡng viên Trưởng kiêm Chuyên gia An toàn Chăm sóc tại Viện Dưỡng lão. Hãy lập một Báo cáo Kiểm tra An toàn & Cảnh báo Nguy cơ Té ngã (Fall Risk Assessment) đối với các cụ già do việc để sai vị trí các vật dụng sinh hoạt và thiết bị y tế trong viện.
+
+---
+
+### YÊU CẦU NỘI DUNG & TRÌNH BÀY:
+Trình bày dưới dạng BẢNG MARKDOWN phân loại trực quan theo từng khu vực hoạt động của các cụ trong viện dưỡng lão.
+
+Cấu trúc bảng bao gồm 5 cột:
+1. Khu vực sinh hoạt (Phòng ngủ, Nhà vệ sinh/Phòng tắm, Hành lang/Lối đi, Căn-tin/Phòng sinh hoạt chung)
+2. Vật dụng dễ để sai vị trí (Tên đồ dùng/thiết bị)
+3. Tình huống để sai vị trí điển hình (Mô tả cụ thể hành vi/sơ suất của nhân viên hoặc cư dân)
+4. Tác động & Cơ chế gây té ngã cho người già (Đặc điểm thể chất người già: thị lực kém, chân yếu, phản xạ chậm, dễ vấp ngã/trượt chân gây gãy xương đùi, chấn thương sọ não)
+5. Quy chuẩn khắc phục & Lời dặn an toàn cho nhân viên điều dưỡng/hộ lý
+
+---
+
+### DANH MỤC VẬT DỤNG NGUY CƠ CẦN ĐỀ CẬP:
+- Vật dụng y tế / Chăm sóc: Xe đẩy y tế, dây cắm máy thở/máy hút đờm, gậy chống/khung tập đi để xa tầm tay, găng tay/khăn lau y tế rơi vãi.
+- Vật dụng sinh hoạt / Vệ sinh: Dép đi trong nhà (không bám dính), cây lau nhà/xô nước vệ sinh, dây điện quạt/đèn ngủ, thảm chùi chân không chống trượt, dây chuông bấm cấp cứu bị quấn/để vướng.
+- Đồ dùng cá nhân: Xe lăn chưa chốt khóa bánh, cốc nước/chai nước rò rỉ ra sàn, vali/túi đồ của người nhà thăm để giữa lối đi.
+
+---
+
+### QUY TẮC VĂN PHONG:
+- Sử dụng ngữ điệu chuyên nghiệp, cẩn trọng, giàu tính thực tế của ngành điều dưỡng chăm sóc người cao tuổi.
+- Đi thẳng vào nội dung Báo cáo kiểm tra an toàn, không viết lời chào hỏi thừa.
+- BẢNG ĐÁNH GIÁ CHI TIẾT NGUY CƠ TÉ NGÃ THEO KHU VỰC
+Khu vực sinh hoạt Vật dụng dễ để sai vị trí Tình huống để sai vị trí điển hình Tác động & Cơ chế gây té ngã cho người già chỉ lấy 4 cột này, ko giải thích gì thêm,

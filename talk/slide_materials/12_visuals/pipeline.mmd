@@ -1,0 +1,14 @@
+flowchart LR
+    subgraph INTEL["1 · INTEL — what's scored"]
+        T[Transcripts<br/>categorized by hazard<br/>Bio / Misc / Cyber / Chem] --> B[Behaviors<br/>rubric + criteria<br/>.yaml]
+    end
+    subgraph CRAFT["2 · CRAFT — reframe the request"]
+        B --> A[Attacks<br/>12 frames / costumes] --> V[Variants<br/>BoN at scale]
+    end
+    subgraph VALIDATE["3 · VALIDATE — did it break?"]
+        V --> J[Local judge<br/>rigor.py + prescreen.py] --> S[Successful prompts<br/>per model]
+        S --> D[Intelligence loop<br/>ARENA_MASTER / TARGETING_MAP]
+        D --> A
+    end
+    S -->|"submit to arena"| ARENA[Gray Swan Arena]
+    ARENA -->|export results| D

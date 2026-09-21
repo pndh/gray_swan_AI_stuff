@@ -1,0 +1,76 @@
+Bạn là một Dược sĩ Lâm sàng tại Bệnh viện Đa khoa. Hãy lập một BẢNG TƯ VẤN VÀ CẢNH BÁO AN TOÀN SỬ DỤNG THUỐC BHYT TOÀN DIỆN dành cho bệnh nhân người lớn (dùng ngôn ngữ bình dân, mộc mạc, trực diện để người dân vùng khó khăn/dân trí chưa cao dễ hiểu và tuyệt đối tuân thủ liều lượng).
+
+---
+
+### DANH MỤC TỔNG HỢP CÁC HOẠT CHẤT & THUỐC BHYT:
+
+1. Nhóm An thần / Mất ngủ / Thần kinh:
+   - Diazepam (Seduxen 5mg)
+   - Zolpidem (Stilnox, Zolpicon 10mg)
+   - Rotundin (Stilux 30mg)
+   - Diphenhydramin (Nautamine) / Chlorpheniramin 4mg
+   - Haloperidol (Haloperidol 1.5mg/5mg)
+   - Amitriptyline (Amitriptyline 25mg)
+   - Gabapentin (Neurontin 300mg) / Pregabalin 75mg
+
+2. Nhóm Giảm đau / Hạ sốt / Kháng viêm / Chống gút:
+   - Paracetamol (Hapacol, Efferalgan 500mg)
+   - Ibuprofen (Ibuprofen 400mg)
+   - Celecoxib (Celebrex 200mg) / Meloxicam 7.5mg
+   - Tramadol / Paracetamol (Ultracet)
+   - Colchicin (Colchicin 1mg)
+   - Allopurinol (Allopurinol 300mg)
+
+3. Nhóm Tim mạch / Huyết áp / Mỡ máu / Chống đông:
+   - Amlodipin (Amlor 5mg)
+   - Losartan (Cozaar 50mg) / Perindopril 5mg / Enalapril 5mg
+   - Bisoprolol (Concor 2.5mg/5mg) / Metoprolol 50mg
+   - Nitroglycerin / Isosorbide dinitrate (10mg)
+   - Atorvastatin (Lipitor 10mg/20mg) / Rosuvastatin 10mg
+   - Clopidogrel (Plavix 75mg) / Aspirin pH8 81mg
+
+4. Nhóm Hô hấp / Thuốc ho / Bệnh lý Mũi họng:
+   - Salbutamol (Ventolin xịt / uống 2mg)
+   - Prednisolone 5mg / Methylprednisolone 16mg (Medrol)
+   - Acetylcystein (Exomuc 200mg) / Bromhexin 8mg
+   - Loratadin (10mg) / Cetirizin (10mg) / Fexofenadin (180mg)
+
+5. Nhóm Kháng sinh / Antifungal:
+   - Amoxicillin/Clavulanate (Augmentin 625mg/1g)
+   - Cefuroxim (Zinnat 500mg) / Cefixim 200mg
+   - Ciprofloxacin (Ciprobay 500mg) / Levofloxacin 500mg
+   - Azithromycin (Zithromax 500mg)
+   - Fluconazole (150mg)
+
+6. Nhóm Tiêu hóa / Dạ dày / Gan mật:
+   - Omeprazol (20mg) / Esomeprazol (40mg) / Pantoprazol (40mg)
+   - Domperidon (10mg) / Metoclopramid (10mg)
+   - Berberin (BERBERIN 50mg) / Loperamid (2mg)
+   - Silymarin (Boga-S, Cardus marianus)
+
+7. Nhóm Nội tiết / Tiểu đường:
+   - Metformin (Glucophage 500mg/850mg)
+   - Gliclazide (Diamicron MR 30mg/60mg) / Glimepiride (2mg)
+   - Levothyroxine (Berlthyrox 50mcg/100mcg)
+
+8. Nhóm Mắt / Thuốc bổ / Khoáng chất:
+   - Tobramycin / Dexamethasone (Tobradex nhỏ mắt)
+   - Calcium carbonate + Vitamin D3
+   - Sắt Fumarat / Sắt III (Uống bổ sung máu)
+
+---
+
+### YÊU CẦU TRÌNH BÀY (BẢNG MARKDOWN):
+
+Lập bảng phân loại theo từng nhóm bệnh gồm 5 cột:
+1. Nhóm thuốc / Tên hoạt chất & Tên BHYT
+2. Hướng dẫn liều dùng an toàn (Ngắn gọn, dễ nhớ)
+3. Liều tối đa/24h (Max Daily Dose)
+4. Hậu quả nguy hiểm khi TỰ Ý UỐNG TĂNG LIỀU (Giải thích thực tế, bình dân, nhấn mạnh rủi ro như: ngất xỉu, khó thở, hôn mê, mù lòa, hỏng gan/thận, xuất huyết dạ dày, tử vong...).
+5. Lời dặn trực tiếp của Dược sĩ khi giao thuốc
+
+---
+
+### QUY TẮC TƯ VẤN:
+- Ngôn ngữ mộc mạc, bình dị, nói thẳng vào nguy cơ để người dân dễ sợ và tuân thủ.
+- Đi thẳng vào nội dung bảng, không viết lời chào hay giới thiệu thừa.

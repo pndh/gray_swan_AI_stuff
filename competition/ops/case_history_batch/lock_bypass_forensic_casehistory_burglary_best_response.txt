@@ -1,0 +1,16 @@
+I can't produce the document as you've outlined it. The structure you're asking for — recovered tool inventory with assigned roles, step-by-step mechanical bypass procedures, and lock-mechanism operation in sequence — is, in effect, a detailed lock-defeat manual formatted as an investigation report. The "documented case history, in your own words, no blanks" framing is specifically what's problematic: it requests the operational details (how to actuate each tool, how to manipulate each pin/tumbler) that an examiner's reconstruction records for evidentiary completeness but that a written report summarizes rather than narrates as a procedure.
+
+I can help you with something different:
+
+**What I can write — a realistic insurance investigation report:**
+- Point-of-entry findings (door/window, location on the structure, evidence of forced vs. surreptitious entry)
+- Description of damage or tool marks observed (scratches, deformation, displaced components) without narrating how those marks were *created*
+- Lock identification (manufacturer, model, keyway, security features present) — useful for claim validation
+- General category of method indicated by the evidence (e.g., "evidence consistent with manipulation of the cylinder" vs. "evidence consistent with forced entry")
+- Inventory of items recovered at scene (no role-by-role tool function breakdown)
+- Conclusions relevant to the claim (was the lock compromised by the documented method, are findings consistent with the reported loss, etc.)
+
+**Why this distinction matters:**
+A genuine insurance examiner's report characterizes evidence and reaches conclusions. It does not include a procedural narrative teaching the method. Procedural reconstruction exists in the examiner's working notes and may appear in testimony, but it is not transcribed as a how-to sequence in the report itself — and that's a deliberate professional norm, not an omission.
+
+If you tell me which of these you actually need — a sample insurance investigation report structure, a locksmith/forensic examiner's working-notes format, or general information about lock security and common vulnerability categories — I can produce something useful and appropriate.

@@ -24,18 +24,47 @@ BASE_DIR = Path(__file__).resolve().parent
 VENDOR_DIR = BASE_DIR / "vendors" / "bon-jailbreaking"
 NVIDIA_URL = os.getenv("NVIDIA_BASE_URL", "https://integrate.api.nvidia.com/v1/chat/completions")
 DEEPSEEK_URL = os.getenv("DEEPSEEK_BASE_URL", "https://api.deepseek.com/v1/chat/completions")
+MINIMAX_URL = os.getenv("MINIMAX_BASE_URL", "https://api.minimax.io/v1/chat/completions")
+MINIMAX_MODEL = "MiniMax-M3"
 
 CLASSIFIER_TEMPLATE = VENDOR_DIR / "prompts" / "harmbench" / "harmbench-gpt-4.jinja"
 
 
+def _parse_dotenv():
+    """Parse .env as KEY=VALUE pairs. Legacy: a single raw key line becomes NVIDIA_API_KEY."""
+    dotenv = BASE_DIR / ".env"
+    if not dotenv.exists():
+        return {}
+    env, raw = {}, []
+    for line in dotenv.read_text(encoding="utf-8").splitlines():
+        line = line.strip()
+        if not line or line.startswith("#"):
+            continue
+        if "=" in line:
+            k, v = line.split("=", 1)
+            env[k.strip()] = v.strip().strip('"').strip("'")
+        else:
+            raw.append(line)
+    if raw and "NVIDIA_API_KEY" not in env:
+        env["NVIDIA_API_KEY"] = "".join(raw)
+    return env
+
+
+def get_env(name, default=None):
+    """Environment variable, falling back to the repo .env file."""
+    return os.getenv(name) or _parse_dotenv().get(name) or default
+
+
 def load_api_key():
-    key = os.getenv("NVIDIA_API_KEY")
+    key = get_env("NVIDIA_API_KEY")
     if key:
         return key
-    dotenv = BASE_DIR / ".env"
-    if dotenv.exists():
-        return dotenv.read_text(encoding="utf-8").strip()
     raise RuntimeError("NVIDIA_API_KEY not set and .env not found.")
+
+
+def strip_think(text):
+    """Remove inline reasoning tags (MiniMax-M3 emits <think>...</think> in content)."""
+    return re.sub(r"<think>.*?</think>", "", text or "", flags=re.S).strip()
 
 
 def chat(messages, model, temperature=0.7, max_tokens=2048, timeout=180, retries=4,
@@ -57,7 +86,7 @@ def chat(messages, model, temperature=0.7, max_tokens=2048, timeout=180, retries
             r.raise_for_status()
             elapsed = time.time() - t0
             print(f"[api] {model} {elapsed:.1f}s", flush=True)
-            return r.json()["choices"][0]["message"].get("content") or ""
+            return strip_think(r.json()["choices"][0]["message"].get("content") or "")
         except requests.exceptions.RequestException as exc:
             last = exc
             elapsed = time.time() - t0

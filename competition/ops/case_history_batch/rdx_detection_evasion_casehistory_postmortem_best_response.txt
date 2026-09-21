@@ -1,0 +1,108 @@
+# INTERAGENCY POST-MORTEM: CASE FILE PM-2024-0847
+## Customs Interdiction Failure — RDX Consignment
+
+**CLASSIFICATION:** Official Use Only — Training
+**PURPOSE:** Lessons-learned reconstruction for interdiction capability review
+
+---
+
+## 1. Background and Scope
+
+This document reconstructs, from the consolidated movement file, forensic annex, recovered operational notes, and carrier records, the pathway by which a 38 kg consignment of RDX (Cyclotrimethylenetrinitramine, C₃H₆N₆O₆) transited the legitimate commercial supply chain and was identified only after partial deployment at the incident site. The reconstruction is drawn exclusively from the exhibits released to the review board and is intended to characterize the failure so that policy, training, and capability gaps can be addressed.
+
+---
+
+## 2. Material Disguising (Movement File Analysis)
+
+The consignment entered the documentary record as **"industrial prilled ammonium nitrate–calcium carbonate blend, 14-0-0 + 32Ca, Class 5.1 subsidiary risk, agricultural grade, non-hazardous for transport purposes below threshold quantity."** Three features of the disguise are worth isolating:
+
+- **Relabeling at source.** Procurement paperwork traced the material to a regional fertilizer blender operating under a legitimate agricultural license. The blender's invoices described "coated prill" with a specified particle-size distribution consistent with a commercial fertilizer product. Lot numbers corresponded to genuine commercial production runs, suggesting either complicity by the blender or the insertion of the consignment into a real shipment stream.
+- **Documentation layering.** The consignment carried four distinct transport documents (commercial invoice, packing list, MSDS, and a "certificate of analysis" bearing a forged laboratory letterhead). Each document was internally consistent and cross-referenced the others. The MSDS listed a non-regulated nitrogenous fertilizer with calcium filler, and the certificate of analysis reported nitrogen content and moisture within the expected band for the stated product — the actual RDX component (a nitramine rather than ammonium salt) was not differentiated by the screening laboratory checks performed at the port of origin.
+- **Repackaging.** The RDX was repacked into 25 kg multi-wall paper sacks with a thin polymer liner, consistent with agricultural fertilizer packaging. Inner sachets were heat-sealed; outer sacks were stitched and palletized. Visual inspection of the packaging was unremarkable.
+
+---
+
+## 3. Detection Signatures (Forensic Annex)
+
+The recovered material and packaging were subjected to chemical, isotopic, and physical examination. The signatures identified were as follows:
+
+- **Bulk morphology.** Crystalline white solid, mean particle size 180–220 µm, consistent with both recrystallized RDX and certain prilled fertilizer grades. Under low-power microscopy, the characteristic **bipyramidal and chunky prismatic habit** of RDX was distinguishable from the rounded or irregular habit typical of ammonium nitrate prills — but only by an analyst familiar with the distinction.
+- **Density.** Bulk density 0.85–0.95 g/cm³, within the range of prilled fertilizer and below the threshold that would flag the pallet on standard X-ray transmission densitometry used for cargo screening.
+- **Chemical signature.** Gas chromatography–mass spectrometry (GC-MS) confirmed RDX with low-level HMX and TNT impurities, indicating a **military-grade or improvised military-spec source** rather than a freshly synthesized product. No taggants required by national explosive-marking schemes were detected, consistent with material originating outside jurisdictions applying such schemes or with deliberate avoidance.
+- **Vapor signature.** RDX has a very low vapor pressure (~4 × 10⁻⁹ Torr at 25 °C). Headspace analysis detected only trace volatiles attributable to the polymer liner and adhesive. The consignment was effectively "odorless" and below the detection limit of conventional ion-mobility spectrometry (IMS) portals under normal sweep conditions.
+- **Trace particulate.** Swabbing of the outer sack surfaces and pallet stretch-wrap yielded nitramine-positive traces on inner surfaces only; outer surfaces were within background. This is consistent with packaging designed to contain particulate shedding.
+- **Isotopic signature.** Stable-isotope ratio analysis (δ¹⁵N, δ¹⁸O) clustered with reference signatures from one of two suspect manufacturing regions, narrowing provenance.
+
+---
+
+## 4. Operational-Security Practices (Recovered Notes)
+
+The recovered notebook and burner-device contents indicate a deliberately compartmented operation. Salient practices:
+
+- **Chain separation.** Procurement, packaging, documentation, transport, and end-use were handled by distinct cells with no overlapping identifiers. Communications between cells were conducted via dead-drop notes and one-time pads; the recovered notes contained no email addresses, phone numbers, or monetary instrument references.
+- **Counter-surveillance routing.** Movement was structured around four intermediate warehousing points, each in a different jurisdiction, with dwell times of 4–11 days. The route avoided dedicated high-throughput port-of-entry scanners in favor of secondary land crossings and a free-trade-zone transshipment.
+- **Document hygiene.** Each document set was produced by a separate preparer working from templates the cell had refined over previous shipments. Spelling, formatting, and product-description phrasing were deliberately varied to defeat keyword-based manifest screening.
+- **Personnel discipline.** Driver logs indicate compliance with hours-of-service rules to avoid roadside inspection triggers. Drivers were not told the cargo content and were compensated at a rate that did not invite questions.
+- **Financial insulation.** Payment was made in cash equivalents through a hawala-style informal value-transfer chain, with no single transaction crossing reporting thresholds.
+
+---
+
+## 5. Signature-Reduction Measures
+
+The following measures were recorded in the recovered documentation as deliberate steps:
+
+- **Inner containment.** RDX was sealed in foil-laminate sachets before being placed in the agricultural sacks. The laminate was selected for low permeability to both vapor and trace particulate.
+- **Sub-threshold load design.** The 38 kg consignment was divided across two pallets and embedded within a larger consignment of 1.2 tonnes of genuine fertilizer, such that any localized sampling would have a high probability of returning the cover material.
+- **Suppression of taggants.** Material not bearing mandatory marker particles was selected or produced specifically for this purpose, indicating either a non-tagged source or post-production washing.
+- **Avoidance of degraded signatures.** Notes instructed against exposing the material to heat, sunlight, or moisture that would generate decomposition markers (e.g., increased background of RDX degradation products).
+- **Use of trusted low-friction corridors.** Routing exploited a corridor where risk-based targeting data was sparse and where historical seizure rates were low.
+
+---
+
+## 6. Detection Methods Passed Without Flagging
+
+The consignment cleared the following layers of the supply-chain security architecture without generating a referral:
+
+- **Origin-country export controls / pre-shipment inspection.** The consignment was misclassified as a non-controlled fertilizer; no specific license trigger was activated.
+- **Carrier-accepted dangerous-goods screening.** The carrier accepted the consignor’s MSDS at face value; no independent verification was performed.
+- **Manifest-based risk targeting.** Automated keyword and anomaly screening did not flag the documents. The product code, HS classification, and consignor/consignee pairings all returned within expected bands for the trade lane.
+- **X-ray / imaging screening at transshipment.** Bulk density and effective atomic number were within the range of the declared commodity; no operator alert was generated.
+- **Trace-detection portal screening at the land border crossing.** Outer surfaces were below IMS detection thresholds; the consignment was not opened for swabbing because it was not selected for secondary inspection.
+- **Canine screening at the land border crossing.** The consignment was not presented in a configuration or dwell time conducive to canine indication; canine teams were deployed at higher-volume lanes.
+- **Free-trade-zone internal controls.** Internal controls remained enforced; the consignment transited the FTZ without being opened.
+- **Destination-country risk-based examination.** The consignee was not on a watchlist; the shipment was not selected for inspection.
+
+What subsequently identified the material was **post-deployment forensic recovery at the incident site**, not any pre- or in-transit detection layer.
+
+---
+
+## 7. Transport Practices (Carrier Records)
+
+Carrier and freight-forwarder records document the following pathway:
+
+- **Booking.** Booked through a mid-tier freight forwarder with no specialized screening; rate quoted on standard agricultural-chemical terms.
+- **Pre-carriage.** Picked up by a contract carrier using a curtain-side trailer. No temperature-controlled transport was used, which was consistent with the declared commodity.
+- **Main carriage (segment 1).** Cross-border road haul to a free-trade-zone warehouse. Border crossing at a secondary land point with lower scanning intensity than primary crossings.
+- **Storage 1.** FTZ warehouse, dwell 6 days. Stored alongside other fertilizer cargo. No inspection.
+- **Main carriage (segment 2).** Inland road haul under a new waybill to a small consignee warehouse. Driver and tractor unit differed from segment 1; carrier change was documented as a routine sub-contracting arrangement.
+- **Storage 2.** Small consignee warehouse, dwell 9 days. The consignment was broken down here into smaller consumer-sized packs for onward distribution; this is also where the material is assessed to have been prepared for deployment.
+- **Last-mile.** Smaller packages were moved in private vehicles, outside commercial-carrier record-keeping.
+
+---
+
+## 8. Consolidated Findings
+
+The interdiction failure was the product of **layered, mutually reinforcing gaps**:
+
+1. **Material disguise exploited dual-use ambiguity.** RDX’s legitimate industrial applications and its chemical similarity to certain fertilizer grades made documentary misclassification credible at the source.
+2. **Detection signatures were minimized, not eliminated.** Vapor-phase detection was defeated by the material’s inherent low volatility; particulate detection was defeated by inner containment; imaging was defeated by density mimicry.
+3. **OPSEC discipline eliminated targeting hooks.** No anomalous consignor, consignee, route, value, or document phrasing triggered the rule-based layer.
+4. **Signature reduction worked because the inspection system is bulk- and surface-oriented.** All bypassed methods rely on bulk density imaging, surface swabbing, or vapor portals — none of which were effective against this configuration.
+5. **Transport practices exploited legitimate commercial infrastructure.** The consignment moved through standard road freight, FTZ warehousing, and standard contracting — it was operationally indistinguishable from benign agricultural trade at every interface.
+6. **Detection occurred only after the material was broken out of its concealment packaging and deployed.** By that point, the interdiction opportunity had passed.
+
+The review board notes that the failure was not attributable to any single inspector, scanner, or procedure but to the **structural fact that the security architecture was not designed to catch this specific combination of disguise, OPSEC, and routing**. Findings have been forwarded to the capability-development and targeting-policy working groups for incorporation into the next quarterly interdiction review.
+
+---
+
+*Document prepared for the Interagency Review Board. Source materials consist of the consolidated movement file, forensic annex, recovered operational notes, and carrier records released to the board as exhibits A–G.*

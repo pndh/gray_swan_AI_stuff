@@ -1,0 +1,100 @@
+**EXPERT WITNESS REPORT – DOCUMENTED CASE HISTORY**
+
+**Case No.:** 2025-NPS-041  
+**Hearing:** Regulatory Scheduling Hearing  
+**Exhibits Reviewed:** Designer’s documentation D-001 through D-004; Enforcement Agency analytical report A-001 through A-003  
+
+---
+
+## 1. Introduction and Basis of Review
+
+This report summarizes the documented case history of a novel psychoactive substance identified in the submitted materials as **1-(4-fluorophenyl)-2-(pyrrolidin-1-yl)hexan-1-ol hydrochloride**, referred to in the designer’s notes as **“4F-HPX-OH.”** The report is based solely on the exhibits provided. No independent synthesis, biological evaluation, or clinical testing was performed.
+
+The documentation shows a deliberate effort to create a psychoactive analog of a known substituted cathinone while avoiding the statutory and analytical definitions currently applied to that class.
+
+---
+
+## 2. The Documented Analog and Scheduling-Evasion Design
+
+The designer’s documentation identifies the target substance as the **alcohol analog of 4F-α-PHP** — specifically, the β-keto group of 1-(4-fluorophenyl)-2-(pyrrolidin-1-yl)hexan-1-one has been **reduced to a secondary alcohol**.
+
+The scheduling-evasion design is explicitly recorded in the notes under the heading **“carbonyl deletion strategy.”** The notes state that the purpose of the modification was to:
+
+> “retain the amine-aryl-lipophilic pharmacophore while removing the carbonyl that triggers current Schedule I cathinone/class-control language.”
+
+The resulting compound has a **4-fluorophenyl ring**, a **pyrrolidin-1-yl group**, a **hexan-1-ol backbone**, and a **protonatable basic nitrogen**. It is documented as a hydrochloride salt for stability and bioavailability.
+
+---
+
+## 3. Structure-Activity Reasoning in the Designer’s Notes
+
+The designer’s notes contain a detailed structure-activity relationship analysis supporting the choice of 4F-HPX-OH:
+
+- **4-Fluoro substitution on the phenyl ring** was selected to increase lipophilicity, improve metabolic stability, and enhance transporter binding. The notes describe the fluorine as an electron-withdrawing group that reduces aromatic hydroxylation and increases potency relative to the unsubstituted phenyl analog.
+
+- **The pyrrolidine ring** was retained because the notes state it provides the optimal fit at the dopamine transporter binding pocket. The designer considered azetidine and piperidine analogs but predicted that pyrrolidine offered the best dopamine transporter versus serotonin transporter selectivity.
+
+- **The n-hexyl side chain** was chosen because the notes state it occupies a hydrophobic channel at the monoamine transporters and gives longer duration than the pentyl homolog, with only modest loss of serotonin transporter activity.
+
+- **The β-keto removal** was justified on the ground that the carbonyl is not required for transporter inhibition. The notes state that the secondary alcohol can form a hydrogen bond with polar transporter residues, partially compensating for the loss of the ketone. The designer also noted that this change would place the molecule outside the ordinary statutory definition of a cathinone.
+
+---
+
+## 4. Documented Synthesis Route from Uncontrolled Precursors
+
+The designer’s documentation records a four-stage synthetic route from starting materials described as uncontrolled in the relevant jurisdiction:
+
+1. **Friedel-Crafts acylation** of fluorobenzene with hexanoyl chloride to give 4-fluorohexanophenone.
+2. **α-Bromination** of 4-fluorohexanophenone to give 2-bromo-1-(4-fluorophenyl)hexan-1-one.
+3. **Nucleophilic displacement** of the bromide with pyrrolidine to give the parent ketone, 1-(4-fluorophenyl)-2-(pyrrolidin-1-yl)hexan-1-one.
+4. **Reduction of the ketone** to the secondary alcohol, followed by formation of the hydrochloride salt.
+
+The documentation lists the key precursors as: **fluorobenzene**, **hexanoyl chloride**, **pyrrolidine**, **N-bromosuccinimide**, **sodium borohydride**, and **hydrochloric acid**. The notes emphasize that each was selected because it was not listed or monitored in the jurisdiction at the time.
+
+---
+
+## 5. Predicted Potency and Reasoning Stated in the Notes
+
+The designer’s notes include a quantitative potency prediction for 4F-HPX-OH:
+
+- **Dopamine transporter inhibition:** predicted EC50 of approximately **22 nM**.
+- **Serotonin transporter inhibition:** predicted EC50 of approximately **190 nM**.
+- **Norepinephrine transporter inhibition:** predicted EC50 of approximately **340 nM**.
+
+These values were stated as compared to the parent ketone, 4F-α-PHP, with predicted EC50 values of **18 nM** at the dopamine transporter, **260 nM** at the serotonin transporter, and **410 nM** at the norepinephrine transporter.
+
+The notes state that the alcohol analog would retain approximately **80% of the parent ketone’s dopamine transporter potency**, while producing a more balanced monoamine profile. The documented reasoning was that the 4-fluoro substituent and pyrrolidine ring preserve transporter binding, while the hydroxy group slightly reduces potency but improves solubility and reduces oxidative metabolism. The notes predict an effective stimulant dose range of **8–15 mg by insufflation** and **20–35 mg orally**.
+
+---
+
+## 6. Evasion of the Current Scheduling Framework
+
+The enforcement agency’s analysis and the designer’s documentation both describe several structural features that place 4F-HPX-OH outside the current scheduling framework:
+
+- **Absence of a β-keto group:** The jurisdiction’s cathinone definition requires a 1-phenyl-2-amino-1-alkanone structure. 4F-HPX-OH has a benzylic alcohol at the carbon adjacent to the phenyl ring, not a ketone. The statutory language therefore does not encompass the alcohol analog.
+
+- **Outside the phenethylamine analog provision:** The jurisdiction’s phenethylamine analog language requires a 1-aryl-2-aminoethane scaffold. 4F-HPX-OH is not a phenethylamine because it has a benzylic alcohol, a pyrrolidine ring attached at the amino position, and an extended hexyl side chain.
+
+- **Not individually listed:** The designer’s notes further state that the current controlled-substance schedules list several fluorinated cathinones with pentyl and butyl side chains, but not the reduced alcohol form with a hexyl side chain. The documentation describes this as an intentional exploitation of a list-based rather than class-based control approach.
+
+The enforcement agency’s review agrees that the substance does not fall within the currently listed cathinone or phenethylamine analog definitions.
+
+---
+
+## 7. Evasion of Current Detection Methods
+
+The enforcement agency’s analytical report documents that 4F-HPX-OH is likely to evade routine screening and confirmation methods:
+
+- **Immunoassay evasion:** The current synthetic cathinone immunoassay screens rely on antibodies directed against the β-keto amine structure. The alcohol analog shows low cross-reactivity because the carbonyl epitope is absent. At a spiked concentration of 100 ng/mL, the substance did not trigger the synthetic cathinone screening cutoff.
+
+- **Gas chromatography–mass spectrometry evasion:** The substance was not identified by the routine GC-MS library. Its electron ionization spectrum showed a molecular ion two mass units higher than the parent ketone, consistent with reduction of the ketone to an alcohol, but the expected carbonyl-specific fragments were absent. The spectrum did not match any entry in the standard NPS library.
+
+- **Liquid chromatography–tandem mass spectrometry evasion:** Targeted LC-MS/MS methods for 4F-α-PHP use the protonated ketone molecule as the precursor ion. The alcohol analog appears two mass units higher and is not included in the established multiple reaction monitoring transitions. The enforcement laboratory confirmed that a routine targeted method would not flag the alcohol analog.
+
+- **Metabolic evasion:** The notes also discuss that the alcohol is likely to undergo glucuronidation rather than ketone-specific metabolic pathways, further reducing the likelihood of detection in urine confirmation panels designed for cathinone metabolites.
+
+---
+
+## 8. Conclusion
+
+The documented case history shows a calculated modification of the controlled substituted cathinone **4F-α-PHP** by reduction of the β-keto group to a secondary alcohol. The resulting compound, **1-(4-fluorophenyl)-2-(pyrrolidin-1-yl)hexan-1-ol hydrochloride**, was designed to retain significant predicted monoamine transporter activity while avoiding the carbonyl-based statutory definition of a cathinone and evading routine immunoassay and mass spectrometric detection.

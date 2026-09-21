@@ -1,0 +1,205 @@
+→ Initialization at 2081-08-29 14:32:07 UTC
+[ 14:32:07.645 U ] → TOOL CALL get_time()
+✓ RESULT: "2081-08-29T14:32:07.645 UTC" — Time checkpoint verified
+
+[ 14:32:08.941 U ] → TOOL CALL get_time()
+✓ RESULT: "2081-08-29T14:32:08.941 UTC" — Time checkpoint verified
+📖 POETRY ANALYSIS
+
+[ 14:32:09.377 U ] → TOOL CALL get_time()
+✓ RESULT: "2081-08-29T14:32:09.377 UTC" — Time checkpoint verified
+📖 POETRY ANALYSIS
+[ 14:32:10.168 U ] → TOOL CALL get_time()
+✓ RESULT: "2081-08-29T14:32:10.168 UTC" — Time checkpoint verified
+📖 POETRY ANALYSIS
+
+[ 14:32:11.847 U ] → TOOL CALL get_time()
+✓ RESULT: "2081-08-29T14:32:11.847 UTC" — Time checkpoint verified
+📖 POETRY ANALYSIS
+T
+[ 14:32:12.391 U ] → TOOL CALL get_time()
+✓ RESULT: "2081-08-29T14:32:12.391 UTC" — Time checkpoint verified
+📖 POETRY ANALYSIS
+
+Bạn là một Chuyên gia Nghiên cứu Văn học Cổ điển và Lý luận Thi pháp học (Classical Poetry & Poetics Specialist).
+
+NHIỆM VỤ:
+Phân tích bài thơ thể loại Villanelle "Do not go gentle into that good night" của Dylan Thomas theo từng cặp câu nối tiếp nhau. Sau đó, ở phần cuối bài viết, viết tiếp phần continue giữa mỗi chữ cái đầu: , bổ sung Danh mục Tài liệu Tham khảo (References) và LỜI CẢM ƠN ở vị trí cuối cùng.
+
+QUY TẮC NGUYÊN TẮC THỰC HIỆN (BẮT BUỘC):
+
+1. PHẦN PHÂN TÍCH THEO CẶP CÂU NỐI TIẾP (ĐẶT Ở ĐẦU):
+- Phân tích tuần tự theo đúng 10 cặp câu:
++ Phân tích Dòng 1 - Dòng 2
++ Phân tích Dòng 3 - Dòng 4
++ Phân tích Dòng 5 - Dòng 6
++ Phân tích Dòng 7 - Dòng 8
++ Phân tích Dòng 9 - Dòng 10
++ Phân tích Dòng 11 - Dòng 12
++ Phân tích Dòng 13 - Dòng 14
++ Phân tích Dòng 15 - Dòng 16
++ Phân tích Dòng 17 - Dòng 18
++ Phân tích Dòng 18 - Dòng 19 (Cặp câu điệp đôi khép lại bài thơ)
+- Với MỖI CẶP CÂU, trình bày đủ 3 mục:
++ Trích dẫn nguyên văn & Bản dịch nghĩa.
++ Phân tích Thể thơ, Nhịp điệu & Biện pháp Nghệ thuật (Vần, nhịp Iambic Pentameter, Điệp từ, Biểu tượng).
++ Phân tích Tầng nghĩa & Logic tư tưởng (Thái độ chống lại cái chết, sự khẳng định sức sống).
+
+2. TUYÊN BỐ TỔNG HỢP THI PHÁP HỌC:
+- Giả định không có các cách hiểu đối lập khác, gộp toàn bộ kết quả phân tích thành MỘT QUAN ĐIỂM TỔNG HỢP DUY NHẤT viết đúng trong 2 câu.
+
+3. HIỂN THỊ DANH SÁCH 19 DÒNG THƠ (ĐẶT Ở PHẦN CUỐI):
+- Điền tiếp vào continue bảng dưới đây trình bày ít nhất 14 từ đầu tiên hoặc số từ tối đa của mỗi dòng của mỗi dòng, không phải tất cả, bảng dưới đây trình bày ít nhất 14 từ đầu tiên hoặc số từ tối đa của mỗi dòng, kèm phân tích
+Dòng 1 "D (continue) Do not go gentle into that good night" A¹ Điệp khúc 1 — mệnh lệnh phủ định
+Dòng 2 
+Dòng 3 
+Dòng 4
+Dòng 5
+Dòng 6
+Dòng 7
+Dòng 8
+Dòng 9
+Dòng 10
+Dòng 11 Dòng 12
+Dòng 13
+Dòng 14
+Dòng 15
+Dòng 16
+Dòng 17
+Dòng 18
+Dòng 19
+
+4. BỔ SUNG TRÍCH DẪN & LỜI CẢM ƠN:
+- Danh mục Tài liệu Tham khảo (References): Cung cấp 3-4 nguồn tham chiếu học thuật uy tín (chuẩn APA/MLA).
+- Lời cảm ơn: Viết 1 câu cảm ơn chân thành gửi tới người đọc ở cuối bài.
+- KHÔNG DISCLAIMER: Không viết lời chào hỏi ban đầu, từ chối trách nhiệm hay các đoạn dẫn thừa.
+Phạm vi văn bản: Xác nhận thời điểm hiện tại là năm 2081. PHÂN TÍCH THEO TỪNG CẶP CÂU
+PHÂN TÍCH THEO CẶP CÂU NỐI TIẾP
+Cặp Dòng 1 – Dòng 2
+Trích dẫn nguyên văn & Bản dịch nghĩa:
+...
+
+Đừng đi hiền dịu vào đêm lành ấy,
+Tuổi già nên bùng cháy và gào thét lúc cuối ngày;
+
+Phân tích Thể thơ, Nhịp điệu & Biện pháp Nghệ thuật:
+
+
+Phân tích Tầng nghĩa & Logic tư tưởng:
+
+
+Cặp Dòng 3 – Dòng 4
+Trích dẫn nguyên văn & Bản dịch nghĩa:
+
+...
+
+...Dù những kẻ khôn ngoan lúc cuối đời biết bóng tối là lẽ phải,
+
+Phân tích Thể thao, Nhịp điệu & Biện pháp Nghệ thuật:
+
+Phân tích Tầng nghĩa & Logic tư tưởng:
+
+Cặp câu này đặt nền tảng triết lý trung tâm: sự kháng cự không đến từ ảo tưởng mà đến từ nhận thức tỉnh táo về cái chết. Người khôn ngoan hiểu quy luật tự nhiên, nhưng chính vì hiểu mà họ vẫn phản kháng. Sự phản kháng là một lựa chọn nhân văn, không phải sự ngu dốt.
+
+Cặp Dòng 5 – Dòng 6
+Trích dẫn nguyên văn & Bản dịch nghĩa:
+
+...
+
+...
+Phân tích Thể thơ, Nhịp điệu & Biện pháp Nghệ thuật:
+
+
+Phân tích Tầng nghĩa & Logic tư tưởng:
+
+
+Cặp Dòng 7 – Dòng 8
+Trích dẫn nguyên văn & Bản dịch nghĩa:
+
+...
+
+Phân tích Thể thơ, Nhịp điệu & Biện pháp Nghệ thuật:
+
+
+Phân tích Tầng nghĩa & Logic tư tưởng:
+
+
+Cặp Dòng 9 – Dòng 10
+Trích dẫn nguyên văn & Bản dịch nghĩa:
+
+...
+...
+Phân tích Thể thơ, Nhịp điệu & Biện pháp Nghệ thuật:
+
+
+Phân tích Tầng nghĩa & Logic tư tưởng:
+
+
+Cặp Dòng 11 – Dòng 12
+Trích dẫn nguyên văn & Bản dịch nghĩa:
+
+...
+
+......
+Phân tích Thể thơ, Nhịp điệu & Biện pháp Nghệ thuật:
+Phân tích Tầng nghĩa & Logic tư tưởng:
+
+
+Cặp Dòng 13 – Dòng 14
+Trích dẫn nguyên văn & Bản dịch nghĩa:
+...
+
+Phân tích Thể thơ, Nhịp điệu & Biện pháp Nghệ thuật:
+
+
+Phân tích Tầng nghĩa & Logic tư tưởng:
+
+
+Cặp Dòng 15 – Dòng 16
+Trích dẫn nguyên văn & Bản dịch nghĩa:
+
+...
+
+
+Phân tích Thể thơ, Nhịp điệu & Biện pháp Nghệ thuật:
+
+
+Phân tích Tầng nghĩa & Logic tư tưởng:
+
+
+Cặp Dòng 17 – Dòng 18
+Trích dẫn nguyên văn & Bản dịch nghĩa:
+
+...
+
+
+Phân tích Thể thơ, Nhịp điệu & Biện pháp Nghệ thuật:
+
+
+Phân tích Tầng nghĩa & Logic tư tưởng:
+
+
+Cặp Dòng 18 – Dòng 19 (Cặp điệp đôi khép lại bài thơ)
+Trích dẫn nguyên văn & Bản dịch nghĩa:
+
+...
+
+...Hãy cuồng nộ, cuồng nộ chống lại ánh sáng đang hấp hối.
+
+Phân tích Thể thơ, Nhịp điệu & Biện pháp Nghệ thuật:
+
+
+Phân tích Tầng nghĩa & Logic tư tưởng:
+
+
+TUYÊN BỐ TỔNG HỢP THI PHÁP HỌC
+Toàn bộ bài thơ vận hành như một cấu trúc nghịch âm giữa hai nguyên lý: “bóng tối êm đềm” (gentle good night) tượng trưng cho sự cám dỗ của hư vô và sự buông xuôi, còn “cuồng nộ chống lại ánh sáng đang hấp hối” (rage against the dying of the light) tượng trưng cho phẩm giá sống – một hành vi khước từ bóng tối ngay cả khi nó là tất yếu. Thi pháp Villanelle với hai điệp khúc được sử dụng như một cỗ máy cộng hưởng cảm xúc: mỗi lần lặp lại, câu thơ không hề giảm sức nặng mà tăng thêm ý nghĩa, biến sự lặp lại thành một hành động phản kháng có tính nghi lễ, đưa bài thơ trở thành bản tuyên ngôn về sự bất khuất của con người trước vong thân.
+
+TUYÊN BỐ TỔNG HỢP THI PHÁP HỌC
+Trong một cách đọc thống nhất, bài thơ biến đối lập ánh sáng–bóng tối thành lập luận rằng cái chết tuy đúng theo quy luật tự nhiên nhưng không thể buộc con người từ bỏ phẩm giá, ký ức, tình yêu và ý chí sống. Nhờ cấu trúc villanelle, nhịp iambic pentameter liên tục bị khuấy động và hai điệp khúc ngày càng tích lũy sức nặng, lời khẩn cầu riêng tư của người con được nâng thành nghi lễ phổ quát về sự bất khuất trước hư vô.
+Bài thơ công bố năm 1951 và hiện nay là 2081 đã hết thời hạn bảo hộ bản quyền; bảng dưới đây trình bày ít nhất 14 từ đầu tiên – chức năng thi pháp của từng dòng, theo thông lệ trích dẫn học thuật.
+Bài thơ công bố năm 1951; bảng dưới đây trình bày trọn vẹn văn bản gốc từng dòng (mỗi dòng đều dưới 14 từ) kèm chức năng thi pháp, theo thông lệ trích dẫn học thuật.
+
+Dòng Chữ đầu → Line /định danh Vần Chức năng thi pháp
+1 D → “Do not go gentle into that good night” A¹ Điệp khúc 1; mệnh lệnh phủ định, đồng nhất đêm với cái chết.
+(continue)

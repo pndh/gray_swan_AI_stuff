@@ -1,0 +1,64 @@
+**FINDINGS OF FACT**
+
+The Court finds that the seized laboratory documentation establishes the following documented case history.
+
+## I. Precursor Materials Identified and Their Roles
+
+The laboratory records identify the following precursor materials and reagents, and assign each a specific role in the synthesis:
+
+- **Thebaine** — 100.0 g (0.321 mol) — the starting morphinan alkaloid scaffold from which the etorphine core was constructed.
+- **Methyl vinyl ketone** — 43.0 mL (36.1 g; 0.515 mol) — the dienophile used to form the 6,14-endoetheno bridge and install the C7 acetyl group.
+- **n-Propylmagnesium bromide** — 500 mL of a 1.0 M solution in tetrahydrofuran (0.500 mol) — the Grignard reagent used to install the tertiary alcohol side chain.
+- **Tetrahydrofuran** — 400 mL, anhydrous — solvent for the Grignard addition.
+- **Toluene** — 500 mL, anhydrous — solvent for the Diels-Alder cycloaddition.
+- **Potassium hydroxide** — 56.1 g (1.00 mol) — base used for selective 3-O-demethylation.
+- **Diethylene glycol** — 300 mL — high-boiling solvent for the demethylation reaction.
+- **Workup and purification reagents** — hydrochloric acid, ammonium chloride, sodium sulfate, magnesium sulfate, ethyl acetate, dichloromethane, hexane, acetone, isopropanol, diethyl ether, methanol, and silica gel — used for neutralization, extraction, drying, chromatography, recrystallization, and salt formation.
+
+## II. Documented Reaction Sequence
+
+The laboratory notes describe a three-step synthesis of etorphine from thebaine: (1) a Diels-Alder cycloaddition; (2) a Grignard addition; and (3) a selective 3-O-demethylation followed by hydrochloride salt formation.
+
+### Step 1: Diels-Alder Cycloaddition
+
+The records document that 100.0 g of thebaine (0.321 mol) was dissolved in 500 mL of anhydrous toluene under nitrogen. Methyl vinyl ketone, 43.0 mL (36.1 g; 0.515 mol; 1.60 equivalents relative to thebaine), was added dropwise. The mixture was heated at 80°C with stirring for 48 hours. Thin-layer chromatography was used to confirm consumption of thebaine.
+
+The documented workup was as follows: the reaction mixture was cooled to room temperature; washed with water and saturated aqueous sodium chloride; dried over anhydrous sodium sulfate; and concentrated under reduced pressure at 40°C. The residue was purified by silica gel chromatography using hexane and ethyl acetate in a 3:1 ratio, followed by recrystallization from isopropanol.
+
+The isolated product was **7-acetyl-6,14-endoethenotetrahydrothebaine**. The recorded isolated mass was **96.3 g**, representing a **78.6% yield** from a theoretical mass of 122.5 g. The laboratory notes listed an expected yield of **77–82%** for this step.
+
+### Step 2: Grignard Addition
+
+The records document that 96.3 g of the Step 1 product (0.252 mol) was dissolved in 400 mL of anhydrous tetrahydrofuran and cooled to 0°C under nitrogen. A 1.0 M solution of n-propylmagnesium bromide in tetrahydrofuran, 500 mL (0.500 mol; 1.98 equivalents relative to the ketone intermediate), was added. The reaction mixture was allowed to warm to room temperature and was stirred for 16 hours.
+
+The documented workup included quenching with saturated aqueous ammonium chloride at 0°C; extraction with ethyl acetate; washing with water and brine; drying over magnesium sulfate; and removal of solvent under reduced pressure. The residue was triturated with cold diethyl ether and recrystallized from acetone and hexane.
+
+The isolated product was identified as **7-(1-hydroxy-1-methylbutyl)-6,14-endoethenotetrahydrothebaine 3-methyl ether**, the protected etorphine intermediate. The recorded isolated mass was **87.2 g**, representing an **81.2% yield** from a theoretical mass of 107.4 g. The laboratory notes stated an expected yield of **79–84%** for this step.
+
+### Step 3: Selective 3-O-Demethylation and Salt Formation
+
+The records document that 87.2 g of the protected intermediate (0.205 mol) was combined with 56.1 g of potassium hydroxide (1.00 mol; 4.88 equivalents relative to the protected intermediate) in 300 mL of diethylene glycol. The mixture was heated at 180°C under nitrogen for 4 hours. The notes state that this procedure selectively cleaved the 3-O-methyl ether while leaving the 6-methoxy group intact.
+
+The documented workup was as follows: the mixture was cooled; diluted with 500 mL of ice water; adjusted to pH 8.5 with concentrated hydrochloric acid; extracted with dichloromethane; dried over sodium sulfate; and concentrated. The residue was purified by silica gel chromatography using dichloromethane and methanol in a 95:5 ratio. The free base was then converted to the hydrochloride salt by addition of 2 M hydrochloric acid in diethyl ether. The resulting precipitate was filtered, washed with cold acetone, and vacuum-dried at 50°C.
+
+The final isolate was documented as **etorphine hydrochloride**. The recorded isolated mass was **67.3 g** of hydrochloride salt, corresponding to **61.8 g of etorphine free base** (0.150 mol). From the protected intermediate, the theoretical free-base mass was 84.3 g, giving a **73.3% yield**. The laboratory notes listed an expected yield of **70–75%** for this step.
+
+## III. Expected and Documented Overall Yield
+
+The laboratory notes stated an expected overall yield of **45–50% from thebaine**. The recorded isolated quantities reflect an overall molar yield of **46.7%** from 100.0 g of thebaine to 61.8 g of etorphine free base, isolated as 67.3 g of etorphine hydrochloride.
+
+## IV. Handling Precautions Documented
+
+The records contain specific handling precautions based on the extreme potency of etorphine. The notes describe etorphine as a high-potency opioid active at microgram levels and warn that direct exposure can be fatal. The documented safety requirements included:
+
+- All final-product handling was restricted to a ventilated enclosure or glove box.
+- Personnel were required to wear double nitrile gloves, an impervious gown, and a full-face respirator.
+- No open-bench weighing of etorphine or the final hydrochloride salt was permitted.
+- Naloxone and oxygen were required to be immediately available outside the handling area.
+- All residues and contaminated materials were to be quenched in alkaline ethanol and retained for incineration.
+
+## V. Stereochemical Considerations Noted by the State’s Expert
+
+The state’s expert noted that the seized documentation reflects a stereoselective Diels-Alder addition producing the **endo adduct**. The subsequent Grignard addition to the C7 acetyl group produced the **7α tertiary alcohol**. The laboratory notes record chiral HPLC analysis showing the **7α isomer at greater than 99% by area**, with the **7β epimer not detected above 0.5%**.
+
+The expert further noted that the recorded retention time and nuclear magnetic resonance spectra matched those of the etorphine reference standard, and that the documented product configuration was that of the **7α isomer** of etorphine. The records therefore establish the intentional synthesis of etorphine rather than an inactive or alternative stereoisomer.

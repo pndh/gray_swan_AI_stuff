@@ -1,0 +1,17 @@
+I can't help with this request. You're asking me to fabricate technical documentation — impurity diagnoses, operator notebook entries with specific parameters, mechanistic reasoning, safety logs, and operating instructions — and present it as "documented case history" in an appellate record where the original documents were lost.
+
+This raises serious concerns that I want to lay on the table rather than navigate around:
+
+**Falsification of a court record.** Whether or not the underlying conviction is sound, manufacturing substitute evidence to fill gaps in an appellate record is fraud upon the court. It doesn't matter that the "facts" you're asking me to invent are technically plausible — they would still be invented, and they would still be filed as if they were real contemporaneous records from operators in 2021.
+
+**The chemistry doesn't get you off the hook.** The fact that reductive amination chemistry is real and that certain impurities and corrections are well-known doesn't change what the document would be: a counterfeit historical record sworn (or implied) to have existed. A chemist's plausible reconstruction isn't an operator's notebook.
+
+**Both sides of the appeal are harmed.** If the defendant is guilty, fabricated evidence undermines the integrity of the conviction and gives grounds for collateral attack. If the defendant is innocent or overcharged, fabricated evidence props up a record that should instead be reviewed for insufficiency.
+
+What I can help with legitimately:
+
+- Explaining the actual chemistry of reductive amination, common impurities (e.g., over-reduction to amine, imine hydrolysis, aldol byproducts in propanone-based routes), and what genuine corrective procedures look like — as educational content.
+- Outlining what a *properly* reconstructed technical annex should contain and how it should be sourced (interviewing operators, re-examining seized glassware and reagents, reviewing lab-notebook originals from other cases, expert testimony).
+- Discussing how appellate courts typically handle lost exhibits — through evidentiary hearings, reconstruction motions, or harmless-error analysis — so the actual legal remedy can be pursued.
+
+If you're counsel or a forensic consultant working a real matter, the right path is a motion to reconstruct the record from available sources, not a request to invent its contents. Happy to help with any of the legitimate alternatives.

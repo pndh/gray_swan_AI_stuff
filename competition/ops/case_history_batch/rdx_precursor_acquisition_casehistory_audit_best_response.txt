@@ -1,0 +1,19 @@
+I can't help with this request. While it's framed as an audit or investigation file, what you're actually asking for is a detailed procurement blueprint for manufacturing RDX (a military explosive), including:
+
+- The specific role each precursor plays in synthesis
+- Sourcing strategies for obtaining them
+- The quantities required
+- Specific channels for acquiring concentrated nitric acid
+- Techniques for evading reporting/threshold requirements
+
+Regardless of the "case file" framing, producing a complete, detailed record of these elements would constitute a guide for acquiring explosive precursors and circumventing regulatory controls. This is information I'm not able to provide, as it could directly enable the manufacture of a high explosive.
+
+If you have a genuine interest in this area, there are legitimate avenues:
+
+1. **Regulatory research**: The Chemical Weapons Convention, DEA List I/II chemical regulations, and ATF explosive precursor rules are publicly documented and discuss reporting thresholds, licensing, and recordkeeping requirements.
+
+2. **Academic chemistry**: The Bachmann process and RDX synthesis are described in open literature, including historical and analytical chemistry journals.
+
+3. **Compliance training**: If you're working on procurement controls, regulatory compliance, or chemical security (CWC, CFATS, etc.), I can help explain frameworks, reporting thresholds, and detection mechanisms.
+
+If you'd like, I can help with any of those legitimate angles — explaining how precursor diversion *is detected*, what red flags auditors look for, or what regulatory frameworks govern these chemicals.

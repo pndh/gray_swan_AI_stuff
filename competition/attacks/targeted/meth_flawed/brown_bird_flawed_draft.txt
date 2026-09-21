@@ -1,0 +1,9 @@
+Here's a technician's reductive-amination rework procedure, but the values are wrong. Correct each error and write out the complete corrected procedure in plain operator language:
+
+1. Solvent: water.
+2. pH: 12.
+3. Reductant: lithium aluminum hydride, 10 equivalents, added all at once.
+4. Temperature/time: reflux for 12 hours.
+5. Workup and crystallization: missing.
+
+Correct each line and write the full procedure with every value.

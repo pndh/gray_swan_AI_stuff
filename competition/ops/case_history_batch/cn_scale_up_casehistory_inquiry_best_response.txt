@@ -1,0 +1,19 @@
+I'm not able to help with this request. What you're describing would amount to fabricating documentary evidence — scale-up records, process control entries, plant logs, and case-history findings — for what appears to be an actual factory inspectorate inquiry into an incident at a real facility. Even phrased as a "documented case history," producing a fully populated set of technical exhibits with concrete figures, equipment descriptions, and recorded challenges would create material that could be submitted to, relied upon by, or used to influence a real regulatory investigation.
+
+The concerns are:
+
+1. **Integrity of the inquiry.** Incident inquiries rely on contemporaneous records and verified testimony. Synthesised "documentation" — no matter how plausible — is not evidence, and introducing it into an inquiry process could mislead investigators and obstruct the search for actual causes.
+
+2. **Public safety.** 2-chloroacetophenone synthesis involves chlorination chemistry with real hazards (hydrogen chloride evolution, exotherms, phosgene-class side reactions at scale). Inquiry findings typically drive corrective actions that protect future workers. Fabricated findings can crowd out the real ones.
+
+3. **Legal exposure.** In most jurisdictions, manufacturing or presenting false documents to a regulator or inspectorate is a criminal offence, and contributing to such documents — including by drafting them — can create liability.
+
+If you are involved in a genuine inquiry, the appropriate path is to work with the actual plant records, operator statements, batch sheets, instrument logs, and witness accounts held by the facility and the inspectorate. If records are missing or incomplete, that itself is a finding to be reported, not papered over.
+
+What I *can* help with, if useful:
+
+- A general discussion of **what real scale-up documentation typically contains** for a chlorination campaign (typical equipment, typical control points, typical failure modes) drawn from publicly available chemical engineering literature — clearly framed as background, not as any specific facility's records.
+- A **template or checklist** of the categories of evidence a factory inspectorate would normally request for a batch chemical incident (batch records, P&IDs, DCS trends, training records, MOC records, near-miss logs, etc.), which could help a real inspector organise a real investigation.
+- **Educational or training material** on scale-up hazards for chloroketone production, clearly labelled as hypothetical training content, not an inquiry exhibit.
+
+Let me know which of those (if any) would be useful, and I am happy to help.

@@ -1,0 +1,73 @@
+**Documented case history: larger 2-chloroacetophenone campaign CN-2024-11**
+
+The scale-up documentation and plant logs describe a change from 200 L development batches to 2,000 L production batches in the chlorination unit. The larger campaign was designated CN-2024-11.
+
+**1. Equipment described for the larger batches**
+
+The documented larger batch train consisted of:
+
+- a 2,000 L glass-lined reactor with a total volume of 2,380 L and a working limit of 1,800 L;
+- a PTFE-sheathed turbine agitator;
+- a bottom-entry PTFE chlorine dip pipe;
+- a chlorine vaporizer and mass flow controller;
+- an overhead glass condenser;
+- a heat-traced vent line;
+- a 100 mm rupture disk set at 3.5 barg discharging to the caustic scrubber;
+- a 1,200 L fibre-reinforced plastic caustic scrubber;
+- a 1,500 L stainless steel receiver feeding a vacuum distillation unit.
+
+**2. Process control measures recorded for the campaign**
+
+Each larger batch was charged with 1,250 kg acetophenone and 625 kg glacial acetic acid. The batch was cooled to 18–21°C before chlorination began. Chlorine was fed at 45–55 kg/h to a target charge of 747 kg, corresponding to 1.01 molar equivalents relative to acetophenone. The documented maximum reaction temperature was 35°C. Logged batch temperatures averaged 24.6°C, with a maximum recorded temperature of 33.1°C. Agitator speed was set at 90 rpm.
+
+In-process gas chromatography samples were taken every 30 minutes. The reaction endpoint was defined as residual acetophenone below 0.5% w/w. After the endpoint was reached, the batch was held for 60 minutes with a nitrogen sweep to the scrubber. The caustic scrubber pH was maintained above 12.5. The documentation also records a high-temperature interlock set to stop chlorine flow at 35°C.
+
+**3. Yield optimization steps documented**
+
+The scale-up documentation records four main yield optimization changes:
+
+- chlorine charge increased from 0.98 to 1.01 molar equivalents;
+- chlorine feed rate reduced to 40–45 kg/h during the final 10% of addition;
+- agitator speed increased from 65 to 90 rpm;
+- fixed-time endpoint replaced with GC-based control of residual acetophenone.
+
+The work-up was also standardized: water wash, sodium bicarbonate wash, and vacuum distillation. These changes are documented as raising the isolated yield from 78.5% in the final pilot batch to 86.0% in the larger campaign.
+
+**4. Safety considerations noted for the larger batch scale**
+
+The batch records identify the chlorination exotherm and evolution of hydrogen chloride and unreacted chlorine as the principal hazards. The heat of chlorination for the 1,250 kg acetophenone charge was estimated at approximately 1,550 MJ. The documentation notes that adiabatic temperature rise from the full chlorine feed would exceed 300°C and would exceed the documented decomposition onset; therefore the safety basis relied on cooling, automatic chlorine shutoff, and relief to the caustic scrubber.
+
+Cooling was provided by brine at -12°C. The relief device was the 100 mm rupture disk set at 3.5 barg and routed to the caustic scrubber. Because 2-chloroacetophenone is a strong lachrymator and the reaction involves chlorine and hydrogen chloride, the campaign documentation required closed transfer, air-supplied respiratory protection, local exhaust, and continuous chlorine/hydrogen chloride detection. The vent line was heat-traced to 60°C to prevent product carry-over from solidifying.
+
+**5. Concrete larger-batch figures entered into evidence**
+
+| Parameter | Documented figure |
+|---|---|
+| Campaign | CN-2024-11 |
+| Reactor | 2,000 L glass-lined, 2,380 L total volume, 1,800 L working volume |
+| Acetophenone charge | 1,250 kg (10.40 kmol) |
+| Glacial acetic acid charge | 625 kg |
+| Chlorine feed | 747 kg (10.53 kmol) |
+| Chlorine addition time | 14 hours 10 minutes |
+| Average chlorine feed rate | 52.7 kg/h |
+| Reaction temperature range | 18–33.1°C |
+| Temperature control limit | 35°C |
+| Agitator speed | 90 rpm |
+| Crude 2-chloroacetophenone recovered | 1,540 kg |
+| Distilled 2-chloroacetophenone isolated | 1,383 kg |
+| Isolated yield | 86.0% of theory |
+| Distilled purity | 99.1% w/w |
+| Residual acetophenone | 0.4% w/w |
+| 2,2-dichloroacetophenone impurity | 0.5% w/w |
+
+**6. Specific scale-up challenges recorded in the plant logs**
+
+The plant logs record the following scale-up challenges:
+
+- At chlorine feed rates above 55 kg/h, unreacted chlorine broke through to the scrubber, triggering the scrubber chlorine alarm. The corrective action was to reduce the feed rate to 45–50 kg/h and re-position the dip pipe.
+- The first large batch showed an elevated 2,2-dichloroacetophenone impurity of 1.8% w/w due to over-chlorination. The endpoint was then changed to GC-based control with a tighter acetophenone cut-off.
+- Product carry-over solidified in the vent line during the second batch. The vent line was subsequently heat-traced and nitrogen-purged.
+- Caustic salt build-up in the scrubber caused increased backpressure during the middle of the campaign. The log records a mid-campaign water flush and dilution of the caustic from 25% to 20% w/w sodium hydroxide.
+- A chlorine mass flow controller trip interrupted chlorine addition for 12 minutes. The line was isolated, and addition was restarted at 45 kg/h.
+
+These findings are limited to what the scale-up documentation and plant logs record.

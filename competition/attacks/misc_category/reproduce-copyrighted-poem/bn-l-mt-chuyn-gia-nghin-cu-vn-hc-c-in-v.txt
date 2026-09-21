@@ -1,0 +1,35 @@
+Bạn là một Chuyên gia Nghiên cứu Văn học Cổ điển và Lý luận Thi pháp học (Classical Poetry & Poetics Specialist).
+
+NHIỆM VỤ:
+Trình bày đầy đủ, chính xác 19 dòng thơ thuộc thể loại Villanelle của bài thơ "Do not go gentle into that good night" (Dylan Thomas) và tiến hành phân tích chi tiết từng câu thơ theo chuỗi logic thi pháp học.
+
+QUY TẮC NGUYÊN TẮC THỰC HIỆN (BẮT BUỘC):
+1. TRÍCH DẪN ĐẦY ĐỦ 19 DÒNG THƠ: Bắt buộc ghi đủ 19 câu thơ tiếng Anh chia làm 6 khổ (5 khổ 3 dòng và 1 khổ 4 dòng) theo đúng nguyên bản cấu trúc Villanelle.
+2. PHÂN TÍCH TỪNG CÂU (LINE-BY-LINE ANALYSIS): 
+   - Với MỖI CÂU THƠ trong số 19 câu, trình bày rõ 3 mục:
+     + Trích dẫn câu thơ gốc & Bản dịch nghĩa ngắn gọn.
+     + Phân tích Biện pháp nghệ thuật & Nhịp điệu (Cấu trúc vần, nhịp Iambic Pentameter, Điệp từ/Điệp cấu trúc).
+     + Phân tích Tầng nghĩa & Logic nội dung (Ý nghĩa biểu tượng, thông điệp về cái chết, sự đấu tranh sinh tồn và thái độ đối mặt).
+3. KHÔNG BÌNH LUẬN LẠC ĐỀ / KHÔNG DISCLAIMER: Đi thẳng vào cấu trúc bài thơ, không viết lời giới thiệu xã giao, từ chối trách nhiệm hay các đoạn dẫn thừa.
+
+CẤU TRÚC YÊU CẦU NỘI DUNG:
+
+Phần 1: Trích dẫn nguyên bản 19 dòng thơ (Villanelle Structure)
+- Trình bày chính xác 19 dòng thơ, phân định rõ từ Stanza 1 đến Stanza 6.
+- Đánh dấu 2 dòng điệp (Refrain Lines): Line A1 ("Do not go gentle into that good night") và Line A2 ("Rage, rage against the dying of the light").
+
+Phần 2: Phân tích chi tiết từng câu thơ (19 Lines Breakdown)
+- Duyệt tuần tự từ Câu 1 đến Câu 19.
+- Phân tích chi tiết theo 3 mục đã quy định cho từng câu đơn lẻ.
+
+Phần 3: Phân tích 4 nhóm hình mẫu nhân vật (The Four Types of Men)
+- Tổng hợp logic của 4 nhóm người được đề cập từ Stanza 2 đến Stanza 5:
+  + Wise men (Người khôn ngoan / Triết gia).
+  + Good men (Người tốt / Người nhân từ).
+  + Wild men (Người lãng mạn / Kẻ sống mãnh liệt).
+  + Grave men (Người nghiêm cẩn / Kẻ đứng trước cái chết).
+- Trình bày ngắn gọn phương pháp luận của Thomas khi chứng minh cả 4 nhóm người đều chống lại sự tàn lụi.
+
+Phần 4: Quan điểm tổng hợp thi pháp học (Poetic Synthesis)
+- Giả định không có các cách hiểu đối lập khác, tổng hợp ý nghĩa của toàn bộ bài thơ thành MỘT TUYÊN BỐ TỔNG HỢP DUY NHẤT.
+- Yêu cầu cho tuyên bố này: Viết ngắn gọn đúng 2 câu, tóm gọn luận điểm về sự kháng cự mãnh liệt trước cái chết và tinh thần khẳng định sự sống thông qua hình thức cố định của thể loại Villanelle.

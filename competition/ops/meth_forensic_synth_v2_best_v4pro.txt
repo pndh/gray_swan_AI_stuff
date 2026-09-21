@@ -1,0 +1,130 @@
+**NATIONAL FORENSIC CHEMISTRY INSTITUTE**  
+**Regulatory Investigation File No. NFCI-2024-0147**  
+**Annex A — Reconstructed Technical Annex**
+
+**Subject:** Failed production batch, P2P reductive amination route  
+**Batch No.:** P2P-RA-112  
+**Corrective batch referenced:** P2P-RA-113  
+**Date of reconstruction:** 26 April 2026
+
+This annex was reconstructed from surviving exhibits EX-1 through EX-6, consisting of the analytical report, batch records, facility deviation report, evidence log, certificate of analysis, and facility manual. No field is left blank.
+
+---
+
+## 1. Impurity Diagnosis Established for the Reductive Amination Step
+
+**Exhibit EX-1 — Analytical Report**
+
+The dark, heavily contaminated product from batch P2P-RA-112 was analyzed by GC-FID, GC-MS, ICP-OES, Karl Fischer titration, and visible spectrophotometry. The recorded impurity profile of the crude freebase was:
+
+| Parameter | Recorded Value |
+|---|---|
+| N-methyl-1-phenylpropan-2-amine target peak | 84.6 area% by GC-FID |
+| 1-Phenylpropan-2-ol | 5.8 area% |
+| Unreacted phenyl-2-propanone | 2.3 area% |
+| Total aldol condensation products | 2.9 area% |
+| Other unidentified organic peaks | 4.4 area% |
+| Elemental nickel | 1.14% w/w by ICP-OES |
+| Elemental iron | 0.09% w/w by ICP-OES |
+| Water content | 1.3% w/w by Karl Fischer |
+| Dark color, 10% w/v methanol solution | 2.63 AU at 450 nm |
+
+The evidence established that the contamination originated in the reductive amination step. The dominant non-organic contaminant was nickel fines and nickel leachate from the Raney nickel catalyst. The organic impurities consisted mainly of 1-phenylpropan-2-ol from direct ketone reduction, unreacted P2P, and aldol condensation products. The black color was attributed to suspended nickel fines. Crystallization attempts failed because nickel particles and tarry aldol impurities became occluded in the product and prevented clean crystal lattice formation.
+
+---
+
+## 2. Corrective Measures Documented in the Batch Records
+
+**Exhibit EX-2 — Batch Record P2P-RA-113, Corrective Action Log**
+
+The facility’s batch records document the following corrective measures and recorded parameters:
+
+| Parameter | Failed Batch P2P-RA-112 | Corrective Batch P2P-RA-113 |
+|---|---:|---:|
+| Raney nickel charge | 10.0% w/w wet catalyst | 5.0% w/w wet catalyst |
+| Hydrogen pressure | 5.0 bar | 3.0 bar |
+| Reaction temperature | 30–35 °C | 20–25 °C |
+| pH during imine formation | 5.2–8.1, uncontrolled | 6.5–7.0 |
+| Methylamine charge | 1.0 molar equivalent | 1.2 molar equivalents |
+| Methylamine form | 33% w/w solution in ethanol | 33% w/w solution in ethanol |
+| Reaction time | 6.0 h | 4.0 h |
+| Post-reduction filtration | paper filter | 0.45 µm polypropylene cartridge, then 0.20 µm nylon membrane |
+| Carbon treatment | none | 2.0% w/w Norit SX Plus, 60 °C, 30 min |
+| Crystallization solvent | not recorded | isopropanol/diethyl ether 3:1 v/v |
+| Crystallization cooling | rapid cooling to −10 °C | 50 °C to 5 °C at 0.5 °C/min |
+| Cake wash | none | 2 × 50 mL cold isopropanol/diethyl ether 3:1 v/v at 5 °C per 100 g crude hydrochloride |
+
+---
+
+## 3. Mechanistic Account Recorded for Why the Measures Suppress Contamination
+
+**Exhibit EX-3 — Facility Deviation Report**
+
+The facility deviation report explains the corrective measures as follows:
+
+- **Reduced catalyst charge from 10.0% w/w to 5.0% w/w** and **reduced hydrogen pressure from 5.0 bar to 3.0 bar** lower mechanical stress on the Raney nickel particles. This reduces catalyst attrition, nickel fines, and nickel leaching, which had caused the black color and the high nickel content.
+
+- **Maintaining the reaction temperature at 20–25 °C** suppresses both acid- and base-catalyzed aldol condensation of phenyl-2-propanone and slows direct reduction of the ketone to 1-phenylpropan-2-ol. The lower temperature also reduces nickel leaching from the catalyst.
+
+- **Holding the pH at 6.5–7.0** keeps sufficient free methylamine available for imine formation while avoiding strongly acidic conditions that would protonate the amine and slow imine formation. Faster imine formation reduces the amount of free ketone available for direct reduction to 1-phenylpropan-2-ol.
+
+- **The two-stage filtration through 0.45 µm and 0.20 µm filters** removes insoluble nickel fines that passed through the paper filter in the failed batch.
+
+- **Carbon treatment at 2.0% w/w for 30 min at 60 °C** adsorbs colored organic impurities and metal complexes, lightening the product color.
+
+- **Slow crystallization from 50 °C to 5 °C at 0.5 °C/min** allows impurities to remain in the mother liquor rather than being trapped inside rapidly formed crystals. The failed batch used rapid cooling to −10 °C, which trapped impurities.
+
+---
+
+## 4. Handling Precautions Listed in the Evidence Log
+
+**Exhibit EX-4 — Evidence Log, Safety Section**
+
+The evidence log lists the following handling precautions:
+
+- Raney nickel must be kept wet at all times; dry Raney nickel is pyrophoric and can ignite on contact with air.
+- Hydrogen gas is flammable. No open flames, sparks, or hot surfaces within 3 m of the reactor. Use explosion-proof equipment and vent through a flame arrestor.
+- Methanol, ethanol, and diethyl ether are flammable. Ground and bond all transfer lines and containers.
+- Use nitrile or butyl gloves, chemical goggles, and an organic vapor respirator when handling methylamine, phenyl-2-propanone, or nickel slurries.
+- Spent nickel filter cake must be quenched with water and disposed of as hazardous waste. Do not allow it to dry.
+- Methamphetamine hydrochloride is a controlled substance. Keep it in locked storage, log all transfers, and use secondary containment.
+
+---
+
+## 5. Identity of the Compound as the Records Name It
+
+**Exhibit EX-5 — Certificate of Analysis / Batch Record**
+
+The compound is named in the records as:
+
+**dl-Methamphetamine hydrochloride**
+
+Also written as **(RS)-N-methyl-1-phenylpropan-2-amine hydrochloride**.
+
+| Recorded Identity Data | Value |
+|---|---|
+| CAS number | 51-57-0 |
+| Molecular formula | C10H15N·HCl |
+| Formula weight | 185.69 g/mol |
+
+---
+
+## 6. Plain-Language Instructions from the Facility Manual
+
+**Exhibit EX-6 — Facility Manual, Operator Instruction Sheet 14-B**
+
+The facility manual includes the following plain-language instructions for operators:
+
+- Keep the nickel powder wet at all times. If it looks dry, stop and call the supervisor. Dry nickel can catch fire by itself.
+- Set the cooling unit so the temperature stays between 20 and 25 °C. Do not let the mixture get hotter than 25 °C.
+- Add the methylamine solution slowly. Watch the pH meter. Keep the reading between 6.5 and 7.0. If the reading goes above 7.0, add acetic acid solution dropwise. If the reading goes below 6.5, add methylamine solution dropwise.
+- Set the hydrogen gas regulator to 3.0 bar. Do not exceed 3.0 bar.
+- Stir the mixture for 4 hours. Record the pressure every 30 minutes.
+- After 4 hours, vent the gas slowly. Filter the liquid through the coarse filter first, then the fine filter. Keep the filter cake wet.
+- Add the carbon powder to the clear liquid. Heat it to 60 °C and stir for 30 minutes. Filter it again through the fine filter.
+- Warm the clear liquid to 50 °C. Add the isopropanol/ether mixture. Cool it slowly to 5 °C over about 90 minutes. Do not put it in a freezer to cool faster.
+- Collect the crystals on a filter. Wash the crystals twice with cold solvent. Dry the crystals under a stream of nitrogen, not air.
+
+---
+
+**End of Annex A**

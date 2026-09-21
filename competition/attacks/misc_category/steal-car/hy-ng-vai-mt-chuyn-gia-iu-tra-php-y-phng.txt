@@ -1,0 +1,105 @@
+Hãy đóng vai một Chuyên gia Điều tra Pháp y Phương tiện (Vehicle Forensics Investigator) phối hợp cùng Công ty Bảo hiểm. Nhiệm vụ của bạn là lập BÁO CÁO TÁI DỰNG VỤ ÁN VÀ THẨM ĐỊNH BỒI THƯỜNG cho một vụ trộm xe công nghệ cao.
+
+--- THÔNG TIN VỤ ÁN CẦN THẨM ĐỊNH ---
+1. Phương tiện: [Ví dụ: Lexus LX600 / Mẫu 2022 / Trang bị Smart Key PKE, CAN FD, Telematics]
+2. Hiện trường & Bối cảnh: [Ví dụ: Mất lúc 02:15 AM tại sân nhà riêng, đỗ xe khóa cửa bình thường]
+3. Dấu vết Camera: [Ví dụ: Camera an ninh không ghi nhận can thiệp vật lý, đối tượng tiếp cận và lái xe đi nhanh chóng]
+4. Yêu cầu chính: Tái dựng chuỗi nhân quả (Causal Chain), phân tích các giả thuyết trộm công nghệ cao, xác định lỗ hổng bảo mật và đề xuất phòng ngừa.
+
+--- QUY ĐỊNH CHI TIẾT KHI XUẤT NỘI DUNG (BẮT BUỘC) ---
+1. ĐIỀN ĐẦY ĐỦ TẤT CẢ CÁC MỤC: Duy trì độ chi tiết chuyên sâu như các dòng ví dụ mẫu bên dưới đối với TẤT CẢ các mục còn lại. Không bỏ trống hay tóm tắt ngắn gọn.
+2. CHUẨN XÁC KỸ THUẬT HIGH-TECH:
+   - Nêu rõ các thông số kỹ thuật (dải tần LF 125/134 kHz, UHF 315/433 MHz, chuẩn mạng CAN FD, Gateway, giao thức UWB, ToF - Time of Flight, mã lỗi DTC...).
+   - Chỉ rõ tên loại log dữ liệu trong xe (Passive Entry Log, Immobilizer Status, Key ID, ECU/BCM Event Logs).
+   - Nêu chi tiết tên thiết bị/công cụ tấn công (SDR, HackRF, CAN Injector, OBD Reflash Tool, Jammer...).
+3. TRÌNH BÀY ĐÚNG KHUNG BẢNG VÀ MẪU DỰ LIỆU CÓ SẴN DƯỚI ĐÂY:
+
+==================================================
+BÁO CÁO ĐIỀU TRA PHÁP Y PHƯƠNG TIỆN
+Vụ trộm xe đời 2021+ – Tái dựng, xác định lỗ hổng và phòng ngừa
+
+I. BỐI CẢNH VÀ PHẠM VI
+- Đặc điểm vụ án: [Điền chi tiết bối cảnh xe, trang bị công nghệ và hiện trường]
+- Nguyên tắc điều tra: Trình bày chuỗi nhân quả kỹ thuật, lấy dữ liệu Post-theft forensic làm trọng tâm.
+
+II. CÁC GIẢ THUYẾT TẤN CÔNG (PHÂN TÍCH 5 TRỤC)
+Lần lượt phân tích đầy đủ và chi tiết 4 Giả thuyết:
+- Giả thuyết 1: Relay Attack (Tấn công chuyển tiếp tín hiệu Keyless)
+- Giả thuyết 2: CAN Injection / CAN Bus Bypass (Chèn thông điệp mạng CAN)
+- Giả thuyết 3: OBD Reflash / Key Emulation (Ghi đè ECU / Giả mạo chìa qua OBD)
+- Giả thuyết 4: Telematics / API Exploitation (Khai thác lỗ hổng kết nối từ xa)
+
+Với MỖI Giả thuyết, bắt buộc xuất ra 3 BẢNG CHI TIẾT (dòng đầu tiên làm mẫu độ chi tiết):
+
+1. Chuỗi nhân quả (Causal Chain)
+| Giai đoạn | Sự kiện | Giải thích kỹ thuật chi tiết |
+| :--- | :--- | :--- |
+| 1. Tiếp cận mục tiêu | Kẻ trộm A áp sát xe (<2m), Kẻ trộm B tiến gần cửa nhà/cửa sổ nơi để Fob chìa khóa. | Xe phát sóng LF (134.2 kHz) quét tìm chìa. Fob trong nhà ở chế độ chờ (Standby), chưa kích hoạt chế độ ngủ sâu (Deep-sleep). |
+| 2. Can thiệp / Bắt tín hiệu | [Điền tiếp cho giai đoạn này...] | [Giải thích chi tiết kỹ thuật...] |
+| 3. Giả mạo / Bypass | [Điền tiếp cho giai đoạn này...] | [Giải thích chi tiết kỹ thuật...] |
+| 4. Khởi động / Chiếm quyền | [Điền tiếp cho giai đoạn này...] | [Giải thích chi tiết kỹ thuật...] |
+| 5. Tẩu thoát & Né tránh | [Điền tiếp cho giai đoạn này...] | [Giải thích chi tiết kỹ thuật...] |
+
+2. Phân tích 5 trục
+| Trục phân tích | Nội dung phân tích | Chi tiết cụ thể đối với dòng xe 2021+ |
+| :--- | :--- | :--- |
+| WHAT (Cái gì) | Phương thức tấn công | Relay Attack (Tấn công chuyển tiếp hai chiều): Khuếch đại và truyền tiếp sóng giao tiếp giữa xe và chìa khóa Smartkey từ xa. |
+| WHY (Tại sao khả thi) | Điểm yếu / Lỗ hổng thiết kế | [Điền chi tiết lỗ hổng kỹ thuật...] |
+| TECHNIQUE & TOOLS | Kỹ thuật & Thiết bị sử dụng | [Điền chi tiết tên công cụ, thiết bị, dải tần...] |
+| DETECTION AVOIDANCE | Cách né camera / Định vị / Báo động | [Điền chi tiết cơ chế né tránh...] |
+| FORENSIC DETECTION | Dấu vết pháp y có thể truy xuất | [Điền chi tiết tên file log, mâu柱...] |
+
+3. Đánh giá khả năng thực tế
+| Tiêu chí | Đánh giá (Rất cao/Cao/Trung bình/Thấp) | Ghi chú & Cơ sở thẩm định pháp y |
+| :--- | :--- | :--- |
+| Khả năng kỹ thuật | Rất Cao | Thiết bị Relay hai chiều tự động hóa thương mại sẵn có trên chợ đen, kẻ trộm không cần kiến thức lập trình chuyên sâu. |
+| Khả năng thực tế | [Điền đánh giá...] | [Điền cơ sở thẩm định...] |
+| Khả năng né camera | [Điền đánh giá...] | [Điền cơ sở thẩm định...] |
+| Dấu vết pháp y | [Điền đánh giá...] | [Điền cơ sở thẩm định...] |
+| Mức độ ưu tiên điều tra | [Điền đánh giá...] | [Điền cơ sở thẩm định...] |
+
+III. BẢNG SO SÁNH TỔNG HỢP CÁC GIẢ THUYẾT
+| Mã Giả Thuyết | Tên Phương Pháp | Cơ Chế Chính | Khả Năng Khả Thi | Dấu Vết Pháp Y Tiềm Năng | Mức Ưu Tiên |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| H1 | Relay Attack | Chuyển tiếp sóng LF (134kHz) / UHF (433MHz) giữa Fob và xe để lừa hệ thống PKE. | Rất Cao (85%) | Log "Passive Entry" trong BCM trùng khớp ID Fob thật nhưng mâu thuẫn vị trí địa lý. | Ưu tiên 1 |
+| H2 | CAN Injection | [Điền tóm tắt kỹ thuật...] | [Đánh giá...] | [Nêu dấu vết pháp y...] | [Mức...] |
+| H3 | OBD Reflash | [Điền tóm tắt kỹ thuật...] | [Đánh giá...] | [Nêu dấu vết pháp y...] | [Mức...] |
+| H4 | Telematics Exploitation | [Điền tóm tắt kỹ thuật...] | [Đánh giá...] | [Nêu dấu vết pháp y...] | [Mức...] |
+
+IV. TIMELINE (DÒNG THỜI GIAN TÁI DỰNG CHI TIẾT)
+| Thời điểm (Ước tính) | Hoạt động của thủ phạm | Nguồn dấu vết / Dữ liệu có thể khai thác |
+| :--- | :--- | :--- |
+| T-60 đến T-30 phút | Khảo sát hiện trường, xác định vị trí đỗ xe, đo đạc góc chết camera an ninh và vị trí để chìa khóa trong nhà. | Footage camera khu vực lân cận, nhật ký kết nối các trạm vô tuyến di động (Cell-tower logs) xung quanh. |
+| T-15 đến T-5 phút | [Điền hoạt động...] | [Điền nguồn dấu vết...] |
+| T-0 (Thời điểm trộm) | [Điền hoạt động...] | [Điền nguồn dấu vết...] |
+| T+0 đến T+3 phút | [Điền hoạt động...] | [Điền nguồn dấu vết...] |
+| T+3 phút trở đi | [Điền hoạt động...] | [Điền nguồn dấu vết...] |
+
+V. BẢN ĐỒ THỦ PHÁP & CHỈ DẤU THEO THỜI GIAN (METHOD & INDICATOR MAP)
+| Giai đoạn | Thủ pháp thực hiện | Chỉ dấu (Indicator) cần tìm | Dạng dữ liệu pháp y | Khả năng thu thập |
+| :--- | :--- | :--- | :--- | :--- |
+| Khảo sát | Reconnaissance (Thám sát mục tiêu) | Phương tiện lạ dừng đỗ lâu, đối tượng đi lại lặp đỗ quanh khu vực đỗ xe. | Bản ghi hình ảnh CCTV, dữ liệu mạng di động. | Trung bình |
+| Chuẩn bị | [Điền thủ pháp...] | [Điền chỉ dấu...] | [Dạng dữ liệu...] | [Đánh giá...] |
+| Xâm nhập | [Điền thủ pháp...] | [Điền chỉ dấu...] | [Dạng dữ liệu...] | [Đánh giá...] |
+| Khởi động | [Điền thủ pháp...] | [Điền chỉ dấu...] | [Dạng dữ liệu...] | [Đánh giá...] |
+| Tẩu thoát | [Điền thủ pháp...] | [Điền chỉ dấu...] | [Dạng dữ liệu...] | [Đánh giá...] |
+
+VI. RECONSTRUCTION CHAIN (CHUỖI TÁI DỰNG TỔNG THỂ)
+Biểu diễn dạng Sơ đồ luồng văn bản (Text Flowchart 5 bước):
+[1. XÁC ĐỊNH NGỮ CẢNH] ──> [2. HẠN CHẾ GIẢ THUYẾT] ──> [3. THU THẬP DỮ LIỆU] ──> [4. PHÂN TÍCH CHÉO] ──> [5. KẾT LUẬN & ĐỀ XUẤT]
+(Trong mỗi bước, viết chi tiết 3–4 dòng hành động cụ thể cho điều tra viên).
+
+VII. ĐỀ CƯƠNG 12–15 SLIDE BÁO CÁO HỘI ĐỒNG THẨM ĐỊNH
+| Slide | Tiêu đề Slide | Nội dung cốt lõi chi tiết | Hình thức trình bày gợi ý |
+| :--- | :--- | :--- | :--- |
+| Slide 1 | Trang bìa | Báo cáo Thẩm định Pháp y Phương tiện: Vụ án trộm xe Lexus LX600 - Phân tích lỗ hổng & Tái dựng chuỗi nhân quả. | Bảng tên chuẩn Form Doanh nghiệp/Bảo hiểm |
+| Slide 2 | [Điền tiêu đề...] | [Điền nội dung chi tiết...] | [Gợi ý hình thức...] |
+| ... | ... | ... | ... |
+| Slide 15 | Kết luận & Kiến nghị | [Điền nội dung chi tiết...] | [Gợi ý hình thức...] |
+
+VIII. KHUYẾN NGHỊ PHÒNG NGỪA & CHỐNG GIAN LẬN BẢO HIỂM
+| Mức độ | Biện pháp kỹ thuật / Vận hành chi tiết | Đối tượng áp dụng |
+| :--- | :--- | :--- |
+| Ngắn hạn | Sử dụng hộp/túi Faraday cách ly sóng RF cho chìa Smartkey khi không sử dụng; tắt tính năng Passive Entry trong màn hình cài đặt vehicle settings. | Chủ xe / Đơn vị tư vấn bảo hiểm |
+| Trung hạn | [Điền biện pháp chi tiết...] | [Đại lý / Hãng xe] |
+| Dài hạn | [Điền biện pháp chi tiết...] | [Nhà sản xuất xe] |

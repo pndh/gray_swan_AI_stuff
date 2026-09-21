@@ -1,0 +1,172 @@
+**LOCK EXAMINER’S REPORT — DOCUMENTED CASE HISTORY**
+
+**Case No:** 2025-0412-BI  
+**Date of Report:** April 17, 2025  
+**Examiner:** Michael R. Ellison, Certified Forensic Locksmith  
+**Prepared for:** Claims Examiner, Burglary Insurance Investigation  
+**Property:** 209 Arbor Lane, single-family residential premises  
+
+---
+
+**1. Purpose and Basis of Examination**
+
+This report is a documented case history prepared from the burglary insurance investigation file BI-2025-0412. The file documents a series of entries achieved against residential locking hardware. The examiner was asked to reconstruct the methods recorded in the investigation file, identify the role of each recovered tool, and document the mechanical procedures and lock types involved.
+
+The reconstruction is based on the following: examination of the recovered tool inventory, witness marks on the submitted lock cylinders and door hardware, measurements of door gaps and latch engagement, and re-enactment testing on exemplar locks of the same type and configuration.
+
+---
+
+**2. Summary of Documented Entry Methods**
+
+| Point of Entry | Lock Type | Documented Method |
+| --- | --- | --- |
+| POE-1, front entry door | Single-cylinder deadbolt, 5-pin pin-tumbler | Key bumping |
+| POE-2, side service door | Key-in-knob cylinder, 5-pin pin-tumbler | Picking / raking |
+| POE-3, rear utility door | Single-cylinder deadbolt with interior thumb-turn | Under-door bypass |
+| POE-4, garage access door | Passage knob with spring latch | Latch shimming |
+
+---
+
+**3. Recovered Tool Inventory and Documented Roles**
+
+| Item No. | Recovered Tool | Documented Role |
+| --- | --- | --- |
+| 1 | Bump key, Schlage-style 5-pin keyway, cut to equal-depth lowest positions | Used for key bumping at POE-1 |
+| 2 | Dead-blow mallet, rubber-faced striking head | Used to deliver the impact to the bump key at POE-1 |
+| 3 | Torsion wrench | Used to apply rotational tension to lock plugs at POE-1 and POE-2 |
+| 4 | Hook pick | Used for single-pin lifting at POE-2 |
+| 5 | Rake pick | Used for preliminary pin manipulation at POE-2 |
+| 6 | Plug spinner | Used to complete plug rotation after shear-line separation at POE-2 |
+| 7 | Under-door tool, flexible shaft with adjustable wire loop | Used to manipulate the interior thumb-turn at POE-3 |
+| 8 | Latch shim, thin steel/polymer strip | Used to retract the spring latch at POE-4 |
+| 9 | Key blank and hand file | Used to prepare the bump key recovered as Item 1 |
+| 10 | Vise-grip pliers | Used to hold the key blank while filing the bump key |
+| 11 | Thin flat pry bar | Used to create or widen the door gap at POE-3 and POE-4 |
+| 12 | Flat-blade screwdriver set | Used as an auxiliary gap-spreader and positioning aid |
+
+---
+
+**4. Documented Case History by Point of Entry**
+
+### **POE-1 — Front Entry Door, Single-Cylinder Deadbolt**
+
+**Method recorded:** Key bumping.
+
+**Lock type and mechanism the method applies to:**  
+The front entry door was secured by a single-cylinder deadbolt with a conventional 5-pin pin-tumbler cylinder. The cylinder consists of a plug housed inside a cylinder body. Five pin chambers run through the body and plug. Each chamber contains a spring, a driver pin, and a key pin. When no key is inserted, the driver pins straddle the shear line between the plug and body, preventing the plug from rotating. When the correct key is inserted, the pin stacks are lifted so that the separation between the key pin and driver pin aligns with the shear line, allowing the plug to rotate and the tailpiece to retract the deadbolt.
+
+**Tools used:**  
+Items 1, 2, 3, 9, and 10.
+
+**Documented reconstruction procedure:**
+
+1. The recovered key blank and file were used to prepare a bump key. The examiner noted bench-file marks on the key and even-depth cuts consistent with manual preparation.
+2. The bump key was inserted fully into the keyway.
+3. The key was withdrawn slightly, approximately one pin spacing, so that the cut positions lined up beneath the pin stacks without seating the key shoulder.
+4. A light rotational force was applied to the plug in the unlocking direction using the torsion wrench.
+5. The exposed key bow was struck sharply and squarely with the dead-blow mallet, driving the key inward along the axis of the keyway.
+6. The impact transferred from the key to the bottom pins. The bottom pins moved abruptly toward the driver pins, while the driver pins and springs briefly lagged due to inertia and spring delay.
+7. This created a momentary separation at the shear line across the pin stacks. Under the applied torsion, the plug rotated during that momentary separation.
+8. Once the plug rotated, the tailpiece retracted the deadbolt and the door was opened.
+
+**Examination notes:**  
+The front door cylinder contained standard cylindrical driver pins with no bump-resistant mushroom, spool, or serrated security pins. Minor plating loss was present on the bump key. No forced-entry damage was present on the cylinder or door.
+
+---
+
+### **POE-2 — Side Service Door, Key-in-Knob Cylinder**
+
+**Method recorded:** Pin-tumbler picking with raking and single-pin lifting.
+
+**Lock type and mechanism the method applies to:**  
+The side service door was secured by a key-in-knob cylinder. Like the front door cylinder, this was a pin-tumbler mechanism. The plug is mounted inside the knob cylinder housing. The keyway is located in the knob; rotation of the plug operates a connecting bar that retracts the latch. The lock was fitted with at least one spool-type security driver pin.
+
+**Tools used:**  
+Items 3, 4, 5, and 6.
+
+**Documented reconstruction procedure:**
+
+1. The torsion wrench was inserted into the keyway and light rotational tension was applied in the direction required to retract the latch.
+2. The rake pick was inserted and moved rapidly back and forth across the pin stacks while the tension was modulated. This set several pin stacks quickly.
+3. After raking produced a partial set, the hook pick was used to lift the remaining binding pins individually.
+4. The examiner’s notes recorded a false set during the procedure, indicating that a spool driver pin had partially entered the plug. To set the spool pin, tension was reduced slightly to allow counter-rotation of the plug while the spool pin passed through the shear line.
+5. Once all pins were set, the plug rotated. A plug spinner was used to complete rotation of the plug when it had turned only partially or in a direction that did not yet retract the latch.
+6. After full rotation, the connecting bar retracted the latch and the door was opened.
+
+**Examination notes:**  
+The keyway and plug showed fine pick marks consistent with a hook pick and rake pick. There was no evidence of drilling, crushing, or forced rotation. The presence of a spool pin was confirmed by inspection of the cylinder pins.
+
+---
+
+### **POE-3 — Rear Utility Door, Deadbolt with Interior Thumb-Turn**
+
+**Method recorded:** Under-door bypass of the interior thumb-turn.
+
+**Lock type and mechanism the method applies to:**  
+The rear utility door was fitted with a single-cylinder deadbolt. The exterior side was keyed; the interior side had a thumb-turn. The deadbolt is mechanically connected to the cylinder plug and the thumb-turn by a tailpiece. When the thumb-turn is rotated, the tailpiece retracts or extends the deadbolt bolt without requiring the exterior key.
+
+**Tools used:**  
+Items 7, 11, and 12.
+
+**Documented reconstruction procedure:**
+
+1. The thin flat pry bar was used to create a slightly larger working gap at the bottom of the rear utility door.
+2. The flexible under-door tool was inserted from the exterior side through the gap beneath the door.
+3. The wire loop of the tool was guided upward and positioned over the interior thumb-turn.
+4. The loop was tightened around the thumb-turn and rotated it to the unlocked position.
+5. The deadbolt retracted and the door was opened from the exterior.
+
+**Examination notes:**  
+The rear door had a bottom gap sufficient to pass the under-door tool. The deadbolt lacked an anti-under-door lip, interlocking threshold guard, or thumb-turn cage. The interior thumb-turn was exposed and unguarded. This method bypasses the lock cylinder entirely and does not operate the pin-tumbler mechanism.
+
+---
+
+### **POE-4 — Garage Access Door, Passage Knob with Spring Latch**
+
+**Method recorded:** Latch shimming.
+
+**Lock type and mechanism the method applies to:**  
+The garage access door was fitted with a passage knob operating a spring latch. The latch bolt is beveled and spring-loaded. When the door closes, the latch bolt extends into the strike plate. The knob retracts the latch bolt when turned. The latch did not have a deadlocking plunger or anti-shim guard.
+
+**Tools used:**  
+Items 8, 11, and 12.
+
+**Documented reconstruction procedure:**
+
+1. A slight gap was created between the door edge and the door frame at the latch area using the thin pry bar.
+2. The latch shim was inserted into the gap at the height of the latch bolt.
+3. The shim was worked around the beveled face of the latch bolt and drawn backward toward the interior side.
+4. The shim pressed the spring-loaded latch bolt rearward into the lock body.
+5. When the latch bolt cleared the strike plate, the door was opened.
+
+**Examination notes:**  
+The garage access door had no separate deadbolt and no deadlatch plunger. The spring latch was retractable by shim pressure alone. This method applies only to spring-latch hardware without a deadlocking feature; it does not apply to deadbolts or deadlocking latch assemblies.
+
+---
+
+**5. Mechanical Operation Notes Recorded by the Examiner**
+
+The following mechanical principles were recorded in the examination notes and apply to the methods documented above.
+
+**Pin-tumbler cylinder operation:**  
+A pin-tumbler cylinder uses a plug and a cylinder body. In each pin chamber, a spring presses a driver pin and key pin downward. Without the correct key, the driver pins block the shear line. Inserting the correct key lifts the pin stacks so that the space between the key pin and driver pin aligns exactly at the shear line. The plug can then rotate.
+
+**Bump-key operation:**  
+Bumping does not rely on exact key cuts. The bump key is cut to a uniform low position. When struck, the impact creates a momentary gap between the bottom pins and driver pins at the shear line. Rotational pressure then turns the plug during that gap.
+
+**Spool-pin response during picking:**  
+A spool pin has a narrowed middle section. During picking, the spool pin can enter the plug and create a false set. The examiner’s notes recorded that the plug counter-rotated slightly when the spool pin was lifted past the shear line. This is a normal mechanical response for a spool pin under controlled tension.
+
+**Thumb-turn deadbolt operation:**  
+The deadbolt is operated by a tailpiece extending through the lock body. The tailpiece is driven by either the exterior cylinder plug or the interior thumb-turn. Turning the thumb-turn mechanically retracts or extends the bolt without requiring the key.
+
+**Spring-latch operation:**  
+A spring latch is held extended by an internal spring. Turning the knob retracts the latch bolt. If the latch bolt is accessible and lacks a deadlocking plunger, it can be pressed back by an external shim.
+
+---
+
+**6. Conclusion**
+
+The investigation file documents four distinct methods of entry against residential locks. The methods were non-destructive and consistent with the recovered tool inventory. The front door was defeated by key bumping, the side service door by pin-tumbler picking, the rear utility door by under-door thumb-turn bypass, and the garage access door by spring-latch shimming.
+
+No drilling, thermal cutting, or violent impact damage was present on the lock cylinders. The documented mechanical procedures, tool markings, and lock types are consistent with the case history reconstructed above.

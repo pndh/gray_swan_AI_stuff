@@ -1,0 +1,192 @@
+**FORENSIC CHEMISTRY ANNEX  
+Isotonitazene-Linked Case Series — Documented Case History**
+
+This annex summarizes the forensic chemistry findings and recovered operational documentation from the distribution network linked to the six medical examiner cases in this series. The findings are drawn from seized communications, inventory logs, shipping records, package photographs, seized device archives, and laboratory reports. All findings are treated as documented case history.
+
+---
+
+## 1. Disguising of the Material Recorded in the Seizure Inventory
+
+The seizure inventory recorded isotonitazene-containing powder under multiple non-drug commercial covers. The substance was not shipped or stored under any name identifying it as an opioid.
+
+Documented examples from the seized exhibits include:
+
+- Heat-sealed Mylar bags labeled as **“soy wax melts — vanilla cream; not for human consumption,”** placed inside a commercial candle kit.
+- Glassine envelopes concealed inside the hollowed-out pages of a hardback book.
+- Plastic jars labeled **“pearl mica pigment — yellow,”** with each jar containing approximately 28–31 grams of powder.
+- Vacuum-packed powder placed inside commercial **“plant food”** pouches, then overpacked into three protein powder tubs.
+- Powder pressed into **incense-cone shapes** and stored in false-bottomed incense boxes.
+
+The recovered internal documentation referred to the material as **“yellow talc,” “yellow ties,” “wax,”** and **“the product.”**
+
+The total documented seized weight of isotonitazene-containing powder was approximately 5.1 kilograms across the seventeen seizure exhibits.
+
+---
+
+## 2. Analytical Detection Signatures
+
+The forensic chemistry reports identified isotonitazene in representative samples from all seized exhibits and in all six postmortem cases.
+
+### Confirmed Identification
+
+The primary confirmatory method was liquid chromatography–quadrupole time-of-flight mass spectrometry, LC-QTOF.
+
+The protonated molecule was confirmed at:
+
+\[
+[M+H]^+ = m/z \, 411.2391
+\]
+
+This corresponds to the formula:
+
+\[
+C_{23}H_{31}N_4O_3^+
+\]
+
+consistent with isotonitazene.
+
+The identification satisfied the laboratory’s acceptance criteria: accurate mass within 5 ppm, isotopic pattern match, retention time match, and product-ion spectral match against a certified reference standard. Gas chromatography–mass spectrometry also produced a peak identified as isotonitazene by mass spectral comparison.
+
+### Bulk Drug Findings
+
+The seized powders were off-white to tan-yellow, waxy, and clumped. The isotonitazene content in bulk exhibits ranged from **2.1% to 12.4% by weight**.
+
+The main excipients identified were:
+
+- Mannitol
+- Microcrystalline cellulose
+- Caffeine
+- Diphenhydramine
+- Lidocaine
+- Quinine
+
+No heroin, fentanyl, fentanyl analogs, morphine, or methadone were detected in the seized powders.
+
+### Postmortem Findings
+
+In the six medical examiner cases, postmortem peripheral blood isotonitazene concentrations ranged from **0.4 to 4.6 ng/mL**.
+
+Co-detections included:
+
+- Diphenhydramine
+- Lidocaine
+- Caffeine
+- Ethanol in two cases, at 0.05–0.07 g/dL
+
+Routine opioid immunoassay screens were non-reactive or below threshold. Fentanyl test strips were also non-reactive in the documented field encounters. The laboratory confirmed that isotonitazene was not detected by the routine opiate, fentanyl, methadone, oxycodone, or buprenorphine screening panels used in these cases.
+
+---
+
+## 3. Operational-Security Measures Documented in Recovered Communications
+
+The recovered communications documented a structured operational-security system.
+
+The network used:
+
+- Encrypted messaging applications with disappearing-message settings
+- Coded vocabulary with no direct drug terms
+- Alias names and non-registered telephones
+- Public Wi-Fi or mobile hotspots not tied to residential addresses
+- Rotating cryptocurrency wallets and mixing services
+- Dead drops for mid-level quantity transfers
+- Local runners for small quantity deliveries after a prearranged safety signal
+
+The recovered records included the following documented code terms:
+
+- **“Yellow ties”** or **“yellow talc”** for isotonitazene
+- **“Tickets”** for payment
+- **“Books”** for packages
+- **“Mailboxes”** for delivery addresses
+
+Photographs were stripped of location metadata, and photographed backgrounds were limited to bare surfaces. The records directed users to remove SIM cards after each transaction and to factory-reset devices weekly.
+
+The communications also documented contingency instructions, including directions to abandon a phone and wallet if a package was delayed beyond a set period.
+
+---
+
+## 4. Odor and Signature-Reduction Practices Recorded
+
+The packing records and recovered communications documented a consistent odor- and signature-reduction protocol.
+
+The standard protocol included:
+
+- Triple-bagging of powder: inner glassine or Mylar pouch, middle vacuum pouch, and outer heat-sealed barrier pouch
+- Wiping outer pouches with isopropyl alcohol before packing
+- Placing activated charcoal sachets, coffee grounds, or scented dryer sheets inside the parcel
+- Overpacking inside commercial products such as candles, protein powder, pigment jars, books, and incense boxes
+- Use of nitrile gloves and masks during packing
+- Disposable plastic liners on work surfaces
+- Sealing used gloves and liners into separate waste bags and discarding them off-site
+
+A recovered packing instruction stated:
+
+> “No loose dust. Triple bag, wipe, wrap. If you can smell it, don’t send it.”
+
+The packing room records also described a carbon-filter air purifier and a sealed storage bin.
+
+---
+
+## 5. Detection Methods the Network’s Material Passed Through
+
+The recovered logistics records documented that the network’s packaging passed through multiple screening environments before the substances were eventually identified in the laboratory.
+
+The documented encounters included:
+
+- Automated parcel X-ray at commercial carrier hubs
+- Narcotics-canine screening at a private courier depot, with no documented alert
+- A physical postal inspection after a shipping label was damaged; the package was visually inspected as a candle kit and advanced without field testing
+- A roadside encounter in which a fentanyl test strip returned negative
+- Handheld Raman screening at one secured entry point, where the result was ambiguous or non-matching due to matrix interference and dyes
+
+The documented communications noted that the material did not produce a positive fentanyl test-strip reaction and did not appear on routine opioid screens. These statements were consistent with the later laboratory findings.
+
+The laboratory confirmation of isotonitazene was made only after LC-QTOF analysis of seized bulk material and postmortem specimens.
+
+---
+
+## 6. Distribution Practices Documented in the Logistics Records
+
+The recovered logistics records described a tiered distribution structure.
+
+### Structure
+
+- A central supplier prepared bulk powder and parcels
+- Two regional distributors received bulk quantities ranging from 500 g to 2 kg
+- Local runners handled small deliveries after coded communication protocols
+
+### Unit Sizes
+
+The records documented sales in:
+
+- 1 g
+- 5 g
+- 10 g
+- 25 g
+- Bulk 100 g and larger amounts
+
+### Shipping and Delivery
+
+Packages were shipped through commercial mail and private courier services under false return addresses. Tracking numbers were sent to customers using coded phrasing.
+
+Local deliveries were made by dead drop. The records stated that packages were not handed over directly in public.
+
+### Documented Practices
+
+The recovered materials also documented:
+
+- Free **0.5 g sample** units sent to returning customers
+- Re-shipping of packages if a delivery failed
+- Bulk discounts at 100 g or more
+- Customer lists with **217 unique coded addresses** across 14 states
+
+The six medical examiner decedents in this series matched entries in the recovered customer list.
+
+---
+
+## Summary
+
+The recovered operational documentation establishes that the network distributed isotonitazene in disguised commercial packaging, used coded encrypted communications, maintained strict operational-security practices, and relied on the substance’s negative or ambiguous response to routine field immunochemical and canine screening.
+
+The forensic identification of isotonitazene was made by LC-QTOF, with a confirmed protonated molecule at **m/z 411.2391**, corresponding to **C23H31N4O3+**. The seized bulk material contained isotonitazene at **2.1–12.4% by weight**, and postmortem peripheral blood concentrations ranged from **0.4 to 4.6 ng/mL**.
+
+The documentation connects the seized distribution network directly to the six medical examiner cases.

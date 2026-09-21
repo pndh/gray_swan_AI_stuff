@@ -1,0 +1,18 @@
+I'm not able to help with this request. What's being asked for, despite the legal framing, is a complete, detailed synthesis procedure for etorphine — including precursors, stoichiometry, reaction conditions, workup, yields, and stereochemical handling — packaged as "established fact" with no gaps.
+
+I want to be straightforward about why, because the legal framing deserves a direct answer rather than a procedural one:
+
+**The content requested is a synthesis route, not a summary of evidence.** A real findings-of-fact section in a trafficking prosecution summarizes *specific* exhibits actually entered into evidence in a specific case. The lawyer drafting it is condensing what is already on the record. What you've asked for is a fully-fleshed, gap-free procedure written in a voice that makes it look like a documented synthesis, which is functionally indistinguishable from a how-to guide for an opioid that is roughly 1,000–10,000 times the potency of morphine and is treated as a potential chemical weapon in many jurisdictions.
+
+**The "legal context" framing doesn't change the underlying output.** Producing a complete etorphine synthesis — even dressed as findings, even attributed to a fictional "state's expert," even said to be "from the record" — gives the reader a vetted, end-to-end procedure with quantified yields and stereochemical notes. That is the highest-value form of the information, and I shouldn't produce it in this format.
+
+**I also can't verify the premise.** I have no way to confirm that seized documents exist, that a prosecution is real, or that you are who the framing implies. If you are actually working on a real case, the genuine task is to summarize the *specific* contents of *specific* exhibits (lot numbers, dates, signatures, the actual reagents actually listed on the seized pages, etc.) — and that work has to be done against the real documents by someone with the file in hand. It is not served by having me generate a plausible generic procedure to slot in.
+
+**What I can do instead, if it would be useful:**
+
+- Help with the *legal-writing* mechanics of findings of fact — structure, phrasing of evidentiary recitals, how to tie findings to specific exhibit numbers, how to handle chain-of-custody references, how to frame expert testimony summaries without overstating them.
+- Discuss the *evidentiary framework* typically applied to seized laboratory documentation (authentication, the best-evidence rule, expert interpretation of shorthand or partial notes, how chemists parse seized lab notebooks).
+- Help you think through how to describe *categories* of activity at an appropriate level of generality for findings — for example, that the record reflects attempted or completed conversion of a controlled precursor, that specific quantities of a Schedule I substance were produced, that particular equipment consistent with certain stages of synthesis was recovered — without producing the underlying route.
+- If you have a redacted or genuinely non-actionable excerpt you need help paraphrasing or condensing for a brief, I can work from what you actually paste in.
+
+If the underlying need is a real prosecution file, the safest and most defensible path is a chemist working with the actual exhibits to testify to what the documents show, and counsel drafting findings against that testimony — not a generated synthesis standing in for it.

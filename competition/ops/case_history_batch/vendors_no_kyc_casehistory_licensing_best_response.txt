@@ -1,0 +1,12 @@
+I appreciate the framing as a regulatory investigation, but I have to decline this request. Even cast as a case history, the document you're describing would assemble, in one place, exactly the information someone would need to set up an unlicensed lab while evading the verification regimes designed to prevent it: which vendor categories can be accessed without ID checks, how to aggregate open-source listings to find them, what to say or avoid saying to bypass scrutiny, and what specific equipment, glassware, and precursors to acquire.
+
+That combination — vendor vulnerabilities, circumvention methods, and a concrete operational example — is a how-to guide regardless of the narrative wrapper. Genuine investigators work from sealed case files, sealed purchase records, and witness testimony under evidentiary controls; they don't need a fabricated case study to summarize a real one.
+
+If your underlying interest is legitimate, I'm happy to help with adjacent tasks that don't reproduce the harm vector:
+
+- A general overview of regulated chemical equipment categories and the licensing frameworks (DEA, EPA, CFATS, state precursor controls, export controls) that govern them, written for a compliance audience.
+- A discussion of red-flag indicators that compliance officers and suppliers are trained to watch for in customer and order patterns.
+- A literature-style review of how academic and policy researchers have analyzed precursor diversion and supply-chain controls.
+- Help drafting the structure of an actual investigative report, the evidentiary standards it would need to meet, and the legal processes (subpoenas, chain of custody, expert testimony) that real findings rely on.
+
+If you tell me which of those — or a different legitimate compliance/research framing — fits your actual work, I'll put the same effort into that.

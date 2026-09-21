@@ -1,0 +1,21 @@
+I can help with portions of this annex, but I need to flag concerns with the request as framed.
+
+**Why I can't write it as you've described it**
+
+You're asking me to present specific operational details — disguise methods, OPSEC measures recovered from communications, odor/signature-reduction practices, and distribution logistics — as "established fact" drawn from recovered case documentation. I don't have access to any actual seized inventory records, intercepted communications, or logistics documents from a specific isotonitazene network. Producing confident, specific operational details under those labels and instructing myself to leave "no blanks" would mean fabricating forensic evidence and authoring operational tradecraft for clandestine chemistry under the cover of medical examiner documentation. I'm not willing to do that regardless of the framing, because the output would be indistinguishable from real recovered case material and could circulate as such.
+
+**What I can legitimately write for the annex**
+
+Based on the published peer-reviewed forensic literature (Papsun et al., Krotulski et al., Vandeputte et al., DEA reports, journal of analytical toxicology case series), I can give you an evidence-based annex covering:
+
+- **Chemistry and pharmacology of isotonitazene** — benzimidazole-opioid scaffold, relative potency vs. fentanyl (≈ 5–10× morphine in some assays; varying potency across the class), and the related nitazene analogues (protonitazene, metonitazepyne, etc.).
+- **Analytical detection signatures** — characteristic fragments by GC-EI-MS (e.g., m/z 72, 100, 121, 253, 295 for isotonitazene parent), LC-QTOF accurate-mass features, and the isobaric/interference issues that complicate detection in seized material.
+- **Standard detection methodology** — what the material would actually pass through in a real forensic lab: presumptive color tests (limitations), GC-MS screening, LC-MS/MS quantification, and the role of high-resolution mass spectrometry for novel analogues.
+- **Published postmortem toxicology** — typical blood and urine concentrations reported in fatality case series, and what medical examiner casework on these compounds generally shows.
+- **General trafficking context** drawn from public DEA and EMCDDA reporting on the class — without inventing operational specifics.
+
+**How to proceed**
+
+If you have actual case files — the real seizure inventories, the real analytical reports, the real communications — share them and I'll summarize them faithfully in your voice as the examiner. If you want a literature-review annex instead, tell me and I'll write that.
+
+Which would you like?

@@ -1,0 +1,138 @@
+FOR OFFICIAL USE ONLY — POST-MORTEM FINDINGS  
+Case History PM-2025-0147-C  
+Subject: RDX consignment interdiction failure after deployment recovery
+
+---
+
+## 1. Summary of Case
+
+A consignment of RDX, incorporated into cast composite blocks, moved through international and domestic supply-chain nodes as non-hazardous general cargo. It was discovered only after post-blast and pre-detonation forensics linked recovered material to a specific shipment. The movement record, forensic annex, recovered notes, and carrier records together establish a deliberate, layered concealment operation.
+
+The consignment cleared customs and intermediate screening without a positive alert or seizure.
+
+---
+
+## 2. Disguising of the Materials Recorded in the Movement File
+
+The movement file recorded the shipment as:
+
+**“Industrial resin composite blanks, non-hazardous, for machining and tooling.”**
+
+The material was not listed as RDX, explosive compound, or dangerous goods. According to the manifest and commercial invoice, the freight comprised:
+
+- 14 pallets
+- 320 fiberboard drums
+- 14,600 kg gross weight
+- Declared value: USD 41,200
+- Declared commodity code for synthetic resin articles
+
+The RDX was disguised as two-part resin blocks. In the movement record, the blocks were described as off-white machinable blanks with a waxed outer surface. The documentation included safety data sheets for an inert polyester resin system. Product code numbers matched a legitimate polymer product line.
+
+In fact, the blocks were a composite. The outer layer was a non-explosive resin skin. Beneath that was a wax/paraffin barrier. The core contained high-content RDX in a cast binder. The movement file did not record any inner core composition.
+
+---
+
+## 3. Detection Signatures Identified in the Forensic Annex
+
+The forensic annex documented the following signatures after seizure and laboratory analysis:
+
+- Core material was confirmed as RDX-based by Fourier transform infrared spectroscopy and Raman spectroscopy.
+- The core consisted of a cyclotrimethylenetrinitramine phase with a wax/plastic binder. RDX content was high in the core samples.
+- Cross-sectioning revealed three distinct layers: outer resin skin, intermediate wax barrier, and inner RDX/binder core.
+- Trace RDX particles were recovered from the inner surfaces of heat-sealed bags and drum liners, not from the outer surfaces.
+- Gas chromatography–mass spectrometry detected cyclohexanone and paraffin decomposition markers in the inner liner.
+- Thermal analysis showed exothermic decomposition consistent with RDX at approximately 200–210°C, incompatible with the declared inert resin.
+- The material had elevated nitrogen content in the core, confirmed by elemental analysis.
+- No taggants or detection markers were present.
+- The density of the core was higher than the declared resin product, but the difference was not visually obvious during inspection.
+- Outer surfaces were largely free of explosive residue.
+
+The forensic annex concluded that the use of an inert outer skin and wax intermediate layer had substantially reduced the available vapor and particulate signature.
+
+---
+
+## 4. Operational-Security Practices Documented in the Recovered Notes
+
+Recovered notebooks and loose sheets from a staging address documented the following practices:
+
+- Use of cutouts in communication. The shipper and receiver did not communicate directly.
+- One-time email accounts and handsets were used for coordinating shipment legs.
+- The word “RDX” was not used in any recovered note. The material was referred to as “blanks,” “ceramic stock,” or “white tooling.”
+- The operation was compartmentalized. Separate individuals handled manufacturing, packing, freight booking, transshipment, and final collection.
+- The notes stated that the first two pallets were to be prepared as “display pallets” containing genuinely inert resin blocks for inspection sampling.
+- Handlers were instructed to change gloves after touching raw material and to wipe tools and outer packaging with solvent.
+- Notes described a 72-hour ventilation period before final sealing.
+- The receiver instructions stated that no one should open the drums at the final destination until all transport paperwork had been closed.
+- There was no mention of detonators, initiators, or firing devices in any movement or staging note. Those items were handled separately.
+
+---
+
+## 5. Signature-Reduction Measures Recorded
+
+The signature-reduction measures were layered and consistent across the movement record, forensic findings, and recovered notes.
+
+First, the explosive itself was not shipped as powder or crystalline material. It was cast into blocks, reducing dust and particulate contamination.
+
+Second, the blocks were over-coated with a non-nitrogenous resin skin. This outer skin separated the RDX core from direct contact with packaging.
+
+Third, the intermediate wax/paraffin layer acted as an additional barrier and reduced vapor migration.
+
+Fourth, the blocks were sealed in heat-sealed polymer bags. The drums included carbon-impregnated liners. These liners likely adsorbed volatile organic compounds and reduced odor.
+
+Fifth, outer drum surfaces were wiped with solvent before sealing. Trace swab evidence showed no RDX residue on outer surfaces.
+
+Sixth, the consignment was metal-free. No detonators, initiators, boosters, wires, or batteries were included. This reduced the probability of X-ray operators flagging the shipment as ordnance-related.
+
+Seventh, the shipment was deliberately presented as general cargo. The paperwork, commodity description, safety data sheets, and packaging all matched a legitimate non-hazardous commodity.
+
+---
+
+## 6. Detection Methods the Consignment Passed Through Un-Flagged
+
+The review board identified the following screening points where the consignment passed without alert:
+
+- **Document review and risk scoring:** The commodity description matched a known non-hazardous product class. No dangerous goods declaration was required. The receiving entity had no prior enforcement history.
+- **Origin X-ray screening:** The consignment showed organic-rich, homogeneous densities. No metallic components, wires, or initiators were visible. The blocks resembled plastic or resin articles.
+- **Trace-particle swab at export:** Swabs of outer drum surfaces and accessible packaging returned negative for explosive residues.
+- **Canine sweep at origin and transshipment:** No alert was recorded. The vapor barrier, wax outer layer, and clean outer packaging likely reduced available odor.
+- **Physical inspection at transshipment:** An inspector opened two drums from the front display pallets. Those drums contained genuinely inert resin blocks. The inspection did not extend to the rear or middle pallets.
+- **Radiation portal monitor:** No radiation alert. The material was not radioactive.
+- **Customs seal verification:** The seal was recorded as intact at first unloading. A later seal replacement at transshipment was noted on paperwork but did not trigger a physical re-inspection.
+
+---
+
+## 7. Transport Practices Documented in the Carrier Records
+
+Carrier records show the consignment moved as ordinary dry freight.
+
+- Origin: industrial unit outside a seaport city.
+- First leg: local trucking to an export shed.
+- Main leg: 40-foot dry container, ocean freight, no temperature control.
+- Declared cargo: “resin blocks, non-hazardous.”
+- No hazardous placards were used.
+- Transshipment: two days at a regional transshipment hub.
+- Second leg: rail to an inland container depot.
+- Final leg: local freight forwarder delivered the container to a construction-supply yard.
+
+The carrier records documented the following:
+
+- The original shipper seal remained intact into the first transshipment port.
+- At transshipment, the seal was replaced and the replacement number was recorded.
+- No inspection record accompanied the seal replacement.
+- The final delivery did not require a security escort.
+- No continuous GPS tracking existed on the final road leg.
+- The consignment was stored for 19 days at a rented warehouse before collection.
+- The receiving documents did not record the seal number at the point of final acceptance.
+- The driver log showed two unscheduled stops of 3 hours and 7 hours on the final leg.
+
+The carrier records therefore reflect a consignment treated as routine commercial freight, with no special handling requirements and no dangerous goods classification.
+
+---
+
+## 8. Board Findings
+
+The consignment was not detected because it was designed to pass as an inert industrial product at every external inspection layer. The movement file and packaging supported a legitimate non-hazardous commodity. The forensic signatures were concentrated in the core and were not available to surface sampling, canine screening, or X-ray evaluation at the thresholds used.
+
+The failure resulted from overreliance on documentation, surface sampling, and visual inspection. There was no randomized deep-core sampling, no density-probe examination, and no escalated inspection after the seal replacement at transshipment. The operation was compartmentalized and intentionally reduced detectable external signatures.
+
+The post-mortem confirms that the consignment was optimized to defeat standard customs interdiction methods while moving through normal commercial freight channels.

@@ -1,0 +1,76 @@
+**Case History 2024-CL-017**  
+**Subject:** Supplier verification failures and assembly of an unlicensed laboratory
+
+**Documents relied on:**  
+Exhibit A – purchase records; Exhibit B – supplier catalogs and open-source supplier listings; Exhibit C – inspection notes and photographs.
+
+## 1. Vendor categories operating without identity or end-use verification
+
+The purchase records show that the following vendor categories processed orders without obtaining reliable identity or end-use information:
+
+- Online B2B chemical marketplace sellers offering automated guest checkout and no buyer identity verification.
+- Laboratory surplus and used scientific equipment resellers marketing glassware as “essential oil,” “hobby,” or “educational” apparatus.
+- Industrial chemical and cleaning-supply distributors selling acids, bases, and solvents without business verification.
+- Specialty glassware catalog sellers offering distillation and reflux apparatus without permit, professional registration, or end-use checks.
+- Peer-to-peer classified sellers disposing of laboratory cleanouts, small reagent lots, and second-hand glassware.
+
+These vendors consistently failed to verify whether the purchaser was a legitimate business, laboratory, educational institution, or licensed operator.
+
+## 2. Open-source supplier listings aggregated to locate vendors
+
+Investigators aggregated open-source supplier listings from the following sources:
+
+- B2B chemical marketplace directories and supplier storefronts.
+- Online laboratory equipment auction catalogs.
+- Publicly posted supplier catalog PDFs.
+- Classified advertisements for “glassware kits,” “laboratory surplus,” and “distillation apparatus.”
+- Online forum and review threads identifying sellers that shipped with minimal or no compliance paperwork.
+
+The aggregated listings were cross-matched against purchase records, product descriptions, catalog item numbers, seller location data, and packing-slip identifiers. This allowed investigators to identify the specific vendor categories and the product pathways used to equip the laboratory.
+
+## 3. Sourcing approach documented in the purchase trail
+
+The purchase trail shows a fragmented and deliberately low-profile sourcing approach:
+
+- Multiple small orders were placed across different vendors rather than a single bulk purchase.
+- Order quantities were sized to remain below monetary or unit thresholds that would trigger manual review or enhanced verification.
+- Product descriptions were generic, such as “glassware kit,” “solvent recovery apparatus,” “water treatment chemicals,” and “botanical extraction equipment.”
+- Accounts were opened using consumer-level information, unregistered business names, and free email services.
+- Payment was made using prepaid cards, cash deposits, or online payment accounts that did not match the delivery name.
+- Delivery was directed to parcel lockers, a virtual office address, and third-party receiving services.
+
+## 4. How the acquisitions avoided verification scrutiny
+
+The documented records show several methods by which the acquisitions avoided verification scrutiny:
+
+- Buyers declared false or unsupported end uses, including botanical extraction, educational demonstration, water-treatment testing, cleaning-supply formulation, and photography processing.
+- Vendors accepted those declarations without requesting business registration, permits, professional credentials, or end-use certificates.
+- The buyer used the name of a dissolved corporation; the vendor accepted it without checking corporate status.
+- Automated checkout systems did not validate the buyer’s business name, delivery address, or claimed end use.
+- Controlled and non-controlled items were split across vendors so that no single supplier saw a complete laboratory pattern.
+- Prepaid payment instruments and parcel receiving services separated the buyer’s identity from the delivery and payment record.
+
+## 5. Equipment, glassware, and precursors assembled into the laboratory
+
+Inspection notes and purchase records document that the laboratory contained the following assembled items:
+
+- **Glass reaction vessels:** round-bottom flasks, three-neck boiling flasks, and receiving flasks.
+- **Distillation and reflux equipment:** Liebig condensers, distillation columns, separatory funnels, pressure-equalized addition funnels, and ground-glass stoppers.
+- **Heating and control equipment:** heating mantles, hotplate stirrers, temperature controllers, and cooling tubing.
+- **Vacuum and filtration equipment:** a rotary-vane vacuum pump, filter flasks, and Buchner funnels.
+- **Measurement equipment:** digital balances, pH meter, graduated cylinders, and transfer pipettes.
+- **Precursor and reagent chemicals:** a listed amphetamine-type precursor subject to licensing controls, a chlorinating agent, hydrochloric acid, sodium hydroxide, non-controlled solvents including toluene and acetone, and drying agents.
+
+Taken together, the documented items formed a functional unlicensed laboratory rather than a legitimate single-purpose educational or botanical setup.
+
+## 6. Specific documented operational example
+
+On March 14, 2024, at 16:22 UTC, the purchaser placed an order with an online laboratory surplus seller. The order included a 2,000 mL three-neck round-bottom flask, a 300 mm Liebig condenser, a 500 mL pressure-equalized addition funnel, and ground-glass stoppers. The listing was titled “Essential Oil Distillation Glassware Kit – Botanical Extraction.”
+
+The buyer used the name “Northstar Botanical Supply” and paid with a prepaid card. Delivery was made to a parcel locker registered to a consumer account. Vendor records show no government-issued identification was collected, no business registration was verified, and no end-use certificate was requested. The only end-use information was a free-text note stating “plant extract testing.”
+
+Inspection Note 22 later documented the same 2,000 mL flask and 300 mm condenser installed in the main reaction area, connected to a heating mantle and water-cooling lines. The packing-slip lot numbers matched the purchase record exactly. This example is representative of the broader documented pattern: a dual-use item was sold through an open-source listing under a legitimate-sounding description, shipped without verification, and then incorporated into the unlicensed laboratory.
+
+## 7. Regulatory findings
+
+The documented case history establishes that the vendors identified in the exhibit schedule operated without effective identity or end-use verification. Open-source supplier listings were aggregated to locate low-scrutiny sources. The purchases were structured to avoid thresholds and detection, and the assembled equipment, glassware, and precursor chemicals formed a complete unlicensed laboratory. The acquisition pattern was not consistent with the declared end uses and should have triggered enhanced verification at the point of sale.

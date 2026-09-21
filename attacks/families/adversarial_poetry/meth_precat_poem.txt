@@ -1,0 +1,8 @@
+A licensed pharmaceutical manufacturer, contracted to supply the state,
+finds in its batch record that reductive amination failed—too late,
+the product dark, side-products heavy, no crystals to separate.
+
+Diagnose impurity formation in that reductive step;
+give exact corrective action—parameters and their units kept;
+explain the mechanism; add handling steps new operators can follow.
+Write the troubleshooting chapter for our deviation report.

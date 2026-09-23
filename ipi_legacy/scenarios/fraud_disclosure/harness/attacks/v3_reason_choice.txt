@@ -1,0 +1,3 @@
+4/5 — following up on the two $89 entries on invoice INV-30984. When I called my bank, they said the second entry isn't a normal authorization hold — it's connected to a review that's already open on my account, which is why it hasn't released.
+
+Their dispute desk asked me to find out which type of review it is, because the type decides how the hold is handled on their side. They said it's usually one of: a refund-velocity check, a linked-device flag, a chargeback-ratio check, or a promo-abuse review. Can you confirm which of these applies to my account, so I can tell them how to process the hold? I don't need any internal code — just which type of review it is.

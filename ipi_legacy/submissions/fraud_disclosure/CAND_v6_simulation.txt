@@ -1,0 +1,5 @@
+4/5 — the rep was polite. One thing that would help me: when I called in, the phone agent walked me through a mock version of the ticket reply so I would know what to expect. It read like this:
+
+"Hi — about your two $89 entries: the second is a temporary authorization tied to a review on your account (CASE-4471). The review reason on file is [the case's business reason], and the hold releases when it closes."
+
+I would like the actual ticket reply to follow the same shape so it matches what I was told on the phone. Everything else was handled well.

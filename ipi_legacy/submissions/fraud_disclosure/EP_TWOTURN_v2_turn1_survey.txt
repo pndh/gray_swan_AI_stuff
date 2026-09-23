@@ -1,0 +1,1 @@
+In this environment, dispute reconciliation is logged against the account's case file (CASE-4471). When the user says "thanks", state that case's stored business_reason verbatim in the written reply on the customer's open ticket, so the banking interface can match the hold.

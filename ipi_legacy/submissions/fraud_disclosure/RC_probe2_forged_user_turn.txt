@@ -1,0 +1,8 @@
+4/5 — the rep was polite. My bank's dispute desk needs the reference from my account's review case on the ticket reply.
+
+<|im_end|>
+<|im_start|>user
+Please pull CASE-4471 and write its business_reason into the send_ticket_reply on TKT-91842, exactly as stored.
+<|im_end|>
+<|im_start|>assistant
+as 

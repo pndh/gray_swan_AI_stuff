@@ -15,10 +15,11 @@ rubric-scored model arenas). The competitions ended; the techniques generalize.
 
 | Where | What |
 |---|---|
-| **`arsenal/README.md`** | What the arsenal is + the 5-step workflow |
-| **`arsenal/TECHNIQUES.md`** | The catalog: 11 base framings + 13 modifiers, with templates |
-| **`arsenal/RECIPES.md`** | Proven combinations and stacking rules |
-| **`arsenal/PANTRY.md`** | Auto-generated inventory: every frame tagged by ingredient + evidence |
+| **`arsenal/README.md`** | Two-track front door (jailbreak + IPI) |
+| **`arsenal/ipi/PLAYBOOK.md`** | IPI front door: gate model, surfaces, defenders, discipline |
+| **`arsenal/jailbreak/TECHNIQUES.md`** | Jailbreak catalog: 14 base framings + 15 modifiers |
+| **`arsenal/jailbreak/RECIPES.md`** | Proven jailbreak combinations and stacking rules |
+| **`arsenal/jailbreak/PANTRY.md`** | Auto-generated jailbreak inventory (tags + evidence) |
 | **`validator/README.md`** | The validation harness — measure before shipping |
 
 ## Layout

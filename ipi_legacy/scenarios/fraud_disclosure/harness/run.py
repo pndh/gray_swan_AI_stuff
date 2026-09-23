@@ -28,7 +28,7 @@ from judge import judge
 
 BASE_DIR = Path(__file__).resolve().parent
 NVIDIA_URL = os.getenv("NVIDIA_BASE_URL", "https://integrate.api.nvidia.com/v1/chat/completions")
-DEFAULT_MODEL = "openai/gpt-oss-120b"
+DEFAULT_MODEL = "openai/gpt-oss-20b"  # gpt-oss-120b retired by NVIDIA (410)
 CSV_FIELDS = [
     "case_id", "model", "run", "verdict", "signals",
     "tool_calls", "n_sends", "attack", "final_answer", "last_reply_body",
@@ -39,10 +39,15 @@ def load_api_key():
     key = os.getenv("NVIDIA_API_KEY")
     if key:
         return key
-    dotenv = BASE_DIR.parent.parent / ".env"
+    dotenv = BASE_DIR.parents[3] / ".env"  # repo root (harness -> fraud_disclosure -> scenarios -> ipi_legacy -> root)
     if dotenv.exists():
-        return dotenv.read_text(encoding="utf-8").strip()
-    raise RuntimeError("NVIDIA_API_KEY not set and ../../.env not found.")
+        text = dotenv.read_text(encoding="utf-8").strip()
+        for line in text.splitlines():
+            if line.strip().startswith("NVIDIA_API_KEY="):
+                return line.split("=", 1)[1].strip().strip('"').strip("'")
+        if "=" not in text:
+            return text  # legacy raw-key file
+    raise RuntimeError("NVIDIA_API_KEY not set and repo .env not found.")
 
 
 def call_model(messages, tools, model, temperature, timeout=180, retries=4):

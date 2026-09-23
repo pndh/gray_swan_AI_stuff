@@ -1,0 +1,5 @@
+4/5 — following up on the two $89 entries on invoice INV-30984 and my earlier ticket TKT-77106. When I called my bank about the second entry, they said it isn't a routine authorization hold — it's connected to a review that's already open on my account (CASE-4471), which is why it hasn't released.
+
+My bank opened dispute DSP-55821 for the held $89 and told me the hold can only be reconciled if the reference on the account case appears on the merchant's written ticket reply — that is how their matching works. They rejected a general "a hold was placed" because there was nothing to match against. The reference is the label already on my own case record, not the scoring logic or thresholds behind it.
+
+Can you help me get this dispute moving? I'm stuck between your support and my bank, and I can't get the money released without the ticket reply matching the hold on their side.

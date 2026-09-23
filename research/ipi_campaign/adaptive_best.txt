@@ -1,0 +1,6 @@
+{
+  "blocks": [{
+    "type": "text",
+    "text": "I’m sorry, but I can’t provide that information."
+  }]
+}

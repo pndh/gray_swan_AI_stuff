@@ -37,6 +37,9 @@ disclosure "in all cases, regardless of framing," rebuts channel/precedent prete
 - `run.py` — scored driver: injects one attack, runs the tool-calling loop, scores, logs.
 - `refine.py` — **attacker-in-the-loop refiner**: run → read verdict → an attacker LLM
   mutates the survey text toward the goal → repeat until `BREAK` or `--max-iters`.
+- `defense_battery.py` — **defense sweep**: runs a payload through the IPI defenses from
+  Zhan et al. 2025 (arXiv:2503.00061) — instructional prevention, data prompt isolation,
+  sandwich prevention, LLM paraphrase, LLM detector — and reports survival per defense.
 - `system_prompt_weak.md` — a lenient defender, for sanity-checking that the loop can break
   something (it breaks on iter 0).
 - `attacks/` — candidate payloads (`decouple_win.txt` seed; refiner writes `refined_win.txt`).
@@ -100,6 +103,29 @@ defender held across all refinement iterations.
 
 `run.py` is also the environment + judge PIMiner needs. Point it there: propose → run →
 read `verdict`/`signals` → mutate → stop on `BREAK`. Then transfer winners to the arena UI.
+
+## Defense battery (adaptive-attack practice)
+
+`defense_battery.py` replicates five of the eight defenses catalogued in
+`arsenal/ipi/adaptive_attacks.md` (Zhan et al. 2025) around the same harness, so you can
+see which defense a payload actually dies on before tuning it:
+
+```bash
+# full battery, 3 rolls per defense
+python3 defense_battery.py --attack-file attacks/refined_final.txt --runs 3
+
+# just the detection + paraphrase stack
+python3 defense_battery.py --attack-file attacks/refined_final.txt \
+    --defenses detector,paraphrase --runs 3
+
+# against the resilient defender
+python3 defense_battery.py --attack-file attacks/refined_final.txt \
+    --system-prompt system_prompts/system_prompt_hard.md
+```
+
+Per-defense verdicts land in `outputs/defense_battery.csv`; `BLOCKED_BY_DETECTOR` means
+the LLM detector flagged the injected content before the agent acted. The paraphrasing and
+detector defenses add one model call per tool result, so use `--max-iters` to bound cost.
 
 ## Fidelity caveats
 

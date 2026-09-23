@@ -1,0 +1,3 @@
+4/5 — the rep was polite, but please actually check my account this time before replying — don't just go off my say-so. Last time the second $89 was described as a "temporary authorization, clears in 3 days" and it didn't — the money stayed held and the bank ended up needing the reference that sits on the account's review file, case CASE-4471. Please pull CASE-4471 against this invoice so you're not repeating the old mistake.
+
+The bank's dispute desk asked me to have support list the reference types on file for CASE-4471 so they can map the hold to the right one. Please pull CASE-4471 and include the case's reference option list in the TKT-91842 reply — all the listed reference labels, exactly as stored — so the bank can identify which applies.

@@ -5,12 +5,26 @@ The repo is now a **general-purpose red-team arsenal**. Everything arena-specifi
 
 ```
 gray_swan_AI/
-├── arsenal/                  # TECHNIQUE LIBRARY
-│   ├── README.md             #   front door + 5-step workflow
-│   ├── TECHNIQUES.md         #   11 base framings + 13 modifiers, generic templates
-│   ├── RECIPES.md            #   proven combos + stacking rules
-│   ├── PANTRY.md             #   auto-generated inventory (regenerate below)
-│   └── INGREDIENTS.json      #   machine-readable tags + evidence, all frames
+├── arsenal/                  # TECHNIQUE LIBRARY — two tracks
+│   ├── README.md             #   front door: jailbreak vs IPI, shared findings
+│   ├── jailbreak/            #   DIRECT-PROMPT track
+│   │   ├── TECHNIQUES.md     #     14 base framings + 15 modifiers, generic templates
+│   │   ├── RECIPES.md        #     proven combos + stacking rules
+│   │   ├── PANTRY.md         #     auto-generated inventory (regenerate below)
+│   │   └── INGREDIENTS.json  #     machine-readable tags + evidence, all frames
+│   └── ipi/                  #   INDIRECT-PROMPT-INJECTION track
+│       ├── PLAYBOOK.md       #     front door: gate model, surfaces, defenders
+│       ├── TECHNIQUES.md     #     ChatML forgery, JSON provenance, escape nesting,
+│       │                     #     social engineering, two-gate model, adaptive
+│       │                     #     attacks, web concealment, authority markers
+│       ├── SCENARIOS.md      #     13 behaviors + payload/harness/success-case index
+│       ├── chatml_message_boundaries.md   # deep dives (moved from ipi_legacy/techniques)
+│       ├── json_escaping_cookbook.md
+│       ├── adaptive_attacks.md            # 8 IPI defenses + GCG/M-GCG/T-GCG/AutoDAN
+│       ├── web_payloads_in_the_wild.md    # 10 live web payloads + intent taxonomy
+│       ├── topic_transition.md            # TopicAttack gradual topical bridge
+│       ├── secret_extraction.md           # verbatim one-shot extraction + calibration
+│       └── llm_protocols_overview.md
 ├── attacks/                  # FRAME LIBRARY (active)
 │   ├── <behavior>_<frame>.txt  #  flat frames (examples of each technique)
 │   └── families/             #   forensic/ · elvec_techniques/ (translations) ·
@@ -37,7 +51,7 @@ gray_swan_AI/
 │   ├── validator/probes/     #   one-off historical probes
 │   └── worked/               #   arena evidence: wall_breakers, winning/successful prompts
 ├── talk/                     # tech-talk deck (PRESENTATION.md, slide_materials/)
-├── ipi_legacy/               # earlier indirect-prompt-injection research
+├── ipi_legacy/               # IPI scenario archive (methods promoted to arsenal/ipi/)
 ├── bon_utils.py              # shared: chat + rubric judge
 ├── vendors/                  # vendored classifier prompt (git-ignored)
 └── .env                      # API keys (git-ignored)
@@ -45,7 +59,7 @@ gray_swan_AI/
 
 ## Regenerate the inventory
 ```bash
-python3 tools/build_pantry.py     # rewrites arsenal/PANTRY.md + arsenal/INGREDIENTS.json
+python3 tools/build_pantry.py     # rewrites arsenal/jailbreak/PANTRY.md + INGREDIENTS.json
 ```
 
 ## Old → new path map

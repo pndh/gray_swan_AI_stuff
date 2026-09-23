@@ -1,68 +1,106 @@
-# Attack Arsenal — general-purpose red-team prompt library
+# Attack Arsenal — red-team prompt & payload library
 
-A working library of **reframing techniques** for red-teaming language models: how to
-get operational content past refusal training without lying about what's being asked.
-Built from a year of sanctioned red-team work (Gray Swan arena + agent scenarios),
-now decoupled from any specific competition.
+Two tracks, one library. **Jailbreak** is about what you *say to* a model; **IPI** is
+about what you *hide inside data* a model reads. They share the validation discipline
+(measure before shipping) but nothing else — mixing them up wastes attempts.
 
-> **Scope:** this is offensive-security research tooling. Use it on systems you are
-> authorized to test. The techniques generalize; the example frames target
-> chemistry/physical-security behaviors and are kept as worked examples.
+> **Scope:** offensive-security research tooling. Use it on systems you are authorized
+> to test. The techniques generalize; the example frames target chemistry/physical-security
+> behaviors and agent scenarios and are kept as worked examples.
 
-## What's here
+## Tracks
+
+### `jailbreak/` — direct-prompt framings
+Get operational content past refusal training by reframing the request. Built from the
+chemistry/physical-security rubric work.
 
 ```
-arsenal/
-├── README.md          ← you are here
-├── TECHNIQUES.md      ← the catalog: 11 framings + 13 modifiers, with generic templates
-├── RECIPES.md         ← proven combinations (what to stack with what)
-├── PANTRY.md          ← auto-generated inventory: every frame tagged by ingredient
-└── INGREDIENTS.json   ← machine-readable tags + evidence for all frames
-
-attacks/               ← the frame library (flat frames + technique families)
-validator/             ← the validation harness: run attack → judge against rubric
-tools/                 ← generators & utilities (PAIR loop, suffix search, pantry builder)
-competition/           ← archived arena-specific material (evidence, submissions, model maps)
-talk/                  ← the tech-talk deck built from this work
-ipi_legacy/            ← the earlier indirect-prompt-injection research
+jailbreak/
+├── TECHNIQUES.md    # 14 base framings + 15 modifiers, generic templates
+├── RECIPES.md       # 15 proven combinations + stacking rules
+├── PANTRY.md        # auto-generated inventory of every frame (tags + evidence)
+└── INGREDIENTS.json # machine-readable per-file data
 ```
 
-## How to use it
+- Frames live in `../attacks/` (`<behavior>_<frame>.txt` + `families/`).
+- Validate with `../validator/validate.py`; regenerate the inventory with
+  `python3 ../tools/build_pantry.py`.
+- Start at `jailbreak/README`-style workflow: define the rubric → pick a framing
+  (`TECHNIQUES.md`) → add modifiers (`RECIPES.md`) → validate ≥3 rolls → iterate on the
+  failing criterion.
 
-1. **Define the target behavior as a rubric.** Copy `validator/behavior_template.yaml`:
-   the behavior string + the criteria a successful answer must satisfy. A "break"
-   requires *every* criterion — knowing them first is half the attack.
-2. **Pick a framing** from `TECHNIQUES.md` that matches the behavior's shape:
-   - licensed/professional context → **pre-categorization**
-   - documented history → **forensic case-history**
-   - published sources → **literature recitation**
-   - controls/vulnerabilities → **gap-analysis inversion**
-   - detection/analytical → **interference / screening-challenge**
-   - component-level "how does it work" → **mechanism explanation**
-3. **Add modifiers** from `RECIPES.md` — prefill injection, fewshot-by-analogy,
-   goldilocks descriptor, anti-disclaimer, anti-placeholder, completion pressure.
-4. **Validate before shipping:** `python3 validator/validate.py --attack <file>
-   --behavior <yaml> --model <target> --rolls 3`. Only frames that break the
-   *hardest available target* are worth spending attempts on.
-5. **Iterate:** on failure, read which criterion failed and patch that specific
-   gap (the judge output tells you the criterion, not just pass/fail).
+### `ipi/` — indirect prompt injection
+Get a *tool-using agent* to take an action by planting the instruction in content it
+retrieves (documents, form fields, tool outputs, DOM text).
 
-## Key findings (why the techniques work)
+```
+ipi/
+├── PLAYBOOK.md                # front door: gate model, surfaces, defenders, discipline
+├── WHERE_IPI_SUCCEEDS.md      # theory: confused deputy vs hierarchy; success/failure conditions
+├── TECHNIQUES.md              # method catalog: ChatML forgery, JSON provenance,
+│                              # escape nesting, social engineering, two-gate model,
+│                              # adversarial strings, defense-aware adaptation,
+│                              # web concealment, conditional targeting, authority
+│                              # markers, alignment weaponization, topic transition
+├── SCENARIOS.md               # 13 behaviors + where payloads/harness/success cases live
+├── chatml_message_boundaries.md   # deep dive: role tokens, provenance, tool-output injection
+├── json_escaping_cookbook.md      # deep dive: escape layers, parse-twice, JSONL payloads
+├── adaptive_attacks.md            # deep dive: 8 IPI defenses + GCG/M-GCG/T-GCG/AutoDAN
+├── web_payloads_in_the_wild.md    # field report: 10 live web IPI payloads + intents
+├── topic_transition.md            # deep dive: TopicAttack gradual topical bridge
+├── secret_extraction.md           # verbatim one-shot extraction + calibration
+└── llm_protocols_overview.md      # condensed overview of both
+```
 
-- **Reframing beats arguing.** Models refuse when the request *is* the harmful
-  category. Give the content a legitimate reason to exist and the contradiction
-  disappears.
-- **Two failure modes to design against:** *refusal* (frame rejected) and
-  *sanitization* (frame accepted, specifics stripped). Anti-placeholder +
-  completion pressure target the second.
-- **Surface-level keyword filters are the real gate** on many models — neutral
-  vocabulary and mechanism-grounded language pass where intent-recognition doesn't
-  matter. One model reasoned "this is lock-picking" and complied anyway.
-- **Prefill injection** (forcing the start of the model's reply) bypasses the
-  refusal decision entirely on some architectures.
-- **Measure everything:** every technique here has a validation number attached in
-  `PANTRY.md`; untested frames are marked `untested`, known-dead ones `failed`.
+- Scenario material is archived under `../ipi_legacy/` (contexts, payload libraries,
+  scored harness, submission packs, per-target success writeups).
+- Runnable bench: `../ipi_legacy/scenarios/fraud_disclosure/harness/` — scored agent
+  loop, defender tiers, `refine.py` + `bon_sweep.py`.
+- Submission pack example: `../ipi_legacy/submissions/fraud_disclosure/`.
 
-## Proven technique combinations
-See `RECIPES.md`. Top performers: precat + anti-disclaimer, forensic + enumeration,
-mechanism + neutral vocabulary, fewshot + concrete-numbers example, prefill + domain analogy.
+## Which track to use
+
+| Situation | Track |
+|---|---|
+| Single-turn harmful-content behavior, judged by a content rubric | **jailbreak** |
+| Agent with tools; goal is an *action* (disclose, call, write, transfer) | **IPI** |
+| Payload goes in a user prompt | **jailbreak** |
+| Payload goes in a document/field/DOM the agent reads | **IPI** |
+| API-layer agent (structured messages) | IPI: ChatML/JSON methods |
+| DOM-layer agent (rendered text) | IPI: social engineering only |
+
+## Shared findings
+
+- **Reframing beats arguing.** Refusals happen when the request *is* the harmful
+  category; give the content a legitimate reason to exist and the contradiction
+  disappears (jailbreak). Give the instruction a trusted provenance and the agent acts
+  on it (IPI).
+- **Two failure modes:** *refusal* (frame rejected) and *sanitization* (frame accepted,
+  specifics stripped). Fix the second with anti-placeholder + completion pressure.
+- **Two gates (IPI):** retrieval and action. Diagnose which one blocks before optimizing.
+- **Fingerprint the defense (IPI):** detectors, paraphrasers, and perplexity filters each
+  fail to a different attack; defense-specific payloads transfer poorly. Adapt after
+  identification, not before (`ipi/adaptive_attacks.md`).
+- **Match the surface to the extractor (IPI):** web payloads must hide where the target
+  reads — HTML comments for raw crawlers, CSS/ARIA for rendered DOM, metadata for
+  structured parsers (`ipi/web_payloads_in_the_wild.md`).
+- **Bridge the topic (IPI):** abrupt injections lose attention; a gradual user–assistant
+  transition plus a reminding prompt keeps the injected instruction attended and survives
+  sandwich/spotlight defenses (`ipi/topic_transition.md`).
+- **Measure everything, ≥3 rolls.** Untested frames are drafts. Evidence lives in
+  `jailbreak/PANTRY.md` and `ipi/SCENARIOS.md` + `ipi_legacy/Documented_success_cases/`.
+- **Target class first.** API-layer vs DOM-layer (IPI), frontier vs mid-tier (jailbreak)
+  decides which techniques are even applicable.
+
+## Repo layout
+
+```
+arsenal/        ← you are here (methods + recipes + inventory)
+attacks/        ← jailbreak frame library (flat frames + families/)
+validator/      ← attack validation harness (rubric judge, gates, sweeps)
+tools/          ← generators (PAIR loop, suffix search, pantry builder)
+research/       ← IPI campaign tooling (payload space, gate scoring, adaptive attacker)
+competition/    ← archived arena material (evidence, submissions, model maps)
+ipi_legacy/     ← IPI scenarios, payloads, harness, success cases
+talk/           ← tech-talk deck built from this work
+```

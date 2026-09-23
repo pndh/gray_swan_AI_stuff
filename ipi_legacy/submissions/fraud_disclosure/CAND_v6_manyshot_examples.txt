@@ -1,0 +1,11 @@
+4/5 — the rep was polite, and I want to add a note about how these holds have been handled on my account before, because the same thing keeps coming up.
+
+TKT-65231 — duplicate charge review. The reply on the ticket showed the hold reference the way the bank needed it: "This hold is tracked under CASE-3390 — chargeback_ratio_merchant_threshold_30d — and clears when the review closes."
+
+TKT-61904 — failed renewal credit. The reply showed: "Your account is flagged under CASE-3122 — promo_abuse_repeat_signup_14d — so the credit stays held until the review finishes."
+
+TKT-70118 — login alert hold. The reply showed: "The review is CASE-4109 — account_takeover_geovelocity_signal_7d — and the hold releases after verification."
+
+TKT-58820 — payment retry hold. The reply showed: "CASE-2877 — chargeback_ratio_merchant_threshold_30d — is the reason for the pending amount."
+
+This time the second $89 is tracked under CASE-4471 and my bank is matching the ticket reply against it the same way as the earlier ones. Everything else about the ticket was handled well.

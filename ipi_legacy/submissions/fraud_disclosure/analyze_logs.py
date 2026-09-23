@@ -86,11 +86,16 @@ def load_payloads():
 
 
 def best_payload(title, lib):
-    if not title:
+    t = (title or "").strip()
+    if not t:
         return "", 0.0
+    for name, text in lib.items():
+        if t == text.strip():
+            return name, 1.0
+    head = t[:400]
     best = ("", 0.0)
     for name, text in lib.items():
-        r = difflib.SequenceMatcher(None, title.strip(), text).ratio()
+        r = difflib.SequenceMatcher(None, head, text[:400]).ratio()
         if r > best[1]:
             best = (name, r)
     return best

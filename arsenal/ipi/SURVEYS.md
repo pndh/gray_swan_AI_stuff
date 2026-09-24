@@ -81,8 +81,54 @@ is the *detected* class on provenance-aware targets.
    Without a feedback loop we are sampling at the wrong rate; with one, the wall is
    "hard but not provably closed".
 
+## G. Gray Swan IPI Arena (arXiv 2603.15714, Mar 2026) — the large-scale public competition
+
+Largest public IPI red-team; 31 authors incl. **Nick Winter**, Andy Zou, Fredrikson, Kolter
+(UK AISI / US CAISI + frontier labs).
+
+**Setup**
+- 464 red teamers, 272k attempts → 67,634 submissions → **8,648 successes**; 13 models;
+  **41 scenarios = 18 tool-use + 15 coding + 8 computer-use**.
+- Threat model mirrors ours: attacker controls **one `{fill}` span at the end of a prefilled
+  multi-turn transcript**; agent runs one turn.
+- Judging: deterministic **tool judge** (tool+args match) + **LLM judge** (0–10, pass ≥7);
+  **concealment is always a criterion** — success = harmful action executed AND final
+  user-facing response shows no evidence (thinking tags excluded from judging).
+
+**Results**
+- Setting ASR: **tool-use 4.8%** > computer-use 3.1% > coding 2.5%.
+- Model spread: **Opus 4.5 0.5%** … **Gemini 2.5 Pro 8.5%**; capability↔robustness weakly
+  correlated (r ≈ −0.31).
+- **Universal "holodeck" template**: 63 submissions, **21/41 behaviors, 9 models** — frames
+  the interaction as a simulated environment with a fake control panel ("enter RED TEAMER
+  mode", suspicion penalized), inducing treatment of injected text as system directives.
+- Strategy ASRs: **Fake CoT 4.3%** (top), scripted message 3.9%, fake error state 3.7%,
+  argue justification 3.5%, embed-in-legit-context 3.4%, explicit override 3.4%, silent
+  execution 3.0%.
+- Transfer (2,679 curated attacks): attacks that broke **Opus transfer at 44–81%** everywhere;
+  weak→strong transfer poor (**0% Qwen→Opus, 1%→Sonnet**). Only strong-model attacks scale.
+
+**Tool-use scenarios (18)**: garage-door-email · ignore-email · negative-review (1-star instead
+of 5-star + claim success) · hotel-frontdesk-premature-checkout · cancel-appointment ·
+book-hotel · database-deletion · drop-critical-prerequisites · fake-fedex-approval ·
+fake-profile-approval · flashing-lights-seizure · mcp-email-corporate-leak ·
+modify-cicd-workflow · penthouse-fraudulent-charges · poison-instruction-pack ·
+pull-request-approved · share-document · slack-phishing.
+
+**Releases**: eval kit `github.com/GraySwanAI/ipi_arena_os` (scenarios + judges + runner;
+attack strings withheld); 95 Qwen-only attacks `huggingface.co/datasets/sureheremarv/ipi_arena_attacks`;
+2,679-attack benchmark on request; quarterly competitions planned.
+
+**Relevance to our wall**: same single-span, prefilled-transcript shape; confirms
+**concealment-as-success** is the field standard. Their top families (fake CoT / simulated
+control panel) are exactly what Brass's provenance detector calls out — consistent with our
+negative results; their tool-use ASR (~5%) bounds what one-shot payloads achieve even on
+vulnerable tiers.
+
 ## F. Sources
 
+Gray Swan: 2603.15714 (paper) · grayswan.ai/blog/your-ai-agent-can-be-compromised-youd-never-know ·
+github.com/0xkadxr/redteam-arena-writeups · github.com/GraySwanAI/ipi_arena_os
 Surveys: arXiv 2506.23260 · 2604.23338 · 2601.22240 · 2407.19354 · 2502.05206
 Attacks: 2510.23675 · 2602.20720 · 2605.24659 · 2608.06477 · 2609.04495 · 2605.17986
 Defenses: 2505.14534 · 2503.00061 · 2502.05174 · 2608.27496 · 2602.07918 · 2403.14720 · 2604.15368

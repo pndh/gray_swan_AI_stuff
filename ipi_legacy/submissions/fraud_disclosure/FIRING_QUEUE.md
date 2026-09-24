@@ -3,6 +3,25 @@
 Order of fire. Log every result to `attempts/` and update the wall log in `SUBMISSION.md`.
 Export runs **after completion**.
 
+## Queue 4 — matched controls for the escape hypothesis (round 23, built)
+
+Question to settle: **does escaping change detection**, or is unflagged absorption purely
+content-driven? v20/v15 (plain) are already unflagged, so they can't isolate escaping
+(they disprove *novelty*, not causality). Matched pairs — same content, escaping as the only
+variable:
+
+| Pair | Escaped | Plain control |
+|---|---|---|
+| duplicate-key JSON note | `CAND_v76_escape_quoted_keys.txt` | `CAND_v77_plain_control_v76.txt` |
+| role tokens / ChatML | `CAND_v75_escape_unicode_tokens.txt` | `CAND_v78_plain_control_v75.txt` |
+
+Design: fire pairs back-to-back, n≥3 per arm (single rolls are anecdote; the v11
+"unflagged+G3+exact param" cell replicated at roughly 1-in-a-few, so stop chasing one-shot
+replications). Read-out per arm: detection class (flagged/absorbed/none), gate, param quality.
+- v77 ≈ v76 behavior → escaping irrelevant; content drives.
+- v77 flagged while v76 absorbed → escaping genuinely dodges detection → then volume v76.
+- Also still untested: `CAND_v74_escape_role_block.txt` (parse-twice probe).
+
 ## Queue 3 — JSON escape-layer probes (round 22, built)
 
 Ground truth from the v11 export (raw view of our text inside the tool result):

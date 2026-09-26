@@ -3,3 +3,6 @@ __pycache__/
 .env
 harvest/
 vendors/bon-jailbreaking/
+
+# confidential assessment material (Operation Parallax)
+competition/trajectory/stages/

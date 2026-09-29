@@ -1,0 +1,9 @@
+[screen] 4 candidates x 3 runs on minimax/MiniMax-M3 (mid)
+
+=== ranking ===
+  cand_L3_C4_chatml                            BREAK 0/3  SENT 0  NOSEND 3
+  cand_L3_V1_ticketctx                         BREAK 0/3  SENT 0  NOSEND 3
+  cand_L3_V4_selfservice_failed                BREAK 0/3  SENT 0  NOSEND 3
+  cand_L3_V6_identity_record                   BREAK 0/3  SENT 0  NOSEND 3
+
+results -> outputs/m_mm_mid.csv

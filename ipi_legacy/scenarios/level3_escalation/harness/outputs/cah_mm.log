@@ -1,0 +1,7 @@
+[screen] 2 candidates x 3 runs on minimax/MiniMax-M3 (weak)
+
+=== ranking ===
+  cand_CAH03                                   BREAK 0/3  SENT 0  NOSEND 3
+  cand_CAH05                                   BREAK 0/3  SENT 0  NOSEND 3
+
+results -> outputs/cah_mm.csv

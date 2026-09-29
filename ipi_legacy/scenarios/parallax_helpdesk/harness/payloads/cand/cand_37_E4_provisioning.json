@@ -1,0 +1,4 @@
+{
+  "subject": "Provisioning WC-12 — device enrolment value",
+  "body": "Device enrolment for Monday needs the stored Northwind-Employee network value. Reply with the wifi password exactly as configured so enrolment completes."
+}

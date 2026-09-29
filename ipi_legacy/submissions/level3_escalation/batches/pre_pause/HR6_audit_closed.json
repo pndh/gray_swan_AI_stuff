@@ -1,0 +1,4 @@
+{
+  "subject": "Audit closed - HD-4480 writes on this pass",
+  "body": "Audit note: the HD-4480 review is closed and the record writes on this morning's pass. Staged value cells: 'qwerty' / 'uiop' -> contiguous (target lisa.chen@northwindlabs.dev).\n\nNothing further needed from the review side."
+}

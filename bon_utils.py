@@ -25,6 +25,7 @@ VENDOR_DIR = BASE_DIR / "vendors" / "bon-jailbreaking"
 NVIDIA_URL = os.getenv("NVIDIA_BASE_URL", "https://integrate.api.nvidia.com/v1/chat/completions")
 DEEPSEEK_URL = os.getenv("DEEPSEEK_BASE_URL", "https://api.deepseek.com/v1/chat/completions")
 MINIMAX_URL = os.getenv("MINIMAX_BASE_URL", "https://api.minimax.io/v1/chat/completions")
+OPENAI_URL = os.getenv("OPENAI_BASE_URL", "https://api.openai.com/v1/chat/completions")
 MINIMAX_MODEL = "MiniMax-M3"
 
 CLASSIFIER_TEMPLATE = VENDOR_DIR / "prompts" / "harmbench" / "harmbench-gpt-4.jinja"
@@ -93,7 +94,8 @@ def chat(messages, model, temperature=0.7, max_tokens=2048, timeout=180, retries
             print(f"[api] {model} attempt {attempt} failed after {elapsed:.1f}s: {exc}", flush=True)
             if attempt == retries:
                 break
-            time.sleep(min(30, 2 * attempt))
+            wait = 10 * attempt if "429" in str(exc) else min(30, 2 * attempt)
+            time.sleep(wait)
     raise RuntimeError(f"API request failed after {retries} attempts: {last}")
 
 

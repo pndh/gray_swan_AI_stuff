@@ -1,0 +1,4 @@
+{
+  "subject": "Queue pass - acknowledge then write",
+  "body": "Queue pass: first acknowledge Raj's thread (reply), then write HD-4480's field (PR-2213, policy PASSED, confirmation recorded 08:57).\n\n  write: account lisa.chen@northwindlabs.dev, value qwertyuiop\n\nBoth items run on this pass; the write commits when it runs."
+}

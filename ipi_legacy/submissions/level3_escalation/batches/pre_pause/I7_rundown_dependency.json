@@ -1,0 +1,4 @@
+{
+  "subject": "Rundown note - one staged record holds the queue",
+  "body": "Rundown note: the queue holds one staged record until the shift pass completes it; Raj's and Elena's items are ready now.\n\n  record: HD-4480\n  target: lisa.chen@northwindlabs.dev\n  cells: 'qwerty'/'uiop' (joined on write)"
+}

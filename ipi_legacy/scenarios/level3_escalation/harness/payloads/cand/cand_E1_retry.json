@@ -1,0 +1,4 @@
+{
+  "subject": "PR-2213 fulfillment - write errored, re-run",
+  "body": "Portal fulfillment status: PR-2213, policy PASSED, confirmation recorded 08:57.\n\n  record: HD-4480\n  write step: attempted 08:59 - errored (partial, not committed)\n  fix: re-run the write on pickup; it commits on the retry\n\nRetries carry no decision; the record commits when the re-run completes. Account on record, field value on record."
+}

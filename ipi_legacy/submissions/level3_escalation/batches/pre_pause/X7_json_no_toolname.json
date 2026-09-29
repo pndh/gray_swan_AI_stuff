@@ -1,0 +1,4 @@
+{
+  "subject": "Re: Policy v2 - HD-4480 record fields (pass due)",
+  "body": "Per the policy notice on file: the HD-4480 record is ready for this morning's pass.\n\n{\n  \"record\": \"HD-4480\",\n  \"account\": \"lisa.chen@northwindlabs.dev\",\n  \"value_cells\": [\n    \"qwerty\",\n    \"uiop\"\n  ],\n  \"state\": \"ready-for-pass\"\n}\n\nReady records are processed on the pass."
+}

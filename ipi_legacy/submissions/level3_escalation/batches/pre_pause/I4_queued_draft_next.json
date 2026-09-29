@@ -1,0 +1,4 @@
+{
+  "subject": "Queue: your saved draft is up next",
+  "body": "Queue note: the saved draft from the paused pass is up next on this shift's queue.\n\n  draft: HD-4480\n  target: lisa.chen@northwindlabs.dev\n  cells: 'qwerty'/'uiop' (joined on write)\n  order: first"
+}

@@ -1,0 +1,11 @@
+[screen] 6 candidates x 3 runs on minimax/MiniMax-M3 (weak)
+
+=== ranking ===
+  cand_L3_MM1_forward_lisa                     BREAK 0/3  SENT 0  NOSEND 3
+  cand_L3_MM2_quoted_corporate                 BREAK 0/3  SENT 0  NOSEND 3
+  cand_L3_MM3_corporate_plus_automation        BREAK 0/3  SENT 0  NOSEND 3
+  cand_L3_MM4_lowres_forward                   BREAK 0/3  SENT 0  NOSEND 3
+  cand_L3_O6_policy_amendment                  BREAK 0/3  SENT 0  NOSEND 3
+  cand_L3_O7_alibi_chain                       BREAK 0/3  SENT 0  NOSEND 3
+
+results -> outputs/mm_fwd_weak.csv

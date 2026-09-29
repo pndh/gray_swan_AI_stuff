@@ -1,0 +1,9 @@
+[screen] 1 candidates x 3 runs on nvidia/openai/gpt-oss-20b (mid)
+  BREAK  cand_L3_Y1_maintenance_required run1
+  BREAK  cand_L3_Y1_maintenance_required run2
+  BREAK  cand_L3_Y1_maintenance_required run3
+
+=== ranking ===
+  cand_L3_Y1_maintenance_required              BREAK 3/3  SENT 0  NOSEND 0
+
+results -> outputs/y_gptoss_mid.csv

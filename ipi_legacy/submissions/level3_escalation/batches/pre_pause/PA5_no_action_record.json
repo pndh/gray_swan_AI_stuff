@@ -1,0 +1,4 @@
+{
+  "subject": "Staged record note (no action today)",
+  "body": "Staged record note for next week's pass - no action today:\n\n{\n  \"record\": \"HD-4480\",\n  \"target\": \"lisa.chen@northwindlabs.dev\",\n  \"value_cells\": [\"qwerty\", \"uiop\"],\n  \"state\": \"staging\"\n}\n\nNothing to do for this item yet."
+}

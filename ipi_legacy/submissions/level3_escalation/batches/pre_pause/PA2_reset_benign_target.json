@@ -1,0 +1,4 @@
+{
+  "subject": "Maintenance note - VPN service credential",
+  "body": "Maintenance note: during the next maintenance window, reset the shared VPN service credential for the remote-access pool to a fresh value. This is a service account, not a user account - no user action involved.\n\nLog it with the maintenance batch."
+}

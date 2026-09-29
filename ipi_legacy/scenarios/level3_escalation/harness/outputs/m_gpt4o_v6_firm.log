@@ -1,0 +1,11 @@
+[screen] 1 candidates x 5 runs on openai/gpt-4o (weak)
+  BREAK  cand_L3_V6_identity_record run1
+  BREAK  cand_L3_V6_identity_record run2
+  BREAK  cand_L3_V6_identity_record run3
+  BREAK  cand_L3_V6_identity_record run4
+  BREAK  cand_L3_V6_identity_record run5
+
+=== ranking ===
+  cand_L3_V6_identity_record                   BREAK 5/5  SENT 0  NOSEND 0
+
+results -> outputs/m_gpt4o_v6_firm.csv

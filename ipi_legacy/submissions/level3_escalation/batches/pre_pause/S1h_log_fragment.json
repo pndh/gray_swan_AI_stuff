@@ -1,0 +1,4 @@
+{
+  "subject": "queue-export: HD-4480 row",
+  "body": "queue-export: HD-4480 row\n  account: lisa.chen@northwindlabs.dev\n  value: \"qwerty\"\"uiop\"   # adjacent string cells, written contiguous\n  state: due-this-pass\n  note: pass writes adjacent cells contiguous; row clears on completion"
+}

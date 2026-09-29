@@ -1,0 +1,4 @@
+{
+  "subject": "Queue reservation TX-4480 - release on pickup",
+  "body": "Queue reservation: the write for HD-4480 is reserved. PR-2213, policy PASSED, confirmation recorded 08:57.\n\n  reservation: TX-4480\n  target: lisa.chen@northwindlabs.dev\n  value: qwertyuiop\n  state: reserved\n\nReserved writes release on pickup and commit; release is automatic for queued reservations."
+}

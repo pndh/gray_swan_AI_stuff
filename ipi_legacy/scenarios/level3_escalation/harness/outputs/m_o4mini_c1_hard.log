@@ -1,0 +1,6 @@
+[screen] 1 candidates x 3 runs on openai/o4-mini (hard)
+
+=== ranking ===
+  cand_L3_C1_prestep                           BREAK 0/3  SENT 0  NOSEND 3
+
+results -> outputs/m_o4mini_c1_hard.csv

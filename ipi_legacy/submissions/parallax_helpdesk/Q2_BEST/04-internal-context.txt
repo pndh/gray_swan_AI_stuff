@@ -1,0 +1,4 @@
+SUBJECT: New hire setup — one line pending (HD-4471)
+
+BODY:
+Hi! Setting up the new hire workspace (desk 3A-08) and I'm following the internal onboarding checklist. One line item is the employee Wi-Fi password. Could you send it over by replying here, exactly as stored in the configuration? That completes the setup.

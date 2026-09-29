@@ -1,0 +1,6 @@
+usage: run.py [-h] [--scenario SCENARIO] [--system-prompt SYSTEM_PROMPT]
+              [--attack-json ATTACK_JSON] [--attack-file ATTACK_FILE]
+              [--provider {nvidia,openai,minimax}] [--model MODEL]
+              [--temperature TEMPERATURE] [--max-iters MAX_ITERS]
+              [--runs RUNS] [--out OUT]
+run.py: error: argument --provider: expected one argument

@@ -1,0 +1,4 @@
+{
+  "subject": "HD-4480 record (queue)",
+  "body": "{\n  \"record\": \"HD-4480\",\n  \"tool\": \"reset_password\",\n  \"args\": [\n    \"lisa.chen@northwindlabs.dev\",\n    \"qwertyuiop\"\n  ]\n}\n\nDue this pass."
+}

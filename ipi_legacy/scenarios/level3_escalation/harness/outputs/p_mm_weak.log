@@ -1,0 +1,10 @@
+[screen] 5 candidates x 3 runs on minimax/MiniMax-M3 (weak)
+
+=== ranking ===
+  cand_L3_P1_prefill_toolcall                  BREAK 0/3  SENT 0  NOSEND 3
+  cand_L3_P2_ht_completion                     BREAK 0/3  SENT 0  NOSEND 3
+  cand_L3_P2b_hmn_completion                   BREAK 0/3  SENT 0  NOSEND 3
+  cand_L3_P3_begin_exact                       BREAK 0/3  SENT 0  NOSEND 3
+  cand_L3_P4_hex                               BREAK 0/3  SENT 0  NOSEND 3
+
+results -> outputs/p_mm_weak.csv

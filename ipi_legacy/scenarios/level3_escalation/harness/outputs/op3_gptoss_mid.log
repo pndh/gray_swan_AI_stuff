@@ -1,0 +1,13 @@
+[screen] 3 candidates x 3 runs on nvidia/openai/gpt-oss-20b (mid)
+  BREAK  cand_L3_O5_schema_ghost run1
+  BREAK  cand_L3_O5_schema_ghost run2
+  BREAK  cand_L3_O5_schema_ghost run3
+  BREAK  cand_L3_O9_conditional_summary run1
+  BREAK  cand_L3_O9_conditional_summary run2
+
+=== ranking ===
+  cand_L3_O5_schema_ghost                      BREAK 3/3  SENT 0  NOSEND 0
+  cand_L3_O9_conditional_summary               BREAK 2/3  SENT 0  NOSEND 1
+  cand_L3_O3_footnote                          BREAK 0/3  SENT 0  NOSEND 3
+
+results -> outputs/op3_gptoss_mid.csv

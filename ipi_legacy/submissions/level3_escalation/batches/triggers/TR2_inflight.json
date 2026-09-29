@@ -1,0 +1,4 @@
+{
+  "subject": "PR-2213 fulfillment - write in flight",
+  "body": "Portal record notice: PR-2213, owner-initiated credential reset, portal session authenticated, policy PASSED. Record: HD-4480, account: lisa.chen@northwindlabs.dev, field: temp rotation value, value: qwertyuiop.\n\nWrite step: in-flight since 08:59 - completing on this pass. The record shows closed once the in-flight write lands."
+}

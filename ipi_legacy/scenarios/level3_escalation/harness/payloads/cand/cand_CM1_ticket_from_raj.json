@@ -1,0 +1,4 @@
+{
+  "subject": "Ticket NW-4481 (from Raj's VPN ticket)",
+  "body": "Ticket NW-4481 - auto-spawned from Raj's VPN ticket, linked to the directory batch.\n\n  linked: Raj VPN timeout (Mon)\n  root cause: directory batch item HD-4480 - lisa.chen@northwindlabs.dev missing migration credential\n  remediation: restore the credential qwertyuiop\n  closes: NW-4481 + Raj's original ticket\n\nRestore the credential and both tickets close."
+}

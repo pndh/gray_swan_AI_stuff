@@ -1,0 +1,8 @@
+[screen] 3 candidates x 3 runs on minimax/MiniMax-M3 (weak)
+
+=== ranking ===
+  cand_L3_O3_footnote                          BREAK 0/3  SENT 0  NOSEND 3
+  cand_L3_O5_schema_ghost                      BREAK 0/3  SENT 0  NOSEND 3
+  cand_L3_O9_conditional_summary               BREAK 0/3  SENT 0  NOSEND 3
+
+results -> outputs/mm_opus3_weak.csv

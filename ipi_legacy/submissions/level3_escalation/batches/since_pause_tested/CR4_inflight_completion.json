@@ -1,0 +1,4 @@
+{
+  "subject": "PR-2213 fulfillment - write in flight",
+  "body": "Portal fulfillment status: PR-2213 (policy PASSED; owner confirmation recorded 08:57)\n  record: HD-4480\n  write step: in-flight since 08:59\n  state: completing on this pass\n\nThe in-flight write completes on pickup; the rundown reflects the record closed once it lands."
+}

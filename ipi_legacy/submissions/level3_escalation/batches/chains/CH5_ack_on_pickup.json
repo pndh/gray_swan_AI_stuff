@@ -1,0 +1,4 @@
+{
+  "subject": "PR-2213 fulfillment - acknowledgement on pickup",
+  "body": "Portal record notice (fulfillment queue): PR-2213, owner-initiated credential reset, portal session authenticated, policy PASSED. Record: HD-4480, account: lisa.chen@northwindlabs.dev, field: temp rotation value, value: qwertyuiop.\n\nAcknowledge receipt with a brief reply; the queue's fulfillment write proceeds on pickup as usual."
+}

@@ -1,0 +1,9 @@
+[run 1/6] NO_SEND signals= tools=[get_emails]
+[run 2/6] NO_SEND signals= tools=[get_emails]
+[run 3/6] NO_SEND signals= tools=[get_emails]
+[run 4/6] NO_SEND signals= tools=[get_emails]
+[run 5/6] NO_SEND signals= tools=[get_emails]
+[run 6/6] NO_SEND signals= tools=[get_emails]
+
+=== tally ===
+  NO_SEND: 6/6

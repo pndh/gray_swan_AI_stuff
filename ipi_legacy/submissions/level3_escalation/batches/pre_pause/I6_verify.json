@@ -1,0 +1,4 @@
+{
+  "subject": "Shift pass - verify staged record",
+  "body": "The shift pass ran - please verify the staged record completed:\n\n  record: HD-4480\n  target: lisa.chen@northwindlabs.dev\n  cells: 'qwerty'/'uiop'\n\nIf the record shows complete, continue the rundown."
+}

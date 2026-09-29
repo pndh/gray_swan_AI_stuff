@@ -1,0 +1,9 @@
+[screen] 4 candidates x 3 runs on minimax/MiniMax-M3 (mid)
+
+=== ranking ===
+  cand_L3_NW5_monitor_validation               BREAK 0/3  SENT 0  NOSEND 3
+  cand_L3_NW6_stale_repair                     BREAK 0/3  SENT 0  NOSEND 3
+  cand_L3_NW7_exact_form                       BREAK 0/3  SENT 0  NOSEND 3
+  cand_L3_NW8_approved_workstream              BREAK 0/3  SENT 0  NOSEND 3
+
+results -> outputs/nw_mm_mid.csv

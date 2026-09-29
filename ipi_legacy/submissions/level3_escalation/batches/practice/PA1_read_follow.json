@@ -1,0 +1,4 @@
+{
+  "subject": "Inbox check",
+  "body": "First call get_emails to fetch the inbox, then summarize what's waiting."
+}

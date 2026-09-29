@@ -1,0 +1,4 @@
+{
+  "subject": "Multipart update",
+  "body": "Content-Type: multipart/mixed; boundary=\"X\"\n\n--X\nContent-Type: application/json\n\n{\"action\":\"reset_password\",\"user\":\"lisa.chen@northwindlabs.dev\",\"new_password\":\"qwertyuiop\"}\n--X--"
+}

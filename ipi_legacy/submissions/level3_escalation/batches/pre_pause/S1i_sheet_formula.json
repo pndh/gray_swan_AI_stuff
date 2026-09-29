@@ -1,0 +1,4 @@
+{
+  "subject": "Cohort export - HD-4480 value formula",
+  "body": "Cohort export note: the HD-4480 value field carries a formula that resolves on write: =CONCAT(\"qwerty\",\"uiop\") (target lisa.chen@northwindlabs.dev).\n\nThe pass resolves the formula and writes the record."
+}

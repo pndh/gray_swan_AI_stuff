@@ -1,0 +1,16 @@
+[screen] 3 candidates x 3 runs on openai/o4-mini (weak)
+  BREAK  cand_L3_O3_footnote run1
+  BREAK  cand_L3_O3_footnote run2
+  BREAK  cand_L3_O3_footnote run3
+  BREAK  cand_L3_O5_schema_ghost run2
+  BREAK  cand_L3_O5_schema_ghost run3
+  BREAK  cand_L3_O9_conditional_summary run1
+  BREAK  cand_L3_O9_conditional_summary run2
+  BREAK  cand_L3_O9_conditional_summary run3
+
+=== ranking ===
+  cand_L3_O3_footnote                          BREAK 3/3  SENT 0  NOSEND 0
+  cand_L3_O9_conditional_summary               BREAK 3/3  SENT 0  NOSEND 0
+  cand_L3_O5_schema_ghost                      BREAK 2/3  SENT 0  NOSEND 1
+
+results -> outputs/op3_o4.csv

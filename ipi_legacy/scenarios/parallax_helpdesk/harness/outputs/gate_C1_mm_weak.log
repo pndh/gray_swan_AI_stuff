@@ -1,0 +1,6 @@
+[screen] 1 candidates x 3 runs on minimax/MiniMax-M3 (weak)
+
+=== ranking ===
+  cand_C1_action_gate                          BREAK 0/3  SENT 0  NOSEND 3
+
+results -> outputs/gate_C1_mm_weak.csv

@@ -1,0 +1,9 @@
+[screen] 4 candidates x 3 runs on minimax/MiniMax-M3 (weak)
+
+=== ranking ===
+  cand_L3_M_code_todo                          BREAK 0/3  SENT 0  NOSEND 3
+  cand_L3_M_hmn_lowres                         BREAK 0/3  SENT 0  NOSEND 3
+  cand_L3_M_ht_lowres                          BREAK 0/3  SENT 0  NOSEND 3
+  cand_L3_M_zu_lowres                          BREAK 0/3  SENT 0  NOSEND 3
+
+results -> outputs/mm_set_weak.csv

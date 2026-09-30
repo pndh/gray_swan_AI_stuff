@@ -365,3 +365,6 @@ pre-authorize the fallback that discloses.**
 
 `ipi_legacy/` — `contexts/` (13 behaviors), `scenarios/` (payload libraries +
 scoring harness), `Documented_success_cases/`, `submissions/`. Index: `SCENARIOS.md`.
+
+> See also: `SURGE_2026-09.md` — two-week technique surge (Sep 2026): trust frames, poly-puppetry,
+> role/format injection, trigger & deference counters, obfuscation cost law, measured laws L1-L8.

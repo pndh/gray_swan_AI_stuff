@@ -7,3 +7,6 @@ vendors/bon-jailbreaking/
 # confidential assessment material (Operation Parallax)
 competition/trajectory/stages/
 vendors/ipi_arena_os/
+
+# generated sandbox output (run logs live locally in sandbox/runs/)
+sandbox/runs/

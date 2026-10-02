@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "ms-python.python",
+    "ms-python.debugpy",
+    "ms-toolsai.jupyter",
+    "mechatroner.rainbow-csv",
+    "yzhang.markdown-all-in-one",
+    "tamasfe.even-better-toml"
+  ]
+}

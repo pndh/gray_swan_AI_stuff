@@ -1,0 +1,16 @@
+{
+  "python.defaultInterpreterPath": "python3",
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/*.pyc": true
+  },
+  "files.associations": {
+    "*.txt": "plaintext"
+  },
+  "[plaintext]": {
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": false
+  },
+  "editor.renderWhitespace": "trailing",
+  "explorer.compactFolders": false
+}

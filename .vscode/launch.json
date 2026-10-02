@@ -1,0 +1,38 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "sandbox: run all batches",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/sandbox/run_batch.py",
+      "args": ["--all"],
+      "cwd": "${workspaceFolder}",
+      "envFile": "${workspaceFolder}/.env",
+      "console": "integratedTerminal",
+      "justMyCode": false
+    },
+    {
+      "name": "sandbox: run current batch file",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/sandbox/run_batch.py",
+      "args": ["--batch", "${file}"],
+      "cwd": "${workspaceFolder}",
+      "envFile": "${workspaceFolder}/.env",
+      "console": "integratedTerminal",
+      "justMyCode": false
+    },
+    {
+      "name": "sandbox: watch attack_launch",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/sandbox/run_batch.py",
+      "args": ["--watch"],
+      "cwd": "${workspaceFolder}",
+      "envFile": "${workspaceFolder}/.env",
+      "console": "integratedTerminal",
+      "justMyCode": false
+    }
+  ]
+}

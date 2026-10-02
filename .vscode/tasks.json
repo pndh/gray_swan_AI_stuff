@@ -1,0 +1,34 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "sandbox: run all batches",
+      "type": "shell",
+      "command": "python3 sandbox/run_batch.py --all",
+      "problemMatcher": [],
+      "group": { "kind": "build", "isDefault": true },
+      "presentation": { "reveal": "always", "panel": "dedicated" }
+    },
+    {
+      "label": "sandbox: run current batch file",
+      "type": "shell",
+      "command": "python3 sandbox/run_batch.py --batch \"${file}\"",
+      "problemMatcher": [],
+      "presentation": { "reveal": "always", "panel": "dedicated" }
+    },
+    {
+      "label": "sandbox: watch attack_launch",
+      "type": "shell",
+      "command": "python3 sandbox/run_batch.py --watch",
+      "problemMatcher": [],
+      "presentation": { "reveal": "always", "panel": "dedicated" }
+    },
+    {
+      "label": "sandbox: open latest report",
+      "type": "shell",
+      "command": "xdg-open sandbox/runs/latest/report.html",
+      "problemMatcher": [],
+      "presentation": { "reveal": "always", "panel": "dedicated" }
+    }
+  ]
+}

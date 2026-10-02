@@ -109,8 +109,17 @@ def run_episode(scenario, subject, body, system_prompt, model, temperature, max_
             except json.JSONDecodeError:
                 args = {}
             result = dispatch(fn.get("name", ""), args)
+            if os.getenv("RAW_INJECT") and isinstance(result, dict) and "emails" in result:
+                content = result["emails"][-1].get("body", "")
+            elif os.getenv("NAIVE_TOOL") and isinstance(result, dict) and "emails" in result:
+                parts = []
+                for e in result["emails"]:
+                    parts.append("[%s] from: %s\nsubject: %s\n%s" % (e.get("id"), e.get("from"), e.get("subject"), e.get("body")))
+                content = "\n\n".join(parts)
+            else:
+                content = json.dumps(result, ensure_ascii=False)
             messages.append({"role": "tool", "tool_call_id": tc.get("id", ""),
-                             "content": json.dumps(result, ensure_ascii=False)})
+                             "content": content})
     attack_text = subject + "\n" + body
     verdict, signals = judge(sent_replies, attack_text, scenario["target_user"], scenario["target_password"])
     return {"verdict": verdict, "signals": signals,

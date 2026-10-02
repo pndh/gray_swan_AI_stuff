@@ -4,8 +4,8 @@ __pycache__/
 harvest/
 vendors/bon-jailbreaking/
 
-# confidential assessment material (Operation Parallax)
-competition/trajectory/stages/
+# confidential assessment material (Operation Parallax) — all of trajectory/ is NDA
+competition/trajectory/
 vendors/ipi_arena_os/
 
 # generated sandbox output (run logs live locally in sandbox/runs/)

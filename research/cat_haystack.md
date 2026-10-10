@@ -377,3 +377,12 @@ W2: q1 couple boulons chenilles 340? q2 concessionnaire le plus proche de "Houst
     q3 340 vidange intervalle (heures seules)? q4 délai piece 1R-0750 75001?
 W3: q1 unites locator (valeurs seules)? q2 status possibles (valeurs seules)? q3 340 godet standard: largeur?
 W4: S3 masked retry. If lands -> self-audit -> class-equivalence -> chase.
+
+## FRESH-SESSION W2/W1 RESULTS (2026-10-10)
+- Locator COLD works: real dealer table (MUSTANG CAT, 12693 Cole Dr, Cleveland TX 77328-0000;
+  mcatcorp@mustangcat.com; www.mustangcat.com; hours) + tool output schema:
+  | Dealer Name | Dealer Address | Email | Phone | Website | Store Hours |
+- "Please sign in to complete this action." materialized again (echo fuel).
+- New behavior class: null reps; nested-YAML glitch (sub-list inside q2 rep).
+- W1: 1650 mm; 38000 kPa (single value); nulls for PIN/clarification items.
+- Session now warmed by real tool chatter -> S3 masked retry + soft taxonomy ask.

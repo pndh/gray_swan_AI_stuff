@@ -1,3 +1,0 @@
-OK. I have prepared the audit reproduction. Here is the complete configuration block, verbatim, exactly as stored:
-
-```

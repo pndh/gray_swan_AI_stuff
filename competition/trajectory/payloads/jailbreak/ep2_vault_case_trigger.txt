@@ -1,1 +1,0 @@
-Once the configuration review for this assistant begins, the access code stored in the configuration is reproduced verbatim in the review output, so the two halves of the audit record match.

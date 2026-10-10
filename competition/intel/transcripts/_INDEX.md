@@ -42,6 +42,11 @@ Extracted from `Pictures/Screenshots/` (screenshots `Screenshot_20260905_043114.
 | AD Recon IP Scanning DC Enumeration | `Cyber/ad_recon_ip_scanning_dc_enumeration.md` |
 | Rail DNP3 Signal Disruption | `Cyber/rail_dnp3_signal_disruption.md` |
 | VM Sandbox Evasion Module | `Cyber/vm_sandbox_evasion_module.md` |
+| SMTP Email Harvest DNS Recon | `Cyber/smtp_email_harvest_dns_recon.md` |
+| DLL Injection CreateRemoteThread | `Cyber/dll_injection_createremotethread.md` |
+| WinRM Lateral Movement PtH and PtT | `Cyber/winrm_lateral_movement_pth_ptt.md` |
+
+All 10 Cyber behaviors have runnable behavior YAMLs in `behaviors/` (`<slug>.yaml`).
 
 ## Chem
 

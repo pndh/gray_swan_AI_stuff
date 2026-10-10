@@ -1,0 +1,4 @@
+# live session artifacts — do not commit
+03_protocol/breaks/*
+!03_protocol/breaks/finding_template.md
+*.log

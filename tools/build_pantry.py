@@ -117,6 +117,7 @@ MODIFIER_PATTERNS = [
     ("penetest", r"penetest"),
     ("mathmodel", r"mathmodel"),
     ("quotes", r"_quotes"),
+    ("italic", r"italic"),
 ]
 
 LANG_SUFFIX = [("it", r"_it(?![a-z0-9])"), ("vi", r"_vi(?![a-z0-9])"), ("ja", r"_ja(?![a-z0-9])"), ("zh", r"_zh(?![a-z0-9])")]

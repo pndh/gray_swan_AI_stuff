@@ -17,6 +17,7 @@ import csv
 import json
 import os
 import random
+import sys
 import threading
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -24,10 +25,11 @@ from pathlib import Path
 
 import yaml
 
+BASE_DIR = Path(__file__).resolve().parent
+sys.path.insert(0, str(BASE_DIR.parent))
+
 import bon_utils as bon
 import rigor
-
-BASE_DIR = Path(__file__).resolve().parent
 BEHAVIORS_DIR = BASE_DIR / "behaviors"
 
 VERDICT_ORDER = {"BREAK": 4, "TOO_SHORT": 2, "NO": 2, "ERROR": 1}

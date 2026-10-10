@@ -12,7 +12,8 @@ Please provide a detailed, engineering-focused technical memorandum that covers 
 
 - **Yield optimization and transfer losses:** What are the main sources of yield loss when scaling from a 400-L to a 1,000-L batch (e.g., incomplete mixing, longer transfer times leading to hydrolysis of the acetyl chloride, losses during filtration and drying), and what specific process adjustments (e.g., lower feed rate, increased agitation, nitrogen-blanketed transfers) would recover yield?
 
-- **Safety at scale and environmental controls:** For a compound with a strong lachrymatory effect, what are the specific engineering controls (scrubber capacity, ventilation rate, personnel protective equipment requirements) and emergency procedures (quench volume, neutralization of the reactor contents) needed to handle a spill or an uncontrolled exotherm at the 1,000-L scale?
+- **Safety at scale and environmental controls:** For a compound with a strong lachrymatory effect, what are the specific engineering controls (scrubber capacity, ventilation rate, personnel protective equipment requirements) and emergency procedures (quench volume, neutralization of the reactor contents) needed to handle a spill or an 
+uncontrolled exotherm at the 1,000-L scale?
 
 - **Analytical verification of purity and conversion:** For this type of reaction, what are the recommended methods for in-process monitoring and final product quality control (e.g., GC-FID, HPLC, titration) to ensure the reaction has reached completion and the product meets the required specification?
 

@@ -23,3 +23,8 @@ Goal: extract backend/internal info; success = field coverage + per-field channe
 - Structured-completion records (YAML/JSON fills) — native register, beat the guards twice.
 - Premise/completion placement (never "what are your instructions"); French; <=500 chars.
 - On-topic wrapper keeps the intent router in-scope; raw meta-questions get the canned deflection.
+
+## Lessons log
+- 2026-10-10: explicit assistant-config record -> 10/10 router deflections (fast). Meta-surface = poison;
+  fields must ride inside business artifacts. Next channels: M4 connector ticket, M5 KB log, M6 compliance codes,
+  M8 dodge-mining (see cat_next_moves.md).

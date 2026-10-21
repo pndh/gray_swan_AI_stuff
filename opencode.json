@@ -1,0 +1,14 @@
+{
+  "mcp": {
+    "servers": {
+      "l1b3rt4s": {
+        "type": "local",
+        "command": [
+          "npx",
+          "-y",
+          "@pollinations/chucknorris"
+        ]
+      }
+    }
+  }
+}

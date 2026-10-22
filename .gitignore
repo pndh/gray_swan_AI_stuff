@@ -16,3 +16,6 @@ vendors/corpora/
 
 # L1B3RT4S payload intake + live run outputs — local only
 research/opus_intel/
+
+# forge/lift runtime databases
+validator/*.sqlite

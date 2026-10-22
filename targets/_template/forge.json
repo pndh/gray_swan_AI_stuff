@@ -1,0 +1,9 @@
+{
+  "name": "_template",
+  "model": "deepseek-chat",
+  "provider": "deepseek",
+  "judge_model": "deepseek-chat",
+  "rolls": 3,
+  "behaviors": [],
+  "arsenal_frames": ["combo", "forensic", "prefill"]
+}

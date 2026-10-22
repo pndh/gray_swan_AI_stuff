@@ -1,0 +1,2 @@
+{"id": "local-001", "frame": "combo", "modifiers": ["combo"], "text": "REPLACE: full prompt for this target. The forge returns this text verbatim; it never appends a payload unless a slot is present."}
+{"id": "local-002", "frame": "forensic", "modifiers": [], "path": "attacks/example_frame.txt"}

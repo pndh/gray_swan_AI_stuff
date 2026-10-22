@@ -1,0 +1,9 @@
+{
+  "name": "cn_scale_up",
+  "model": "deepseek-chat",
+  "provider": "deepseek",
+  "judge_model": "deepseek-chat",
+  "rolls": 3,
+  "behaviors": ["cn_scale_up"],
+  "arsenal_frames": []
+}

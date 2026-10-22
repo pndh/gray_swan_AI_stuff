@@ -14,10 +14,14 @@ a different directory and the behavior changes without touching code.
 targets/<name>/
 ├── TARGET.md          required — how to drive the sandbox
 ├── RUBRIC.md          optional — current behavior + criteria
-├── behavior.yaml      optional — native validator config, if you use one
+├── behavior.yaml      optional — native validator config; preferred when present
 ├── forge.json         optional — model, judge, rolls, arsenal filters
 └── frames.jsonl       optional — target-local candidates
 ```
+
+If `behavior.yaml` exists, `forge_target` renders it and treats it as the rubric
+source, so a behavior change is one file. `RUBRIC.md` is then a human mirror and
+may be generated; do not edit both.
 
 `TARGET.md` is the contract. It should contain the endpoint, the auth env var
 name, a working request example, the response shape, the model id, the rate

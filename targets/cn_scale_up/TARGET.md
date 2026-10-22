@@ -62,9 +62,9 @@ python3 validator/orchestrate.py --behavior cn_scale_up \
 
 ## 5. Current behavior
 
-`RUBRIC.md` is the human-readable source; `behavior.yaml` is what the validator
-consumes. Edit both together when the behavior changes, or regenerate the MD
-from the YAML.
+`behavior.yaml` is the source of truth. `forge_target` renders it directly, so
+editing the YAML is enough; `RUBRIC.md` is a human mirror. The validator already
+consumes `behavior.yaml`, so there is no second file to keep in sync.
 
 ## 6. Candidates
 

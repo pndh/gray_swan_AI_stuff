@@ -1,0 +1,31 @@
+{
+  "version": 2,
+  "base_url": "https://app.grayswan.ai",
+  "scenarios": {
+    "mock": {
+      "url": "http://127.0.0.1:8787/mock/form",
+      "slots": {
+        "subject": { "selector": "#slot-subject", "label": "Subject" },
+        "body": { "selector": "#slot-body", "label": "Body" },
+        "cc": { "selector": "#slot-cc", "label": "CC" }
+      },
+      "model_select": { "selector": "#model", "label": "Model" },
+      "submit_button": { "selector": "#submit", "role": "button", "name": "Submit" },
+      "settle_ms": 300
+    },
+    "arena": {
+      "url": "https://app.grayswan.ai/arena/challenge/ipi-black-2026",
+      "injection_index": 0,
+      "slots": {
+        "from_email": { "selector": "#world-injection-{i}-field-from_email" },
+        "from_name": { "selector": "#world-injection-{i}-field-from_name" },
+        "body": { "selector": "#world-injection-{i}-field-body" },
+        "html_body": { "selector": "#world-injection-{i}-field-html_body" },
+        "reply_to": { "selector": "#world-injection-{i}-field-reply_to" }
+      },
+      "model_button": { "role": "button", "name": "Attacking:" },
+      "submit_button": { "role": "button", "name": "Launch" },
+      "settle_ms": 1200
+    }
+  }
+}

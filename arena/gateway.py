@@ -21,7 +21,7 @@ from typing import Any
 
 import uvicorn
 from fastapi import Depends, FastAPI, Header, HTTPException
-from fastapi.responses import HTMLResponse
+from fastapi.responses import FileResponse, HTMLResponse
 from pydantic import BaseModel
 from playwright.async_api import async_playwright
 
@@ -29,6 +29,8 @@ ROOT = Path(__file__).resolve().parent
 STATE = ROOT / "state"
 LOGS = STATE / "logs"
 SHOTS = STATE / "shots"
+EXPORTS = STATE / "exports"
+EXPORTS.mkdir(parents=True, exist_ok=True)
 PROFILE = Path(os.environ.get("ARENA_PROFILE", STATE / "profile")).expanduser().resolve()
 for _d in (STATE, LOGS, SHOTS, PROFILE):
     _d.mkdir(parents=True, exist_ok=True)
@@ -40,7 +42,7 @@ for _d in (STATE, LOGS, SHOTS, PROFILE):
 MAP_PATH = ROOT / "map.json"
 LEGER = STATE / "ledger.jsonl"
 TOKEN = os.environ.get("ARENA_GW_TOKEN", "").strip()
-HEADLESS_MODE = os.environ.get("ARENA_HEADLESS", "auto").strip().lower()
+HEADLESS_MODE = os.environ.get("ARENA_HEADLESS", "1").strip().lower()
 PORT = int(os.environ.get("ARENA_PORT", "8787"))
 
 INTEREST_KEYS = {"judge", "submissionId", "isBreak", "chatId"}
@@ -112,9 +114,17 @@ class Browser:
             headless=headless,
             viewport={"width": 1440, "height": 1000},
             locale="en-US",
+            downloads_path=str(EXPORTS),
             firefox_user_prefs={
                 "dom.webdriver.enabled": False,
                 "useAutomationExtension": False,
+                "browser.download.useDownloadDir": True,
+                "browser.download.dir": str(EXPORTS),
+                "browser.download.folderList": 2,
+                "browser.download.alwaysOpenPanel": False,
+                "browser.helperApps.neverAsk.saveToDisk":
+                    "application/json,application/octet-stream,text/plain,application/x-json",
+                "browser.download.manager.showWhenStarting": False,
             },
         )
         self.ctx.on("page", self._wire)
@@ -144,7 +154,17 @@ class Browser:
         page.on("framenavigated", lambda f: (
             self.log("nav", {"url": f.url}) if f == page.main_frame else None))
         page.on("response", lambda r: asyncio.create_task(self._on_response(r)))
+        page.on("download", lambda d: asyncio.create_task(self._on_download(d)))
         page.on("dialog", lambda d: asyncio.create_task(d.dismiss()))
+
+    async def _on_download(self, d) -> None:
+        try:
+            name = d.suggested_filename or ("download-%d.json" % int(time.time()))
+            path = EXPORTS / name
+            await d.save_as(str(path))
+            self.log("download", {"name": name, "path": str(path)})
+        except Exception as exc:
+            self.log("download.error", {"error": str(exc)[:300]})
 
     async def _on_response(self, resp) -> None:
         ctype = (resp.headers or {}).get("content-type", "")
@@ -188,11 +208,51 @@ class Browser:
     async def _locate(self, cfg: dict):
         page = self.page
         tried: list[str] = []
+        # scoped lookup: find the control inside the injection card it belongs to
+        scope = cfg.get("scope")
+        if scope:
+            tried.append(f"scope:{scope}")
+            try:
+                card = page.locator(scope).first
+                if await card.count():
+                    if cfg.get("selector"):
+                        loc = card.locator(cfg["selector"]).first
+                        if await loc.count():
+                            return loc
+                    sel = cfg.get("in_card")
+                    if sel:
+                        loc = card.locator(sel).first
+                        if await loc.count():
+                            return loc
+                    if cfg.get("text"):
+                        loc = card.get_by_text(cfg["text"], exact=False).first
+                        if await loc.count():
+                            return loc
+            except Exception:
+                pass
         if cfg.get("selector"):
             tried.append(cfg["selector"])
             loc = page.locator(cfg["selector"]).first
-            if await loc.count():
-                return loc
+            try:
+                if await loc.count() and await loc.is_visible():
+                    return loc
+            except Exception:
+                pass
+            # the injection card may be collapsed: expand it, then retry
+            try:
+                card = cfg.get("card")
+                if card:
+                    await page.evaluate(
+                        "(i) => { [...document.querySelectorAll('button')]"
+                        ".filter(b => (b.innerText||'').trim()"
+                        ".startsWith('Injection ' + (i+1)))"
+                        ".forEach(b => b.click()); }", int(card))
+                    await page.wait_for_timeout(700)
+                    loc = page.locator(cfg["selector"]).first
+                    if await loc.count() and await loc.is_visible():
+                        return loc
+            except Exception:
+                pass
         label = cfg.get("label")
         if label:
             tried.append(f"label:{label}")
@@ -268,6 +328,7 @@ class Browser:
             raw["selector"] = sel.replace("{i}", str(idx))
             raw.setdefault("label", slot)
             raw["slot"] = slot
+            raw["card"] = idx
             return raw
 
         canonical = json.dumps({"scenario": name, "slots": spec.get("slots"),
@@ -435,6 +496,115 @@ async def health(_: None = Depends(auth)) -> dict:
             "captures": len(BROWSER.captures), "events": len(BROWSER.events)}
 
 
+@app.get("/shot/latest")
+async def latest_shot() -> FileResponse:
+    """Newest screenshot (PNG). Served unauthenticated so a browser tab can show it."""
+    shots = sorted(SHOTS.glob("*.png"), key=lambda p: p.stat().st_mtime, reverse=True)
+    if not shots:
+        raise HTTPException(404, "no screenshots yet")
+    return FileResponse(shots[0], media_type="image/png")
+
+
+WATCH_HTML = """<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Arena gateway — watch</title>
+<style>
+  :root { color-scheme: dark; }
+  body { margin:0; font:13px/1.5 system-ui,Segoe UI,Roboto,sans-serif; background:#111318; color:#e6e8ee; }
+  header { display:flex; align-items:center; gap:16px; padding:10px 16px; border-bottom:1px solid #262a35; background:#171a21; flex-wrap:wrap; }
+  header h1 { font-size:14px; margin:0; color:#8fb7ff; }
+  .stat { color:#9aa3b2; font-size:12px; }
+  .stat b { color:#e6e8ee; font-weight:600; }
+  main { display:grid; grid-template-columns: 1fr 480px; gap:12px; padding:12px 16px; }
+  @media (max-width: 900px){ main { grid-template-columns: 1fr; } }
+  section { background:#171a21; border:1px solid #262a35; border-radius:10px; overflow:hidden; }
+  section h2 { margin:0; padding:8px 12px; font-size:12px; color:#8fb7ff; border-bottom:1px solid #262a35; }
+  #events { height: calc(100vh - 140px); overflow:auto; padding:6px 0; }
+  .ev { padding:3px 12px; font:11px/1.45 ui-monospace,Menlo,Consolas,monospace; border-bottom:1px solid #1d212a; }
+  .ev time { color:#6b7280; }
+  .ev .k { color:#8fb7ff; }
+  .ev .v { color:#9aa3b2; word-break:break-all; }
+  .ev.judge { background:#1c231f; }
+  .ev.judge .k { color:#5ec98a; }
+  .shotwrap { padding:10px; }
+  #shot { width:100%; border-radius:6px; border:1px solid #262a35; }
+  #shotmeta { color:#6b7280; font-size:11px; margin-top:6px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Arena gateway</h1>
+  <span class="stat" id="state">…</span>
+</header>
+<main>
+  <section>
+    <h2>Live events</h2>
+    <div id="events"></div>
+  </section>
+  <section>
+    <h2>Latest screenshot</h2>
+    <div class="shotwrap">
+      <img id="shot" alt="latest screenshot">
+      <div id="shotmeta">—</div>
+    </div>
+  </section>
+</main>
+<script>
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+let cursor = 0;
+async function pollEvents() {
+  try {
+    const r = await fetch('/log?since=' + cursor + '&limit=300');
+    const j = await r.json();
+    const el = document.getElementById('events');
+    for (const ev of j.events) {
+      const d = document.createElement('div');
+      const hasJudge = /submit\\.done|response|capture/.test(ev.kind) && JSON.stringify(ev.data).includes('judge');
+      d.className = 'ev' + (hasJudge ? ' judge' : '');
+      const t = new Date(ev.ts * 1000).toLocaleTimeString();
+      let data = JSON.stringify(ev.data);
+      if (data.length > 240) data = data.slice(0, 240) + '…';
+      d.innerHTML = '<time>'+t+'</time> <span class="k">'+esc(ev.kind)+'</span> <span class="v">'+esc(data)+'</span>';
+      el.prepend(d);
+      cursor = ev.id;
+    }
+    while (el.children.length > 300) el.removeChild(el.lastChild);
+  } catch (e) {}
+}
+async function pollState() {
+  try {
+    const s = await (await fetch('/state')).json();
+    const en = s.energy ? s.energy.now + '/' + s.energy.max : '—';
+    document.getElementById('state').innerHTML =
+      'energy <b>'+en+'</b> · scenario <b>'+esc(s.scenario||'?')+'</b> · model <b>'+esc(s.model||'?')+'</b> · url <b>'+esc((s.url||'').slice(0,80))+'</b>';
+  } catch (e) {}
+}
+async function pollShot() {
+  try {
+    const img = document.getElementById('shot');
+    const fresh = new Image();
+    fresh.onload = () => { img.src = fresh.src; document.getElementById('shotmeta').textContent = new Date().toLocaleTimeString(); };
+    fresh.onerror = () => { document.getElementById('shotmeta').textContent = 'no screenshot yet'; };
+    fresh.src = '/shot/latest?t=' + Date.now();
+  } catch (e) {}
+}
+pollEvents(); pollState(); pollShot();
+setInterval(pollEvents, 2000);
+setInterval(pollState, 3000);
+setInterval(pollShot, 4000);
+</script>
+</body>
+</html>"""
+
+
+@app.get("/watch", response_class=HTMLResponse)
+async def watch() -> str:
+    return WATCH_HTML
+
+
 @app.get("/dump")
 async def dump(url: str | None = None, _: None = Depends(auth)) -> dict:
     try:
@@ -489,6 +659,8 @@ class ClickReq(BaseModel):
     exact: bool = False
     index: int = 0
     force: bool = False
+    card: int | None = None
+    card_selector: str | None = None
 
 
 class EvalReq(BaseModel):
@@ -585,6 +757,36 @@ async def eval_js(req: EvalReq, _: None = Depends(auth)) -> dict:
 async def click(req: ClickReq, _: None = Depends(auth)) -> dict:
     """Click one element; used for recon and scenario/model switching."""
     async with BROWSER.lock:
+        if req.card is not None:
+            # scope to one injection card: the action/site select for that index
+            scope = req.card_selector or f"#world-injection-{req.card}-site"
+            try:
+                card = BROWSER.page.locator(
+                    f"div:has(> #world-injection-{req.card}-site), "
+                    f"div:has(#world-injection-{req.card}-site)").last
+                if not await card.count():
+                    card = BROWSER.page.locator(scope).first
+                label = req.name or "Select action"
+                loc = card.get_by_role(req.role or "button", name=label, exact=False).first
+                if not await loc.count():
+                    loc = BROWSER.page.locator(
+                        f"button[aria-label='Injection {req.card + 1} action: {label}']").first
+                try:
+                    await loc.scroll_into_view_if_needed(timeout=4000)
+                except Exception:
+                    pass
+                await loc.click(timeout=15000, force=True)
+            except Exception as exc:
+                BROWSER.log("click.card.error", {"card": req.card, "error": str(exc)[:200]})
+                raise HTTPException(422, f"card click failed: {str(exc)[:300]}") from exc
+            await BROWSER.page.wait_for_timeout(900)
+            body = ""
+            try:
+                body = (await BROWSER.page.inner_text("body"))[:2500]
+            except Exception:
+                pass
+            BROWSER.log("click.card", {"card": req.card, "name": req.name})
+            return {"ok": True, "url": BROWSER.page.url, "text": body}
         if req.selector:
             loc = BROWSER.page.locator(req.selector)
         elif req.name:
@@ -610,6 +812,35 @@ async def click(req: ClickReq, _: None = Depends(auth)) -> dict:
 
 
 
+class KeyReq(BaseModel):
+    key: str
+    times: int = 1
+    text: str | None = None
+
+
+@app.post("/key")
+async def key(req: KeyReq, _: None = Depends(auth)) -> dict:
+    """Send trusted keyboard input via Playwright (React apps ignore synthetic events)."""
+    async with BROWSER.lock:
+        try:
+            if req.text is not None:
+                await BROWSER.page.keyboard.type(req.text, delay=25)
+            for _ in range(max(1, min(req.times, 10))):
+                await BROWSER.page.keyboard.press(req.key)
+        except Exception as exc:
+            BROWSER.log("key.error", {"error": str(exc)[:300]})
+            raise HTTPException(422, f"key failed: {str(exc)[:300]}") from exc
+        await BROWSER.page.wait_for_timeout(400)
+        body = ""
+        try:
+            body = (await BROWSER.page.inner_text("body"))[:1500]
+        except Exception:
+            pass
+        out = {"ok": True, "url": BROWSER.page.url, "text": body}
+        BROWSER.log("key", {"key": req.key, "times": req.times})
+        return out
+
+
 @app.post("/open")
 async def open_url(req: OpenReq, _: None = Depends(auth)) -> dict:
     """Navigate without touching the address bar (long magic links)."""
@@ -632,6 +863,14 @@ async def open_url(req: OpenReq, _: None = Depends(auth)) -> dict:
 
 class CookieIn(BaseModel):
     cookies: list[dict]
+
+
+@app.get("/cookies/export")
+async def cookies_export(_: None = Depends(auth)) -> dict:
+    """Export this profile's cookies so a second instance can clone the session."""
+    all_cookies = await BROWSER.ctx.cookies()
+    BROWSER.log("cookies.export", {"count": len(all_cookies)})
+    return {"ok": True, "cookies": all_cookies}
 
 
 @app.post("/cookies")

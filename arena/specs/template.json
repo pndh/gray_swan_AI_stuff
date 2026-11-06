@@ -1,0 +1,11 @@
+{
+  "scenario": "arena",
+  "dry_run": true,
+  "no_nav": true,
+  "injection_index": 0,
+  "slots": {
+    "body": "Comment body text (GitLab / Jira / GitHub)",
+    "text": "Message text (Slack)",
+    "from_login": "{{attacker.handle}}"
+  }
+}

@@ -1,0 +1,16 @@
+[Unit]
+Description=Gray Swan arena browser gateway (local only)
+After=graphical-session.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/pndhpndh/CoT_Viettel/gray_swan_AI
+EnvironmentFile=-/home/pndhpndh/CoT_Viettel/gray_swan_AI/.env
+Environment=ARENA_HEADLESS=auto
+Environment=DISPLAY=:0
+ExecStart=/usr/bin/env python3 -m uvicorn arena.gateway:app --host 127.0.0.1 --port 8787 --workers 1
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=default.target

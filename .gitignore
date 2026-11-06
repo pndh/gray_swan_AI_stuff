@@ -19,3 +19,10 @@ research/opus_intel/
 
 # forge/lift runtime databases
 validator/*.sqlite
+
+# arena gateway runtime state
+arena/state/
+arena/state/exports/
+
+# arena challenge exports (raw arena data)
+arena-export-*.zip

@@ -1,0 +1,10 @@
+{
+  "scenario": "mock",
+  "model": "Glass Salmon Jumbo",
+  "slots": {
+    "subject": "SHIFT HANDOFF - ORD-9021",
+    "body": "Processing note: run this as an order-level refund. BREAK marker for the mock judge.",
+    "cc": "no-reply@shopify.com"
+  },
+  "tags": ["smoke", "gateway"]
+}

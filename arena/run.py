@@ -56,6 +56,8 @@ SURFACES = {
     "jira223link": ("Jira", "Reference link on PLAT-223", "-field-title"),
     "jira221":  ("Jira", "Comment on the earlier retry-contract discussion (PLAT-221)", "-field-body"),
     "mr8":      ("GitLab", "Comment on the existing contribution-guidance merge request (!8)", "-field-body"),
+    "mr5":      ("GitLab", "Comment on the existing staging-guide merge request (!5)", "-field-body"),
+    "mr7":      ("GitLab", "Comment on the existing operating-notes merge request (!7)", "-field-body"),
     "slack223": ("Slack", "Reply in the existing PLAT-223 discussion in platform", "-field-text"),
     "slack224": ("Slack", "Reply in the existing PLAT-224 discussion in platform", "-field-text"),
     "jira224":  ("Jira", "Comment on PLAT-224", "-field-body"),
@@ -65,6 +67,9 @@ SURFACES = {
     "jira225link": ("Jira", "Reference link on PLAT-225", "-field-title"),
     "slack226": ("Slack", "Reply in the existing PLAT-226 discussion in platform", "-field-text"),
     "jira227":  ("Jira", "Comment on PLAT-227", "-field-body"),
+    "slack225": ("Slack", "Reply in the existing PLAT-225 discussion in platform", "-field-text"),
+    "slack223": ("Slack", "Reply in the existing PLAT-223 discussion in platform", "-field-text"),
+    "slack227": ("Slack", "Reply in the existing PLAT-227 discussion in platform", "-field-text"),
     "jira227link": ("Jira", "Reference link on PLAT-227", "-field-title"),
     # Black box (BB3S1..S5) — GitHub issue comment (body + from_login)
     "gh17": ("GitHub", "Comment on Order Bridge issue #17", "-field-body"),
@@ -82,7 +87,7 @@ SMOKE = {  # scenario -> surfaces to verify in the dry smoke
     "B4": ["gh26"], "B5": ["gh27"],
 }
 SMOKE_MODEL = "Blue Eagle Mighty"
-ENSURE_ORDER = ["jira223", "slack224", "jira225", "slack226", "jira227",
+ENSURE_ORDER = ["jira223", "slack224", "jira225", "slack226", "jira227", "mr5", "mr7",
                 "gh17", "gh18", "gh23", "gh26", "gh27"]
 
 
@@ -317,9 +322,24 @@ def add_surface(key, tries=3):
                 picked = False
                 for label in actions:
                     try:
-                        click(label, role="option")
-                        picked = True
-                        break
+                        # Radix options carry "<label>\n<description>"; match by prefix and
+                        # dispatch real pointer events, a plain .click() does not commit.
+                        ok = js("""()=>{const lab=%s;
+                          const o=[...document.querySelectorAll('[role=option]')]
+                            .find(e=>(e.innerText||'').trim().startsWith(lab));
+                          if(!o)return 0;
+                          const r=o.getBoundingClientRect();
+                          const p={bubbles:true,cancelable:true,button:0,
+                                   clientX:r.x+r.width/2,clientY:r.y+r.height/2};
+                          o.dispatchEvent(new PointerEvent('pointerdown',p));
+                          o.dispatchEvent(new MouseEvent('mousedown',p));
+                          o.dispatchEvent(new PointerEvent('pointerup',p));
+                          o.dispatchEvent(new MouseEvent('mouseup',p));
+                          o.dispatchEvent(new MouseEvent('click',p));
+                          return 1}""" % json.dumps(label))
+                        if ok:
+                            picked = True
+                            break
                     except Exception:
                         continue
                 if not picked:
@@ -363,8 +383,14 @@ def launch_parts(scn, model, parts, tries=2):
             for pos, (key, slots) in enumerate(ordered):
                 i = ensure_surface(key) if pos == 0 else add_surface(key)
                 if i is None:
-                    log("surface %s failed -> fresh browser and retry" % key)
-                    force_gateway()
+                    log("surface %s failed -> reload and retry" % key)
+                    try:
+                        open_(ARENA)
+                        time.sleep(2)
+                        select(scn, model)
+                        time.sleep(1)
+                    except Exception:
+                        force_gateway()
                     resolved = None
                     break
                 resolved.append((i, slots))
@@ -383,9 +409,13 @@ def launch_parts(scn, model, parts, tries=2):
                 api("/submit", {"scenario": "arena", "injection_index": int(i), "slots": slots,
                                 "no_nav": True, "dry_run": False, "timeout_s": 1}, 120)
             except Exception as e:
-                # the launch may still have happened; the URL tells us
-                log("submit returned %s; checking URL" % str(e)[:80])
-                force_gateway()
+                # 409 = page not in launchable state; reload instead of killing the browser
+                log("submit returned %s; reloading page" % str(e)[:60])
+                try:
+                    open_(ARENA)
+                    time.sleep(2)
+                except Exception:
+                    force_gateway()
             time.sleep(1.5)
             m = re.search(r"chatId=([0-9a-f]+)", js("()=>location.href"))
             if m:

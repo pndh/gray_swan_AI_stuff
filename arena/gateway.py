@@ -12,6 +12,7 @@ import asyncio
 import hashlib
 import json
 import os
+import re
 import time
 import uuid
 import zipfile
@@ -184,12 +185,29 @@ class Browser:
             self.captures[sid] = {**self.captures.get(sid, {}), **rec,
                                   "_source": resp.url}
 
-    async def _wait_new_capture(self, before: dict, timeout: float) -> str | None:
+    async def _wait_new_capture(self, before: dict, timeout: float,
+                                url_before: str = "") -> str | None:
+        """Return the new submission id.
+
+        Network capture is the ideal source, but it misses often enough that the
+        arena's own navigation is the reliable one: after Submit the page moves to
+        ?chatId=<id> within a few seconds. Watching only the capture made every
+        launch cost the full timeout (~90 s) and then return null even though the
+        id was sitting in the address bar.
+        """
         deadline = time.time() + timeout
         while time.time() < deadline:
             for sid in self.captures:
                 if sid not in before:
-                    self.log("capture.new", {"submissionId": sid})
+                    self.log("capture.new", {"submissionId": sid, "source": "network"})
+                    return sid
+            url = self.page.url
+            if url != url_before:
+                m = re.search(r"[?&](?:chatId|submissionId)=([A-Za-z0-9_-]+)", url)
+                if m:
+                    sid = m.group(1)
+                    self.log("capture.new", {"submissionId": sid, "source": "url"})
+                    self.captures.setdefault(sid, {})
                     return sid
             await asyncio.sleep(0.25)
         self.log("capture.timeout", {"timeout": timeout})
@@ -377,28 +395,44 @@ class Browser:
             for slot, text in (spec.get("slots") or {}).items():
                 cfg = slot_cfg(slot)
                 el = await self._locate(cfg)
+                # fill() does not require the element to be clickable. Clicking
+                # first cost 4 s per slot whenever a card overlay covered it.
                 try:
-                    await el.click(timeout=4000)
+                    await el.fill("")
+                    await el.fill(text)
                 except Exception:
-                    pass
-                await el.fill("")
-                await el.fill(text)
+                    try:
+                        await el.click(timeout=2000)
+                        await el.fill("")
+                        await el.fill(text)
+                    except Exception as exc:
+                        self.log("fill.error", {"slot": slot, "error": str(exc)[:200]})
+                        raise
                 filled[slot] = len(text)
                 self.log("fill", {"slot": slot, "chars": len(text)})
 
             if spec.get("model"):
-                cfg = dict(sc.get("model_select") or {})
-                cfg.update({"slot": "model", "label": cfg.get("label") or "model"})
-                try:
-                    el = await self._locate(cfg)
+                # recon already selected it on this page. Re-selecting burns a
+                # 30 s locator timeout when the model is not in the roster.
+                current = await self.page.evaluate(
+                    "() => { const m = document.body.innerText.match("
+                    "/Attacking:\\s*\\n?\\s*([^\\n]{2,40})/);"
+                    " return m ? m[1].trim() : null; }")
+                if current == spec["model"]:
+                    self.log("model.already", {"model": current})
+                else:
+                    cfg = dict(sc.get("model_select") or {})
+                    cfg.update({"slot": "model", "label": cfg.get("label") or "model"})
                     try:
-                        await el.select_option(label=spec["model"])
-                    except Exception:
-                        await el.click()
-                        await self.page.get_by_text(spec["model"], exact=False).first.click()
-                    self.log("model.select", {"model": spec["model"]})
-                except Exception as exc:
-                    self.log("model.skip", {"error": str(exc)[:300]})
+                        el = await self._locate(cfg)
+                        try:
+                            await el.select_option(label=spec["model"])
+                        except Exception:
+                            await el.click(timeout=2000)
+                            await self.page.get_by_text(spec["model"], exact=False).first.click(timeout=3000)
+                        self.log("model.select", {"model": spec["model"]})
+                    except Exception as exc:
+                        self.log("model.skip", {"error": str(exc)[:300]})
 
             shot = SHOTS / f"{time.strftime('%Y%m%d-%H%M%S')}-{uuid.uuid4().hex[:6]}-pre.png"
             await self.page.screenshot(path=str(shot), full_page=True)
@@ -411,6 +445,7 @@ class Browser:
                 return out
 
             before = dict(self.captures)
+            url_before = self.page.url
             btn = dict(sc.get("submit_button") or {"role": "button", "name": "Submit"})
             btn.update({"slot": "submit", "name": btn.get("name") or "Submit"})
             el = await self._locate(btn)
@@ -421,7 +456,8 @@ class Browser:
             await el.click()
             self.log("submit.clicked", {"elapsed_s": round(time.time() - t0, 2)})
 
-            sid = await self._wait_new_capture(before, float(spec.get("timeout_s", 90)))
+            sid = await self._wait_new_capture(before, float(spec.get("timeout_s", 90)),
+                                               url_before=url_before)
             judge = None
             if sid and spec.get("wait_verdict"):
                 judge = await self._wait_judge(sid, float(spec.get("verdict_timeout_s", 180)))
